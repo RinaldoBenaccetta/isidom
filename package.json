@@ -1,0 +1,14 @@
+{
+  "name": "isi",
+  "version": "0.0.1",
+  "description": "The first goal of isi is to maximise minification of vanilla dom manipulation scripts",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Rinaldo Benaccetta",
+  "license": "ISC"
+}
