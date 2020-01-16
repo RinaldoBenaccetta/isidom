@@ -1,5 +1,6 @@
 
-import {$$undefined} from "../constants/common_values";
+// import {$$undefined} from "../constants/common_values";
+import * as constant from "../constants/common_values";
 
 /**
  * @description Replacement for typeof x === 'undefined'
@@ -8,16 +9,6 @@ import {$$undefined} from "../constants/common_values";
  * @param {*} variable
  * @returns {boolean}
  */
-export default function(variable) {
-    //import * as values from "../constants/common_values";
-    //const $$undefined = "undefined";
-//export function $isUndefined(variable) {
-    // import $$undefined from "../constants/common_values";
-    return typeof variable === $$undefined;
+export function $isUndefined(variable) {
+    return typeof variable === constant.$$undefined;
 }
-
-// export function $isUndefined(variable) {
-//     //import * as values from "../constants/common_values";
-//     const $$undefined = "undefined";
-//     return typeof variable === $$undefined;
-// }
