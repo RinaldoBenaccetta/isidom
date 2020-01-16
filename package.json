@@ -1,6 +1,9 @@
 {
   "name": "isi",
   "version": "0.0.1",
+  "devDependencies": {
+    "jest-cli": "^24.9.0"
+  },
   "description": "The first goal of isi is to maximise minification of vanilla dom manipulation scripts",
   "main": "index.js",
   "directories": {
@@ -10,5 +13,8 @@
     "test": "jest"
   },
   "author": "Rinaldo Benaccetta",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "esm": "^3.2.25"
+  }
 }
