@@ -13,6 +13,8 @@ import {
 import $isUndefined from "./tools/is_undefined.js";
 
 console.log("hello " + $$undefined);
+console.log("true : " + $$_true);
+
 
 let x = 2;
 if (!$isUndefined(x)) {
