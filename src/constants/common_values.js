@@ -14,7 +14,7 @@ export const $$_null = "null";
 
 
 /**
- * Deprecated values.
+ * @Deprecated
  */
 export const $$undefined = "undefined";
 export const $$click = "click";
@@ -26,7 +26,7 @@ export const $$focus = "focus";
 
 
 /**
- * Deprecated constants should be replaced by theses.
+ * Deprecated constants should be replaced by these.
  */
 export const $$_undefined = "undefined";
 export const $$_click = "click";
