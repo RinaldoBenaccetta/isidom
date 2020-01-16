@@ -5,12 +5,14 @@
     "jest-cli": "^24.9.0"
   },
   "description": "The first goal of isi is to maximise minification of vanilla dom manipulation scripts",
-  "main": "index.js",
+  "main": "src/index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "jest"
+    "start": "node -r esm .",
+    "test": "jest",
+    "experiment": "node experiment.js"
   },
   "author": "Rinaldo Benaccetta",
   "license": "ISC",
