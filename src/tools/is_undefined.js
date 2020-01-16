@@ -1,5 +1,3 @@
-
-// import {$$undefined} from "../constants/common_values";
 import * as constant from "../constants/common_values";
 
 /**
