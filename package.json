@@ -15,6 +15,7 @@
   "scripts": {
     "start": "node -r esm .",
     "test": "jest",
+    "watch": "jest --watchAll",
     "build": "npx rollup --config"
   },
   "author": "Rinaldo Benaccetta",
