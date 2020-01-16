@@ -15,8 +15,7 @@
   "scripts": {
     "start": "node -r esm .",
     "test": "jest",
-    "experiment": "node experiment.js",
-    "bundle": "npx rollup --config"
+    "build": "npx rollup --config"
   },
   "author": "Rinaldo Benaccetta",
   "license": "ISC",
