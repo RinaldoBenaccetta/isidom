@@ -455,9 +455,9 @@ const $$$zIndex = "zIndex";
 const $$_zoom = "zoom";
 const $$$zoom = $$_zoom;
 
-function $isUndefined(variable) {
-  return typeof variable === $$undefined;
-}
+// function $isUndefined(variable) {
+//   return typeof variable === $$undefined;
+// }
 
 /**
  * assaini les sélécteur : enlève les '.' et les '#'
@@ -473,9 +473,9 @@ function $selectorClean(selector) {
   return selector;
 }
 
-function $isArray(input) {
-  return Array.isArray(input);
-}
+// function $isArray(input) {
+//   return Array.isArray(input);
+// }
 
 function $isNodeList(input) {
   return NodeList.prototype.isPrototypeOf(input);
