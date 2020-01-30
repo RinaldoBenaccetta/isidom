@@ -1,6 +1,6 @@
 import * as mod from "../tools/array_to_string_list";
 
-describe('arry_to_string_list', () => {
+describe('array_to_string_list', () => {
     describe('given a string and no argument', () => {
         test("wich is a class name return the class name with . at start", () => {
             let className = '.myClass';
@@ -35,5 +35,14 @@ describe('arry_to_string_list', () => {
         let className = "myClass";
         expect(mod.$arrayToStringList(className, false)).toBe(className);
       });
+    });
+
+    describe('given an array of strings and no argument', () => {
+        test('with class names and no class names return class names with each . at start', () => {
+            let array = ['.myFirstClass', 'mySecondClass', '  myFirdClass'];
+            expect(mod.$arrayToStringList(array)).toBe(
+              ".myFirstClass.mySecondClass.myFirdClass"
+            );
+        });
     });
 });
