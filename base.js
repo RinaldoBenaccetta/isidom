@@ -459,27 +459,27 @@ const $$$zoom = $$_zoom;
 //   return typeof variable === $$undefined;
 // }
 
-/**
- * assaini les sélécteur : enlève les '.' et les '#'
- *
- * @param {[type]} selector le séclecteur à assainir
- *
- */
-function $selectorClean(selector) {
-  //console.log(selector);
-  if (selector.charAt(0) === "#" || selector.charAt(0) === ".") {
-    selector = selector.substr(1);
-  }
-  return selector;
-}
+// /**
+//  * assaini les sélécteur : enlève les '.' et les '#'
+//  *
+//  * @param {[type]} selector le séclecteur à assainir
+//  *
+//  */
+// function $selectorClean(selector) {
+//   //console.log(selector);
+//   if (selector.charAt(0) === "#" || selector.charAt(0) === ".") {
+//     selector = selector.substr(1);
+//   }
+//   return selector;
+// }
 
 // function $isArray(input) {
 //   return Array.isArray(input);
 // }
 
-function $isNodeList(input) {
-  return NodeList.prototype.isPrototypeOf(input);
-}
+// function $isNodeList(input) {
+//   return NodeList.prototype.isPrototypeOf(input);
+// }
 
 function $arrayToStringList(input, arg = $$true) {
   let joint = arg === $$true ? "." : " ";
