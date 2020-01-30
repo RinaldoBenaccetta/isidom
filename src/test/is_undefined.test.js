@@ -6,7 +6,7 @@ describe("is_undefined", () => {
       let x = 1;
       expect(mod.$isUndefined(x)).toBeFalsy();
     });
-  })
+  });
 
   describe("given an undefined value", () => {
     test("is undefined", () => {

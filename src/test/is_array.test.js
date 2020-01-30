@@ -1,6 +1,3 @@
-// const esmImport = require("esm")(module);
-// const mod = esmImport("../tools/is_array.js");
-
 import * as mod from "../tools/is_array.js";
 
 describe("is_array", () => {

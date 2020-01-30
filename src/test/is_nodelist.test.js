@@ -4,14 +4,14 @@ describe('is_nodelist', () => {
     describe("given a nodeList", () => {
         test("is nodelist", () => {
             let nodeList = document.querySelectorAll("div");
-            expect(mod.$isNodeList(nodeList)).toBe(true);
+            expect(mod.$isNodeList(nodeList)).toBeTruthy();
         });
     });
 
     describe("given an htmlCollection", () => {
         test("is not a nodeList", () => {
-        let htmlCollection = document.getElementsByTagName("div");
-        expect(mod.$isNodeList(htmlCollection)).toBe(false);
+            let htmlCollection = document.getElementsByTagName("div");
+            expect(mod.$isNodeList(htmlCollection)).toBeFalsy();
         });
     });
 });
