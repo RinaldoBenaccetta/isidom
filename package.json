@@ -24,7 +24,5 @@
   },
   "author": "Rinaldo Benaccetta",
   "license": "ISC",
-  "dependencies": {
-    "esm": "^3.2.25"
-  }
+  "dependencies": {}
 }
