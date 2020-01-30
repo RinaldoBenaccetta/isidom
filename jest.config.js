@@ -1,6 +1,5 @@
 module.exports = {
-    verbose: true,
-    "setupFiles": [
-        "./__mocks__/client.js"
-    ],
+  verbose: true,
+  preset: "ts-jest/presets/js-with-ts",
+  testEnvironment: "jsdom"
 };

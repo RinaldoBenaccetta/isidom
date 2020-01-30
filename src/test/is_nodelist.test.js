@@ -1,14 +1,14 @@
-const esmImport = require("esm")(module);
-const mod = esmImport("../tools/is_nodelist.js");
 
-test("expect nodeList to be nodelist", () => {
-    document.body.innerHTML = '<div id="test"><div class="panel-block"></div>Hello</div></div>....</div>'
-    var nodeList = document.querySelectorAll("div");
-    expect(mod.$isNodeList(nodeList)).toBe(true);
-});
+import * as mod from "../tools/is_nodelist.js";
 
-test("expect htmlCollection not to be nodelist", () => {
-    document.body.innerHTML = '<div id="test"><div class="panel-block"></div>Hello</div></div>....</div>'
-    var htmlCollection = document.getElementsByTagName("div")
-    expect(mod.$isNodeList(htmlCollection)).toBe(false);
+describe('nodelist', () => {
+    test('is nodelist', () => {
+        let nodeList = document.querySelectorAll('div');
+        expect(mod.$isNodeList(nodeList)).toBe(true);
+    });
+
+    test("is not an htmlCollection", () => {
+        let htmlCollection = document.getElementsByTagName("div");
+        expect(mod.$isNodeList(htmlCollection)).toBe(false);
+    });
 });

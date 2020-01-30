@@ -2,10 +2,14 @@
   "name": "isi",
   "version": "0.0.1",
   "devDependencies": {
+    "@types/jest": "^25.1.1",
+    "gulp": "^4.0.2",
+    "gulp-better-rollup": "^4.0.1",
+    "jest": "^25.1.0",
     "jest-cli": "^24.9.0",
     "rollup": "^1.27.0",
-    "gulp": "^4.0.2",
-    "gulp-better-rollup": "^4.0.1"
+    "ts-jest": "^25.1.0",
+    "typescript": "^3.7.5"
   },
   "description": "The first goal of isi is to maximise minification of vanilla dom manipulation scripts",
   "main": "src/index.js",
