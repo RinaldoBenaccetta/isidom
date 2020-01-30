@@ -1,14 +1,17 @@
-
 import * as mod from "../tools/is_nodelist.js";
 
-describe('nodelist', () => {
-    test('is nodelist', () => {
-        let nodeList = document.querySelectorAll('div');
-        expect(mod.$isNodeList(nodeList)).toBe(true);
+describe('is_nodelist', () => {
+    describe("given a nodeList", () => {
+        test("is nodelist", () => {
+            let nodeList = document.querySelectorAll("div");
+            expect(mod.$isNodeList(nodeList)).toBe(true);
+        });
     });
 
-    test("is not an htmlCollection", () => {
+    describe("given an htmlCollection", () => {
+        test("is not a nodeList", () => {
         let htmlCollection = document.getElementsByTagName("div");
         expect(mod.$isNodeList(htmlCollection)).toBe(false);
+        });
     });
 });
