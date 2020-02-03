@@ -1,6 +1,6 @@
 import * as mod from '../tools/is-nodelist'
 
-describe('is_nodelist', () => {
+describe('$isNodeList', () => {
   describe('given a nodeList', () => {
     test('is nodelist', () => {
       const nodeList = document.querySelectorAll('div')

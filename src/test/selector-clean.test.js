@@ -1,6 +1,6 @@
 import * as mod from '../tools/selector-clean'
 
-describe('selector_clean', () => {
+describe('$selectorClean', () => {
   describe('given a string', () => {
     test('wich is a class name return the class name without .', () => {
       const className = '.myClass'

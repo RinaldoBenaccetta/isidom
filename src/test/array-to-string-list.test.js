@@ -1,6 +1,6 @@
 import * as mod from '../tools/array-to-string-list'
 
-describe('array_to_string_list', () => {
+describe('$arrayToStringList', () => {
   describe('given a string and no argument', () => {
     test('wich is a class name return the class name with . at start', () => {
       const className = '.myClass'

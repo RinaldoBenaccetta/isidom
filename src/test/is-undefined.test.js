@@ -1,6 +1,6 @@
 import * as mod from '../tools/is-undefined'
 
-describe('is_undefined', () => {
+describe('$isUndefined', () => {
   describe('given a defined value', () => {
     test('is not undefined', () => {
       const x = 1

@@ -1,6 +1,6 @@
 import * as mod from '../tools/is-array'
 
-describe('is_array', () => {
+describe('$isArray', () => {
   describe('given an array', () => {
     test('is an array', () => {
       const x = [1, 2, 3]
