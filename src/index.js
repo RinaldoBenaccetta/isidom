@@ -1,2 +1,2 @@
 export * from './tools/is-undefined'
-export * from './constants/common_values'
+export * from './constants/common-values'
