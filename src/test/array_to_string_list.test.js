@@ -1,4 +1,4 @@
-import * as mod from '../tools/array_to_string_list'
+import * as mod from '../tools/array-to-string-list'
 
 describe('array_to_string_list', () => {
   describe('given a string and no argument', () => {

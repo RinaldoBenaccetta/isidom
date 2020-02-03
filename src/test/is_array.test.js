@@ -1,4 +1,4 @@
-import * as mod from '../tools/is_array.js'
+import * as mod from '../tools/is-array'
 
 describe('is_array', () => {
   describe('given an array', () => {

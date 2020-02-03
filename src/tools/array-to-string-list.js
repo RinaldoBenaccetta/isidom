@@ -1,6 +1,6 @@
 import * as constant from '../constants/common_values'
-import { $isArray } from '../tools/is_array.js'
-import { $selectorClean } from '../tools/selector_clean'
+import { $isArray } from './is-array'
+import { $selectorClean } from './selector-clean'
 
 /**
  * @description Return a string concatened from an array of string.

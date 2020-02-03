@@ -1,4 +1,4 @@
-import * as mod from '../tools/selector_clean'
+import * as mod from '../tools/selector-clean'
 
 describe('selector_clean', () => {
   describe('given a string', () => {

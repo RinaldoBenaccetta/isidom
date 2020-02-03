@@ -1,4 +1,4 @@
-import * as mod from '../tools/is_nodelist.js'
+import * as mod from '../tools/is-nodelist'
 
 describe('is_nodelist', () => {
   describe('given a nodeList', () => {

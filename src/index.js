@@ -1,2 +1,2 @@
-export * from "./tools/is_undefined.js";
-export * from "./constants/common_values.js";
+export * from './tools/is-undefined'
+export * from './constants/common_values'
