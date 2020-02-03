@@ -3,6 +3,6 @@
  * @param {*} input
  * @returns {boolean}
  */
-export function $isArray(input) {
-    return Array.isArray(input);
+export function $isArray (input) {
+  return Array.isArray(input)
 }
