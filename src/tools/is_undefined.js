@@ -1,4 +1,4 @@
-import * as constant from "../constants/common_values";
+import * as constant from '../constants/common_values'
 
 /**
  * @description Replacement for typeof x === 'undefined'
@@ -7,6 +7,7 @@ import * as constant from "../constants/common_values";
  * @param {*} variable
  * @returns {boolean}
  */
-export function $isUndefined(variable) {
-    return typeof variable === constant.$$undefined;
+export function $isUndefined (variable) {
+  // eslint-disable-next-line valid-typeof
+  return typeof variable === constant.$$undefined
 }
