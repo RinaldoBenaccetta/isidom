@@ -3,10 +3,18 @@
   "version": "0.0.1",
   "devDependencies": {
     "@types/jest": "^25.1.1",
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
     "gulp": "^4.0.2",
     "gulp-better-rollup": "^4.0.1",
     "jest": "^25.1.0",
     "jest-cli": "^24.9.0",
+    "prettier": "^1.19.1",
+    "prettier-eslint": "^9.0.1",
     "rollup": "^1.27.0",
     "ts-jest": "^25.1.0",
     "typescript": "^3.7.5"
