@@ -4,6 +4,6 @@
  * @param {*} input
  * @returns {boolean}
  */
-export function $isNodeList(input) {
-    return NodeList.prototype.isPrototypeOf(input);
+export function $isNodeList (input) {
+  return NodeList.prototype.isPrototypeOf(input)
 }
