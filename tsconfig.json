@@ -10,4 +10,10 @@
     "include": [
         "src/**/*"
     ],
+    "exclude": [
+        "dist",
+        "docs",
+        "build",
+        "node_modules"
+    ]
 }
