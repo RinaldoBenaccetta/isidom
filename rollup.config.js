@@ -1,7 +1,7 @@
 export default {
-  input: "src/index.js",
+  input: 'src/index.js',
   output: {
-    file: "dist/bundle.js",
-    format: "es"
+    file: 'dist/bundle.js',
+    format: 'es'
   }
-};
+}
