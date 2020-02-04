@@ -1,6 +1,5 @@
 import * as constant from '../constants/values'
-import { $isArray } from './is-array'
-import { $selectorClean } from './selector-clean'
+import { $selectorArrayClean } from './selector-array-clean'
 
 /**
  * @description Return a string concatened from an array of string.
@@ -22,13 +21,6 @@ import { $selectorClean } from './selector-clean'
  */
 export function $selectorArrayToString (input, arg = constant.$true) {
   const SEPARATOR = arg === constant.$true ? '.' : ' '
-
-  if ($isArray(input)) {
-    for (let i = 0, len = input.length; i < len; i++) {
-      input[i] = $selectorClean(input[i])
-    }
-    return SEPARATOR + input.join(SEPARATOR)
-  }
-
-  return (SEPARATOR + $selectorClean(input)).trim()
+  input = $selectorArrayClean(input)
+  return (SEPARATOR + input.join(SEPARATOR)).trim()
 }
