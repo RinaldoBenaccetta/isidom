@@ -1,4 +1,4 @@
-import * as constant from '../constants/common-values'
+import * as constant from '../constants/values'
 
 /**
  * @description Replacement for typeof x === 'undefined'
