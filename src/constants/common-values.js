@@ -1,55 +1,44 @@
 /**
- * 
+ *
  * List of common values.
- * $$ say non-string value.
- * $$_ say string value.
+ * $ say non-string value.
+ * _$ say string value.
  */
 
-export const $$true = true;
-export const $$false = false;
-export const $$null = null;
-export const $$_true = "true";
-export const $$_false = "false";
-export const $$_null = "null";
+export const $true = true
+export const $false = false
+export const $null = null
 
+export const _$true = 'true'
+export const _$false = 'false'
+export const _$null = 'null'
 
-/**
- * @Deprecated
- */
-export const $$undefined = "undefined";
-export const $$click = "click";
-export const $$mouseup = "mouseup";
-export const $$default = "default";
-export const $$change = "change";
-export const $$blur = "blur";
-export const $$focus = "focus";
+export const _$emptyString = ''
+export const _$undefined = 'undefined'
 
+export const _$default = 'default'
+export const _$initial = 'initial'
+export const _$hidden = 'hidden'
+export const _$none = 'none'
+export const _$block = 'block'
+export const _$disabled = 'disabled'
 
-/**
- * Deprecated constants should be replaced by these.
- */
-export const $$_undefined = "undefined";
-export const $$_click = "click";
-export const $$_mouseup = "mouseup";
-export const $$_default = "default";
-export const $$_change = "change";
-export const $$_blur = "blur";
-export const $$_focus = "focus";
+export const _$click = 'click'
+export const _$mouseup = 'mouseup'
 
+export const _$change = 'change'
+export const _$blur = 'blur'
+export const _$focus = 'focus'
 
-export const $$_body = "body";
-export const $$_html = "html";
-export const $$_img = "img";
-export const $$_px = "px";
-export const $$_em = "em";
-export const $$_rem = "rem";
-export const $$_emptyString = "";
-export const $$_none = "none";
-export const $$_initial = "initial";
-export const $$_hidden = "hidden";
-export const $$_ms = "ms";
-export const $$_block = "block";
-export const $$_ok = "ok";
-export const $$_error = "error";
-export const $$_no = "no";
-export const $$_disabled = "disabled";
+export const _$body = 'body'
+export const _$html = 'html'
+export const _$img = 'img'
+
+export const _$px = 'px'
+export const _$em = 'em'
+export const _$rem = 'rem'
+export const _$ms = 'ms'
+
+export const _$ok = 'ok'
+export const _$no = 'no'
+export const _$error = 'error'

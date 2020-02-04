@@ -20,15 +20,15 @@ import { $selectorClean } from './selector-clean'
  *
  * @returns {string}
  */
-export function $arrayToStringList (input, arg = constant.$$true) {
-  const separator = arg === constant.$$true ? '.' : ' '
+export function $arrayToStringList (input, arg = constant.$true) {
+  const SEPARATOR = arg === constant.$true ? '.' : ' '
 
   if ($isArray(input)) {
     for (let i = 0, len = input.length; i < len; i++) {
       input[i] = $selectorClean(input[i])
     }
-    return separator + input.join(separator)
+    return SEPARATOR + input.join(SEPARATOR)
   }
 
-  return (separator + $selectorClean(input)).trim()
+  return (SEPARATOR + $selectorClean(input)).trim()
 }

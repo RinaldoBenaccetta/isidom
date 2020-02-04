@@ -12,5 +12,5 @@ import * as constant from '../constants/common-values'
  */
 export function $isUndefined (variable) {
   // eslint-disable-next-line valid-typeof
-  return typeof variable === constant.$$undefined
+  return typeof variable === constant._$undefined
 }
