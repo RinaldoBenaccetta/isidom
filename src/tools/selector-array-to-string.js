@@ -20,7 +20,7 @@ import { $selectorClean } from './selector-clean'
  *
  * @returns {string}
  */
-export function $arrayToStringList (input, arg = constant.$true) {
+export function $selectorArrayToString (input, arg = constant.$true) {
   const SEPARATOR = arg === constant.$true ? '.' : ' '
 
   if ($isArray(input)) {
