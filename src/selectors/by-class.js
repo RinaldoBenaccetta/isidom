@@ -2,7 +2,7 @@ import { $selectorArrayToString } from '../tools/selector-array-to-string'
 import * as constant from '../constants/elements'
 
 /**
- * @description Selector by class based on querySelectorAll wich return a nodeList.
+ * @description Select elements based on querySelectorAll wich return a nodeList of elements containing specified classs.
  *              A nodeList is not live.
  *              A nodeList accept forEach.
  *
