@@ -1,4 +1,4 @@
-import * as mod from '../tools/selector-array-clean'
+import * as mod from '../../tools/selector-array-clean'
 
 describe('$selectorArrayClean', () => {
   describe('given an array of selectors', () => {

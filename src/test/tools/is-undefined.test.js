@@ -1,4 +1,4 @@
-import * as mod from '../tools/is-undefined'
+import * as mod from '../../tools/is-undefined'
 
 describe('$isUndefined', () => {
   describe('given a defined value', () => {
