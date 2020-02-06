@@ -10,7 +10,7 @@ import * as values from '../constants/values'
  *
  * @returns {array, null}
  */
-export function $bySiblings (element) {
+export function $findSiblings (element) {
   const output = Array.prototype.filter.call(
     element.parentNode.children,
     function (child) {

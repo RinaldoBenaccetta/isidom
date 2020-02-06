@@ -1,4 +1,4 @@
-import { $bySiblings } from '../../selectors/by-siblings'
+import { $findSiblings } from '../../selectors/find-siblings'
 import '@testing-library/jest-dom'
 
 document.body.innerHTML =
@@ -23,7 +23,7 @@ describe('$siblings', () => {
   describe('given an HTMLElement', () => {
     test('wich is present in the DOM and have siblings return an array of siblings', () => {
       const TARGET_ID = document.getElementById('mySecondId')
-      const ARRAY = $bySiblings(TARGET_ID)
+      const ARRAY = $findSiblings(TARGET_ID)
       const TEST_ARRAY = Array.isArray(ARRAY)
       expect(TEST_ARRAY).toBeTruthy()
       expect(ARRAY.length).toBe(3)
@@ -31,7 +31,7 @@ describe('$siblings', () => {
 
     test('wich is present in the DOM and have no siblings return null', () => {
       const TARGET_ID = document.getElementById('sadId')
-      const ARRAY = $bySiblings(TARGET_ID)
+      const ARRAY = $findSiblings(TARGET_ID)
       expect(ARRAY).toBeNull()
     })
   })
