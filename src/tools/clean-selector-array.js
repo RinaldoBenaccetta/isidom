@@ -1,5 +1,5 @@
 import { $isArray } from './is-array'
-import { $selectorClean } from './selector-clean'
+import { $cleanSelector } from './clean-selector'
 
 /**
  * @description Return an array of strings without '.' and '#' at start of strings.
@@ -12,12 +12,12 @@ import { $selectorClean } from './selector-clean'
  *
  * @returns  {string[]}
  */
-export function $selectorArrayClean (input) {
+export function $cleanSelectorArray (input) {
   if ($isArray(input)) {
     for (let i = 0, len = input.length; i < len; i++) {
-      input[i] = $selectorClean(input[i])
+      input[i] = $cleanSelector(input[i])
     }
     return input
   }
-  return [$selectorClean(input)]
+  return [$cleanSelector(input)]
 }

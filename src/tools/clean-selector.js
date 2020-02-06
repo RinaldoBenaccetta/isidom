@@ -7,7 +7,7 @@
  *
  * @returns {string}
  */
-export function $selectorClean (selector) {
+export function $cleanSelector (selector) {
   selector = selector.trim()
   if (selector.charAt(0) === '#' || selector.charAt(0) === '.') {
     selector = selector.substr(1)
