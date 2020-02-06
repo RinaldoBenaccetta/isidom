@@ -19,8 +19,6 @@ describe('$isCollection', () => {
   describe('given an element', () => {
     test('is an element', () => {
       const htmlElement = document.getElementById('myId')
-      console.log(htmlElement)
-
       expect($isHtmlElement(htmlElement)).toBeTruthy()
     })
 
@@ -37,11 +35,4 @@ describe('$isCollection', () => {
       })
     })
   })
-
-  //   describe('given an htmlCollection', () => {
-  //     test('is not a nodeList', () => {
-  //       const htmlCollection = document.getElementById('myId')
-  //       expect($isHtmlElement(htmlCollection)).toBeTruthy()
-  //     })
-  //   })
 })
