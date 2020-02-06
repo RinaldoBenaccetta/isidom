@@ -14,13 +14,13 @@ import { $selectorArrayClean } from './selector-array-clean'
  *                                 without '.' at start according to the argument 'arg' received.
  *                                 An array of string will return a concatened string with
  *                                 or without '.' at start according to the argument 'arg' received.
- * @param {boolean=} [arg=true] optional, true will set separator as '.'
+ * @param {boolean=} [dot=true] optional, true will set separator as '.'
  *                              and false will set separator as ' '
  *
  * @returns {string}
  */
-export function $selectorArrayToString (input, arg = constant.$true) {
-  const SEPARATOR = arg === constant.$true ? '.' : ' '
+export function $selectorArrayToString (input, dot = constant.$true) {
+  const SEPARATOR = dot === constant.$true ? '.' : ' '
   input = $selectorArrayClean(input)
   return (SEPARATOR + input.join(SEPARATOR)).trim()
 }
