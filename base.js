@@ -621,17 +621,17 @@ function $getStyle(property, element) {
   return element.style[property];
 }
 
-/**
- * renvoie le premier élément avec l'ID renseigné
- *
- * @param {[type]} id                 L'ID
- * @param {[type]} [element=document] Le DOM parent, c'est document par défaut
- *
- * @return {[type]} un élément
- */
-function $byId(id, element = $$document) {
-  return element.getElementById($selectorClean(id));
-}
+// /**
+//  * renvoie le premier élément avec l'ID renseigné
+//  *
+//  * @param {[type]} id                 L'ID
+//  * @param {[type]} [element=document] Le DOM parent, c'est document par défaut
+//  *
+//  * @return {[type]} un élément
+//  */
+// function $byId(id, element = $$document) {
+//   return element.getElementById($selectorClean(id));
+// }
 
 // /**
 //  * renvoie les éléments recherchés
@@ -646,13 +646,13 @@ function $byId(id, element = $$document) {
 //   return element.querySelectorAll(query);
 // }
 
-function $siblings(element) {
-  return Array.prototype.filter.call(element.parentNode.children, function(
-    child
-  ) {
-    return child !== element;
-  });
-}
+// function $siblings(element) {
+//   return Array.prototype.filter.call(element.parentNode.children, function(
+//     child
+//   ) {
+//     return child !== element;
+//   });
+// }
 
 function $getAttr(attribute, element) {
   return element.getAttribute(attribute);

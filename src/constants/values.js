@@ -8,6 +8,7 @@
 export const $true = true
 export const $false = false
 export const $null = null
+export const $undefined = undefined
 
 export const _$true = 'true'
 export const _$false = 'false'
