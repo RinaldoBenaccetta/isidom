@@ -704,9 +704,9 @@ function $offset(element) {
   };
 }
 
-function $parent(element) {
-  return element.parentElement;
-}
+// function $parent(element) {
+//   return element.parentElement;
+// }
 
 function $getNextSiblings(filter, element) {
   var siblings = [];
