@@ -724,16 +724,16 @@ function $getPreviousSiblings(filter, element) {
   return $__filterCollection(filter, siblings);
 }
 
-function $__filterCollection(filter, element) {
-  var output = [];
-  for (var i = 0; i < element.length; i++) {
-    // si le nodetype est un element
-    if (element[i].nodeType === 1) {
-      if (element[i].matches(filter)) output.push(element[i]);
-    }
-  }
-  return output;
-}
+// function $__filterCollection(filter, element) {
+//   var output = [];
+//   for (var i = 0; i < element.length; i++) {
+//     // si le nodetype est un element
+//     if (element[i].nodeType === 1) {
+//       if (element[i].matches(filter)) output.push(element[i]);
+//     }
+//   }
+//   return output;
+// }
 
 /**
  * affiche ou cache un element
