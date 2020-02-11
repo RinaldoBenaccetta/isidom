@@ -2,7 +2,7 @@ import { $isNodeList } from './is-nodelist'
 import { $isArray } from './is-array'
 
 /**
- * @description Basic replacement for the forEach native function from Javascript.
+ * @description Replacement for the forEach native function from Javascript based on for loop.
  *
  * @export
  *
@@ -13,9 +13,13 @@ import { $isArray } from './is-array'
  */
 export function $forEach (functionToExecute, element) {
   if ($isNodeList(element) || $isArray(element)) {
-    element.forEach(function (item) {
+    for (const item of element) {
       functionToExecute(item)
-    })
+    }
+
+    // element.forEach(function (item) {
+    //   functionToExecute(item)
+    // })
   } else {
     functionToExecute(element)
   }
