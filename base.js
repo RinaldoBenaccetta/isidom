@@ -541,19 +541,19 @@ function $setValue(val, element) {
 //   return element.getElementsByClassName($arrayToStringList(className, $$false));
 // }
 
-/**
- * determine si une classe est présente dans l'élément fourni.
- *
- * @param {[type]} element   l'élément à tester
- * @param {[type]} className La classe recherchée
- *
- * @return {[type]} true ou false
- */
-function $hasClass(className, element) {
-  className = $selectorClean(className);
-  // return new RegExp(' ' + className + ' ').test(' ' + element.className + ' ');
-  return new RegExp(` ${className} `).test(` ${element.className} `);
-}
+// /**
+//  * determine si une classe est présente dans l'élément fourni.
+//  *
+//  * @param {[type]} element   l'élément à tester
+//  * @param {[type]} className La classe recherchée
+//  *
+//  * @return {[type]} true ou false
+//  */
+// function $hasClass(className, element) {
+//   className = $selectorClean(className);
+//   // return new RegExp(' ' + className + ' ').test(' ' + element.className + ' ');
+//   return new RegExp(` ${className} `).test(` ${element.className} `);
+// }
 
 // todo : dupliquer $__processElement avec comme nom $forEach et deprecier $__processElement
 function $__processElement(executeFunction, element) {
@@ -708,21 +708,21 @@ function $offset(element) {
 //   return element.parentElement;
 // }
 
-function $getNextSiblings(filter, element) {
-  var siblings = [];
-  while ((element = element.nextSibling)) {
-    siblings.push(element);
-  }
-  return $__filterCollection(filter, siblings);
-}
+// function $getNextSiblings(filter, element) {
+//   var siblings = [];
+//   while ((element = element.nextSibling)) {
+//     siblings.push(element);
+//   }
+//   return $__filterCollection(filter, siblings);
+// }
 
-function $getPreviousSiblings(filter, element) {
-  var siblings = [];
-  while ((element = element.previousSibling)) {
-    siblings.push(element);
-  }
-  return $__filterCollection(filter, siblings);
-}
+// function $getPreviousSiblings(filter, element) {
+//   var siblings = [];
+//   while ((element = element.previousSibling)) {
+//     siblings.push(element);
+//   }
+//   return $__filterCollection(filter, siblings);
+// }
 
 // function $__filterCollection(filter, element) {
 //   var output = [];
