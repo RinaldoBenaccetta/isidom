@@ -43,3 +43,6 @@ export const _$ms = 'ms'
 export const _$ok = 'ok'
 export const _$no = 'no'
 export const _$error = 'error'
+
+export const _$length = 'length'
+export const _$width = 'width'
