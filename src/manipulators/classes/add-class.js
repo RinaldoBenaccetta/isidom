@@ -9,8 +9,8 @@ import * as elements from '../../constants/elements'
  *              If in application, classes are added only on HTMLELement a few
  *              number of times, the best for minification would be to use this
  *              instead of $addClass : myElement[$classList].add(class)
- *              That's not apply if $forEach is allready used, in this case,
- *              the best is to use $addClass.
+ *              That's not apply if $forEach or $removeClass is already used,
+ *              in this case, the best is to use $addClass.
  *
  * @export
  *
