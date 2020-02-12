@@ -3,19 +3,23 @@ import { $isArray } from './is-array'
 import { $isCollection } from './is-collection'
 
 /**
- * @description Replacement for the forEach native function from Javascript based on for loop.
+ * @description Replacement for the forEach native function from Javascript
+ *              based on for loop.
  *
  * @export
  *
- * @param {function} functionToExecute This is the function that will be executed in the forEach loop.
+ * @param {function} functionToExecute This is the function that will be
+ *                                     executed in the forEach loop.
  *
- * @param {*} element This is the nodelist, the nodeList or the HTMLCollection that will be processed by the for loop.
- *                    If this is not an array or a nodelist, the function will be executed once on the argument.
+ * @param {*} element This is the nodelist, the nodeList or the HTMLCollection
+ *                    that will be processed by the for loop.
+ *                    If this is not an array or a nodelist, the function
+ *                    will be executed once on the argument.
  */
 export function $forEach (functionToExecute, element) {
   if ($isNodeList(element) || $isArray(element) || $isCollection(element)) {
-    for (const item of element) {
-      functionToExecute(item)
+    for (const ITEM of element) {
+      functionToExecute(ITEM)
     }
   } else {
     functionToExecute(element)
