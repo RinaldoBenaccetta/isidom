@@ -13,8 +13,8 @@ import { $isCollection } from './is-collection'
  *
  * @param {*} element This is the nodelist, the nodeList or the HTMLCollection
  *                    that will be processed by the for loop.
- *                    If this is not an array or a nodelist, the function
- *                    will be executed once on the argument.
+ *                    If this is not an array an HTMLCollection or a nodelist,
+ *                    the function will be executed once on the argument.
  */
 export function $forEach (functionToExecute, element) {
   if ($isNodeList(element) || $isArray(element) || $isCollection(element)) {
