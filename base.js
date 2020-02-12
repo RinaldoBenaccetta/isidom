@@ -555,29 +555,29 @@ function $setValue(val, element) {
 //   return new RegExp(` ${className} `).test(` ${element.className} `);
 // }
 
-// todo : dupliquer $__processElement avec comme nom $forEach et deprecier $__processElement
-function $__processElement(executeFunction, element) {
-  if ($isNodeList(element) || $isArray(element)) {
-    element.forEach(function(element) {
-      executeFunction(element);
-    });
-  } else {
-    executeFunction(element);
-  }
-}
+// // todo : dupliquer $__processElement avec comme nom $forEach et deprecier $__processElement
+// function $__processElement(executeFunction, element) {
+//   if ($isNodeList(element) || $isArray(element)) {
+//     element.forEach(function(element) {
+//       executeFunction(element);
+//     });
+//   } else {
+//     executeFunction(element);
+//   }
+// }
 
-/**
- * ajoute une classe à un ou des éléments
- *
- * @param {[type]} element   L'élément
- * @param {[type]} className La classe
- *
- */
-function $addClass(className, element) {
-  $__processElement(function(target) {
-    target.classList.add(...$selectorToArray(className));
-  }, element);
-}
+// /**
+//  * ajoute une classe à un ou des éléments
+//  *
+//  * @param {[type]} element   L'élément
+//  * @param {[type]} className La classe
+//  *
+//  */
+// function $addClass(className, element) {
+//   $__processElement(function(target) {
+//     target.classList.add(...$selectorToArray(className));
+//   }, element);
+// }
 
 /**
  * ajoute une classe à un ou des éléments
@@ -596,18 +596,18 @@ function $toggleClass(className, element) {
   }, element);
 }
 
-/**
- * enlève une ou plusieurs classes de la séléction
- *
- * @param {[string]} element   L'élément
- * @param {[string]} className La classe ou les classes
- *
- */
-function $removeClass(className, element) {
-  $__processElement(function(target) {
-    target.classList.remove(...$selectorToArray(className));
-  }, element);
-}
+// /**
+//  * enlève une ou plusieurs classes de la séléction
+//  *
+//  * @param {[string]} element   L'élément
+//  * @param {[string]} className La classe ou les classes
+//  *
+//  */
+// function $removeClass(className, element) {
+//   $__processElement(function(target) {
+//     target.classList.remove(...$selectorToArray(className));
+//   }, element);
+// }
 
 // function $setStyle(element) {
 //   return element.style;
