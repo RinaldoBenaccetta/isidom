@@ -10,10 +10,13 @@ import { $selectorToArray } from './selector-to-array'
  *
  *              Spaces from start and end of strings will be removed.
  *
- * @param {string, string[]} input A string value will output the same string with or
- *                                 without '.' at start according to the argument 'arg' received.
- *                                 An array of string will return a concatened string with
- *                                 or without '.' at start according to the argument 'arg' received.
+ * @param {string, string[]} input A string value will output the same string
+ *                                 with or without '.' at start according to
+ *                                 the argument 'arg' received.
+ *                                 An array of string will return a
+ *                                 concatened string with or without '.'
+ *                                 at start according to the argument
+ *                                'arg' received.
  * @param {boolean=} [dot=true] optional, true will set separator as '.'
  *                              and false will set separator as ' '
  *
