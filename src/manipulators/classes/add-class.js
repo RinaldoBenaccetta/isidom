@@ -3,8 +3,14 @@ import { $selectorToArray } from '../../tools/selector-to-array'
 import * as elements from '../../constants/elements'
 
 /**
- * @description add a class or a list of classes to an HTMLElement
+ * @description Add a class or a list of classes to an HTMLElement
  *              or to all HTMLElements of a nodeList or an HTMLCollection.
+ *
+ *              If in application, classes are added only on HTMLELement a few
+ *              number of times, the best for minification would be to use this
+ *              instead of $addClass : myElement[$classList].add(class)
+ *              That's not apply if $forEach is allready used, in this case,
+ *              the best is to use $addClass.
  *
  * @export
  *
