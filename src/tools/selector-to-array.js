@@ -13,7 +13,7 @@ import { $cleanSelector } from './clean-selector'
  *
  * @returns  {string[]}
  */
-export function $cleanSelectorArray (input) {
+export function $selectorToArray (input) {
   if ($isArray(input)) {
     for (let i = 0, len = input.length; i < len; i++) {
       input[i] = $cleanSelector(input[i])

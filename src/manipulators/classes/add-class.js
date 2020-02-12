@@ -1,5 +1,5 @@
 import { $forEach } from '../../tools/for-each'
-import { $cleanSelectorArray } from '../../tools/clean-selector-array'
+import { $selectorToArray } from '../../tools/selector-to-array'
 import * as elements from '../../constants/elements'
 
 /**
@@ -13,6 +13,6 @@ import * as elements from '../../constants/elements'
  */
 export function $addClass (className, element) {
   $forEach(function (target) {
-    target[elements.$classList].add(...$cleanSelectorArray(className))
+    target[elements.$classList].add(...$selectorToArray(className))
   }, element)
 }
