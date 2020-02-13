@@ -12,3 +12,6 @@ Isi should stay simple and light. For lightweight, no errors should be throw by 
 
 ### Functions
 Functions are camel case named with *$* in front. eg. : *$isArray*
+
+### Arguments
+The arguments in function are in this order : *value, property, element*.
