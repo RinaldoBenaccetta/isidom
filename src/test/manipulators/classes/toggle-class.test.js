@@ -89,7 +89,6 @@ describe('$toggleClass', () => {
   describe('given a string and an HTMLCollection', () => {
     document.body.innerHTML = DOC
     const HTML_COLLECTION = document.getElementsByClassName('myThirdClass')
-    console.log(HTML_COLLECTION)
     test('wich is a valid class, toggle the class of all the HTMLElement from the HTMLCollection', () => {
       $toggleClass('myNewClass', HTML_COLLECTION)
       expect(HTML_COLLECTION.length).toBe(2)
