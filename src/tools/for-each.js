@@ -5,6 +5,10 @@ import { $isCollection } from './is-collection'
 /**
  * @description Replacement for the forEach native function from Javascript
  *              based on for loop.
+ *              eg. :
+ *                $forEach(itemsInElement => {
+ *                  itemsInElement.doThings
+ *                }, element)
  *
  * @export
  *
