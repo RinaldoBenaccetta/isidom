@@ -579,22 +579,22 @@ function $setValue(val, element) {
 //   }, element);
 // }
 
-/**
- * ajoute une classe à un ou des éléments
- *
- * @param {[type]} element   L'élément
- * @param {[type]} className La classe
- *
- */
-function $toggleClass(className, element) {
-  let arg = $selectorToArray(className);
+// /**
+//  * ajoute une classe à un ou des éléments
+//  *
+//  * @param {[type]} element   L'élément
+//  * @param {[type]} className La classe
+//  *
+//  */
+// function $toggleClass(className, element) {
+//   let arg = $selectorToArray(className);
 
-  $__processElement(function(target) {
-    for (let i = 0, len = arg.length; i < len; i++) {
-      target.classList.toggle(arg[i]);
-    }
-  }, element);
-}
+//   $__processElement(function(target) {
+//     for (let i = 0, len = arg.length; i < len; i++) {
+//       target.classList.toggle(arg[i]);
+//     }
+//   }, element);
+// }
 
 // /**
 //  * enlève une ou plusieurs classes de la séléction
@@ -654,19 +654,19 @@ function $getStyle(property, element) {
 //   });
 // }
 
-function $getAttr(attribute, element) {
-  return element.getAttribute(attribute);
-}
+// function $getAttr(attribute, element) {
+//   return element.getAttribute(attribute);
+// }
 
-function $getData(attribute, element) {
-  // return element.getAttribute('data-' + attribute);
-  return $getAttr("data-" + attribute, element);
-}
+// function $getData(attribute, element) {
+//   // return element.getAttribute('data-' + attribute);
+//   return $getAttr("data-" + attribute, element);
+// }
 
-function $setAttr(name, value, element) {
-  // TODO: inverser name et value >> value, property, element
-  element.setAttribute(name, value);
-}
+// function $setAttr(name, value, element) {
+//   // TODO: inverser name et value >> value, property, element
+//   element.setAttribute(name, value);
+// }
 
 function $getText(element) {
   return element.textContent;
