@@ -19,7 +19,7 @@ import * as elements from '../../constants/elements'
 export function $toggleClass (className, element) {
   const CLASSES = $selectorToArray(className)
 
-  $forEach(function (target) {
+  $forEach(target => {
     for (let i = 0, len = CLASSES.length; i < len; i++) {
       target[elements.$classList].toggle(CLASSES[i])
     }
