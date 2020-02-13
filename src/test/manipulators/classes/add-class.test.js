@@ -1,7 +1,7 @@
 import { $addClass } from '../../../manipulators/classes/add-class'
 import '@testing-library/jest-dom'
 
-document.body.innerHTML =
+const DOC =
   // eslint-disable-next-line no-multi-str
   '<div class="myFirstClass myFirdClass">hello</div>\
   <div class="mySecondClass"></div>\
@@ -18,20 +18,25 @@ document.body.innerHTML =
 
 describe('$addClass', () => {
   describe('given a string and an HTMLElement', () => {
-    const TARGET_ID = document.getElementById('myId')
     test('wich is a valid class, add the class to the HTMLElement', () => {
+      document.body.innerHTML = DOC
+      const TARGET_ID = document.getElementById('myId')
       $addClass('myNewClass', TARGET_ID)
       expect(TARGET_ID).toHaveClass('myNewClass')
       expect(TARGET_ID).toHaveClass('myFirstClass')
     })
 
     test('wich is a valid class with dot at start, add the class to the HTMLElement', () => {
+      document.body.innerHTML = DOC
+      const TARGET_ID = document.getElementById('myId')
       $addClass('.myNewClass', TARGET_ID)
       expect(TARGET_ID).toHaveClass('myNewClass')
       expect(TARGET_ID).toHaveClass('myFirstClass')
     })
 
     test('wich is a valid class with spaces at start and end, add the class to the HTMLElement', () => {
+      document.body.innerHTML = DOC
+      const TARGET_ID = document.getElementById('myId')
       $addClass('   myNewClass  ', TARGET_ID)
       expect(TARGET_ID).toHaveClass('myNewClass')
       expect(TARGET_ID).toHaveClass('myFirstClass')
@@ -39,6 +44,7 @@ describe('$addClass', () => {
   })
 
   describe('given an array of strings and an HTMLElement', () => {
+    document.body.innerHTML = DOC
     const TARGET_ID = document.getElementById('myId')
     test('wich is an array of valid classes, add the class to the HTMLElement', () => {
       $addClass(['myNewClass', 'anotherClass', 'andAgain'], TARGET_ID)
@@ -50,6 +56,7 @@ describe('$addClass', () => {
   })
 
   describe('given a string and a nodeList', () => {
+    document.body.innerHTML = DOC
     const TARGET_ELEMENTS = document.querySelectorAll('.myFirstClass')
     test('wich is a valid class, add the class to the HTMLElement of the HTMLCollection', () => {
       $addClass('myNewClass', TARGET_ELEMENTS)
@@ -65,6 +72,7 @@ describe('$addClass', () => {
   })
 
   describe('given a string and an HTMLCollection', () => {
+    document.body.innerHTML = DOC
     const TARGET_ELEMENTS = document.getElementsByClassName('myFirstClass')
     test('wich is a valid class, add the class to the HTMLElement of the HTMLCollection', () => {
       $addClass('myNewClass', TARGET_ELEMENTS)
@@ -80,6 +88,7 @@ describe('$addClass', () => {
   })
 
   describe('given an array of strings and an HTMLCollection', () => {
+    document.body.innerHTML = DOC
     const TARGET_ELEMENTS = document.getElementsByClassName('myFirdClass')
     test('wich is a valid class, add the class to the HTMLElement of the HTMLCollection', () => {
       $addClass(['myNewClass', 'anotherClass', 'andAgain'], TARGET_ELEMENTS)
