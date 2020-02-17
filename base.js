@@ -672,11 +672,11 @@ function $getStyle(property, element) {
 //   return element.textContent;
 // }
 
-function $setText(text, element) {
-  //console.log(text);
-  //console.log(element);
-  element.textContent = text;
-}
+// function $setText(text, element) {
+//   //console.log(text);
+//   //console.log(element);
+//   element.textContent = text;
+// }
 
 function $getHeight(element = $$false) {
   if (element === $$false) {
