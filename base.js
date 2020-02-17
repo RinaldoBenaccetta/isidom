@@ -668,9 +668,9 @@ function $getStyle(property, element) {
 //   element.setAttribute(name, value);
 // }
 
-function $getText(element) {
-  return element.textContent;
-}
+// function $getText(element) {
+//   return element.textContent;
+// }
 
 function $setText(text, element) {
   //console.log(text);
