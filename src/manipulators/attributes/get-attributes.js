@@ -7,6 +7,8 @@
  *                    class: 'myClass'
  *                    type: 'range'
  *                }
+ *              The data can be accessed like this :
+ *                $getAttributes(element).type
  *
  * @export
  *
