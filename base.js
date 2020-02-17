@@ -504,9 +504,9 @@
 //   return [$selectorClean(input)];
 // }
 
-function $getValue(element) {
-  return element.value;
-}
+// function $getValue(element) {
+//   return element.value;
+// }
 
 function $setValue(val, element) {
   element.value = val;
