@@ -617,9 +617,9 @@
 //   return (element.style[property] = value);
 // }
 
-function $getStyle(property, element) {
-  return element.style[property];
-}
+// function $getStyle(property, element) {
+//   return element.style[property];
+// }
 
 // /**
 //  * renvoie le premier élément avec l'ID renseigné
