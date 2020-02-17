@@ -20,7 +20,6 @@ describe('$getText', () => {
     test('return the text of the HTMLElement', () => {
       document.body.innerHTML = DOC
       const TARGET_ID = document.getElementById('myId')
-      console.log(TARGET_ID)
       const TEST = $getText(TARGET_ID)
       expect(TEST).toBe('Hello world!')
     })
