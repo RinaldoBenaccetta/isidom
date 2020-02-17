@@ -613,9 +613,9 @@
 //   return element.style;
 // }
 
-function $setStyle(value, property, element) {
-  return (element.style[property] = value);
-}
+// function $setStyle(value, property, element) {
+//   return (element.style[property] = value);
+// }
 
 function $getStyle(property, element) {
   return element.style[property];
