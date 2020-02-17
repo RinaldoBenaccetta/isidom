@@ -508,9 +508,9 @@
 //   return element.value;
 // }
 
-function $setValue(val, element) {
-  element.value = val;
-}
+// function $setValue(val, element) {
+//   element.value = val;
+// }
 
 // /**
 //  * renvoie une nodelist des éléments avec la classe [selector]
