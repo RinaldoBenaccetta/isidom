@@ -1,4 +1,4 @@
-import { $selectorToArray } from '../../tools/selector-to-array'
+import { $selectorToArray } from '../../lib/tools/selector-to-array'
 
 describe('$selectorArrayClean', () => {
   describe('given an array of selectors', () => {

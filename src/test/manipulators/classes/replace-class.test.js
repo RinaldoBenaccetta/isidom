@@ -1,4 +1,4 @@
-import { $replaceClass } from '../../../manipulators/classes/replace-class'
+import { $replaceClass } from '../../../lib/manipulators/classes/replace-class'
 import '@testing-library/jest-dom'
 
 const DOC =

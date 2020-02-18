@@ -1,4 +1,4 @@
-import { $findParent } from '../../selectors/find-parent'
+import { $findParent } from '../../lib/selectors/find-parent'
 import '@testing-library/jest-dom'
 
 document.body.innerHTML =

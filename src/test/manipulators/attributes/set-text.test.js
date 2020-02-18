@@ -1,4 +1,4 @@
-import { $setText } from '../../../manipulators/attributes/set-text'
+import { $setText } from '../../../lib/manipulators/attributes/set-text'
 import '@testing-library/jest-dom'
 
 const DOC =

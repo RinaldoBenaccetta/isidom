@@ -1,4 +1,4 @@
-import { $removeClass } from '../../../manipulators/classes/remove-class'
+import { $removeClass } from '../../../lib/manipulators/classes/remove-class'
 import '@testing-library/jest-dom'
 
 document.body.innerHTML =

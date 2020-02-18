@@ -1,4 +1,4 @@
-import { $addClass } from '../../../manipulators/classes/add-class'
+import { $addClass } from '../../../lib/manipulators/classes/add-class'
 import '@testing-library/jest-dom'
 
 const DOC =

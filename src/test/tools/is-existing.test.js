@@ -1,4 +1,4 @@
-import { $isExisting } from '../../tools/is-existing'
+import { $isExisting } from '../../lib/tools/is-existing'
 import '@testing-library/jest-dom'
 
 document.body.innerHTML =

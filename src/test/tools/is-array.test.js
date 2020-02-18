@@ -1,4 +1,4 @@
-import * as mod from '../../tools/is-array'
+import * as mod from '../../lib/tools/is-array'
 
 describe('$isArray', () => {
   describe('given an array', () => {

@@ -1,4 +1,4 @@
-import { $removeStyle } from '../../../manipulators/attributes/remove-style'
+import { $removeStyle } from '../../../lib/manipulators/attributes/remove-style'
 import '@testing-library/jest-dom'
 
 const DOC =

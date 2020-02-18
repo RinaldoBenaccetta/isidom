@@ -1,4 +1,4 @@
-import { $toggleClass } from '../../../manipulators/classes/toggle-class'
+import { $toggleClass } from '../../../lib/manipulators/classes/toggle-class'
 import '@testing-library/jest-dom'
 
 const DOC =

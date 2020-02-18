@@ -1,4 +1,4 @@
-import { $getAttribute } from '../../manipulators/attributes/get-attribute'
+import { $getAttribute } from './get-attribute'
 
 /**
  * @description Return the value of the specified data (eg. : data-color).
