@@ -1,4 +1,4 @@
-* $cssProperty is for CSS properties used in CSS format :
+* $css prefixed is for CSS properties used in CSS format :
 
         element.removeProperty('background-color');
 
@@ -10,7 +10,7 @@
 
         element.removeProperty(a);
 
-* $jsProperty is for CSS properties used in JS format :
+* $js prefixed is for CSS properties used in JS format :
 
         element.style.backgroundColor = 'red';
 
