@@ -29,7 +29,9 @@
     "start": "node -r esm .",
     "test": "jest",
     "watch": "jest --watchAll",
-    "build": "npx rollup --config"
+    "build": "npx rollup --config",
+    "doc": "documentation build --config documentation.yml build src/lib/** -f md -o readme.md",
+    "docwatch": "documentation build --config documentation.yml build src/lib/** -f md -o readme.md -w"
   },
   "author": "Rinaldo Benaccetta",
   "license": "ISC",

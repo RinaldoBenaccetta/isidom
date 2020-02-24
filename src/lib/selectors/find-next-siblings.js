@@ -1,8 +1,15 @@
 import * as values from '../constants/values'
 
 /**
- * @descriptionReturn Return an array containing all next HTMLElements siblings from a specified HTMLElement.
- *                    Return null if there is no next siblings.
+ * @description
+ * Return an array containing all next HTMLElements siblings from
+ * a specified HTMLElement.
+ *
+ * Return null if there is no next siblings found.
+ *
+ * To be used like this :
+ *
+ *     let a = $findNextSiblings(element)
  *
  * @export
  *

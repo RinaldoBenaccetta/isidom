@@ -1,9 +1,3 @@
-/**
- *
- * List of CSS properties.
- * $cssProperty is for CSS properties used CSS like : element.removeProperty('background-color');
- * $jsProperty is for CSS properties used JS like : element.style.backgroundColor = 'red';
- */
 export const $cssAlignContent = 'align-content'
 export const $jsAlignContent = 'alignContent'
 export const $cssAlignItems = 'align-items'

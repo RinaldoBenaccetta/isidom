@@ -1,5 +1,10 @@
 /**
- * @description Check if input is an HTML collection and return true or false.
+ * @description
+ * Check if input is an HTML collection and return true or false.
+ *
+ * To be used like this :
+ *
+ *     if($isCollection(input)) { do something }
  *
  * @export
  *

@@ -3,27 +3,33 @@ import * as elements from '../../constants/elements'
 import { $cleanSelector } from '../../tools/clean-selector'
 
 /**
- * @description Replace a class by another in an HTMLElement
- *              or in all HTMLElements of a nodeList or an HTMLCollection.
+ * @description
+ * Replace a class by another in an HTMLElement
+ * or in all HTMLElements of a nodeList or an HTMLCollection.
  *
- *              Based on native element.classList.replace that is not well
- *              supported : https://caniuse.com/#search=classlist%20replace
- *              Until it's well supported, the best would be to use $toggleClass
- *              on the two classes.
+ * Based on native element.classList.replace that is not well
+ * supported : https://caniuse.com/#search=classlist%20replace.
+ * Until it's well supported, the best would be to use $toggleClass
+ * on the two classes.
  *
- *              If in application, classes are replaced only on HTMLELement a
- *              few number of times, the best for minification would be to use
- *              this instead of $replaceClass :
- *              myElement[$classList].replace(class)
- *              That's not apply if $forEach, $addClass, $toggleClass
- *              or $removeClass is already used,
- *              in this case, the best is to use $replaceClass.
+ * To be used like this :
+ *
+ *     $replaceClass('oldClass', 'newClass', element)
+ *
+ * If in the application, classes are replaced only on HTMLELement a
+ * few number of times, the best for minification would be to use
+ * this instead of $replaceClass :
+ *
+ *     myElement[$classList].replace('oldClass', 'newClass')
+ *
+ * That's not apply if $forEach or other class and attributes manipulators are
+ * already used. In this case, the best is to use $replaceClass.
  *
  * @export
  *
  * @param {string} oldClass
  * @param {string} newClass
- * @param {HTMLElement, nodeList, HTMLCollection} element
+ * @param {(HTMLElement|nodeList|HTMLCollection)} element
  */
 export function $replaceClass (oldClass, newClass, element) {
   $forEach(target => {

@@ -1,12 +1,17 @@
 /**
- * @description Set the specified value of the specified input.
+ * @description
+ * Set the specified value of the specified input.
+ *
+ * To be used like this :
+ *
+ *     $setValue(value, input)
  *
  * @export
  *
- * @param {string, number, boolean} val
+ * @param {string|number|boolean} value
  *
- * @param {HTMLBaseElement} element
+ * @param {HTMLBaseElement} input
  */
-export function $setValue (val, element) {
-  element.value = val
+export function $setValue (value, input) {
+  input.value = value
 }

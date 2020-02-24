@@ -1,8 +1,13 @@
 import * as constant from '../constants/values'
 
 /**
- * @description Replacement for typeof x === 'undefined'
- *              To be used like this : if(isUndefined(x)) then ...
+ * @description Replacement for :
+ *
+ *     typeof variable === 'undefined'
+ *
+ * To be used like this :
+ *
+ *     if($isUndefined(variable)) { do something }
  *
  * @export
  *

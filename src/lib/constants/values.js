@@ -1,10 +1,3 @@
-/**
- *
- * List of common values.
- * $ say non-string value.
- * _$ say string value.
- */
-
 export const $true = true
 export const $false = false
 export const $null = null

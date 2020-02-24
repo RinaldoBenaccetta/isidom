@@ -1,0 +1,67 @@
+toc:
+  - name: Introduction
+    file: src/doc/introduction.md
+  - name: Conventions
+    file: src/doc/conventions.md
+  - name: Constants
+    children:
+      - name: Common values
+        file: src/doc/common-values.md
+      - name: Elements
+        file: src/doc/elements.md
+      - name: CSS properties
+        file: src/doc/css-properties.md
+  - name: Tools
+    children:
+      - $isUndefined
+      - $isExisting
+      - $isArray
+      - $isCollection
+      - $isNodeList
+      - $isHtmlElement
+      - $selectorToArray
+      - $selectorArrayToString
+      - $forEach
+      - $filterCollection
+      - $cleanSelector
+  - name: Selectors
+    children:
+      - $byClass
+      - $byClassLive
+      - $byId
+      - $select
+      - $findParent
+      - $findSiblings
+      - $findPreviousSiblings
+      - $findNextSiblings
+  - name: Class manipulators
+    children:
+      - $hasClass
+      - $addClass
+      - $removeClass
+      - $toggleClass
+      - $replaceClass
+  - name: Attribute manipulators
+    children:
+      - $getAttribute
+      - $getAttributes
+      - $setAttribute
+  - name: Data manipulators
+    children:
+      - $getData
+  - name: Text manipulators
+    children:
+      - $getText
+      - $setText
+  - name: Value manipulators
+    children:
+      - $getValue
+      - $setValue
+  - name: Style manipulators
+    children:
+      - $getStyle
+      - $setStyle
+      - $removeStyle
+  - name: Todo
+    file: src/doc/todo.md
+

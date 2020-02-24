@@ -1,5 +1,10 @@
 /**
- * @description Return the text value of the specified HTMLElement.
+ * @description
+ * Return the text value of the specified HTMLElement.
+ *
+ * To be used like this :
+ *
+ *     let a = $getText(element)
  *
  * @export
  *

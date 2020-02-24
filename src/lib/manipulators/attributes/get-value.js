@@ -1,12 +1,17 @@
 /**
- * @description Return the value of an input.
+ * @description
+ * Return the value of an input element.
+ *
+ * To be used like this :
+ *
+ *     let a = $getValue(input)
  *
  * @export
  *
- * @param {HTMLElement} element
+ * @param {HTMLElement} input
  *
  * @returns {string}
  */
-export function $getValue (element) {
-  return element.value
+export function $getValue (input) {
+  return input.value
 }

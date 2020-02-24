@@ -1,5 +1,10 @@
 /**
- * @description Check if input is a nodelist and return true or false.
+ * @description
+ * Check if input is a nodelist and return true or false.
+ *
+ * To be used like this :
+ *
+ *     if($isNodeList(input)) { do something }
  *
  * @export
  *
