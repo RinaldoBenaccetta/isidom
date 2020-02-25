@@ -1,5 +1,6 @@
 import * as values from '../constants/values'
 import * as elements from '../constants/elements'
+import * as properties from '../constants/css-properties'
 
 /**
  * @description
@@ -19,7 +20,7 @@ import * as elements from '../constants/elements'
 export function $getHeight (element = values.$null) {
   if (element) {
     return parseFloat(
-      getComputedStyle(element).height.replace(
+      getComputedStyle(element)[properties.$cssHeight].replace(
         values._$px,
         values._$emptyString
       )
