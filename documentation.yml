@@ -65,6 +65,7 @@ toc:
   - name: Sizes values
     children:
       - $getHeight
+      - $getWidth
   - name: Todo
     file: src/doc/todo.md
 

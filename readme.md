@@ -89,9 +89,9 @@
 -   [Sizes values][85]
     -   [$getHeight][86]
         -   [Parameters][87]
--   [Todo][88]
--   [$getWidth][89]
-    -   [Parameters][90]
+    -   [$getWidth][88]
+        -   [Parameters][89]
+-   [Todo][90]
 
 ## Introduction
 
@@ -1840,13 +1840,7 @@ To be used like this :
 
 Returns **[number][103]** 
 
-## Todo
-
--   Improve $getData with [https://developer.mozilla.org/fr/docs/Apprendre/HTML/Comment/Utiliser_attributs_donnes][105].
--   Investigate a $setData function.
-
-
-## $getWidth
+### $getWidth
 
 Return the Width in pixels of an HTMLElement.
 If no HTMLElement is specified, or the element value is null,
@@ -1856,11 +1850,17 @@ To be used like this :
 
     let a = $getWidth(element)
 
-### Parameters
+#### Parameters
 
 -   `element` **[HTMLElement][93]**  (optional, default `null`)
 
 Returns **[number][103]** 
+
+## Todo
+
+-   Improve $getData with [https://developer.mozilla.org/fr/docs/Apprendre/HTML/Comment/Utiliser_attributs_donnes][105].
+-   Investigate a $setData function.
+
 
 [1]: #introduction
 
@@ -2036,11 +2036,11 @@ Returns **[number][103]**
 
 [87]: #parameters-35
 
-[88]: #todo
+[88]: #getwidth
 
-[89]: #getwidth
+[89]: #parameters-36
 
-[90]: #parameters-36
+[90]: #todo
 
 [91]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
 
