@@ -19,7 +19,7 @@ import * as elements from '../constants/elements'
 export function $getHeight (element = values.$null) {
   if (element) {
     return parseFloat(
-      getComputedStyle(element, values.$null).height.replace(
+      getComputedStyle(element).height.replace(
         values._$px,
         values._$emptyString
       )

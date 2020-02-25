@@ -20,7 +20,7 @@ describe('$getHeight', () => {
   })
 
   describe('given no argument', () => {
-    test('return the heigh of the window', () => {
+    test('return the height of the window', () => {
       const TEST = $getHeight()
       expect(TEST).toBe(768)
     })
