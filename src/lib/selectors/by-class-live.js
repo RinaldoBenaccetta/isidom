@@ -21,7 +21,7 @@ import * as elements from '../constants/elements'
  * @param {string|string[]} classList
  * The string and strings in array can start with a dot or not.
  * The string and strings in array can have spaces at start an end.
- * @param {HTMLElement=} [element=elements.document]
+ * @param {HTMLElement=} [element=document]
  *
  * @returns
  */

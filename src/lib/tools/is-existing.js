@@ -16,7 +16,7 @@ import * as values from '../constants/values'
  * @export
  *
  * @param {string} query
- * @param {HTMLElement=} [element=elements.document]
+ * @param {HTMLElement=} [element=document]
  *
  * @returns {boolean}
  */

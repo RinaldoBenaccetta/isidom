@@ -19,7 +19,7 @@ import * as elements from '../constants/elements'
  * @export
  *
  * @param {string} query
- * @param {element} [element=elements.$document]
+ * @param {element} [element=document]
  *
  * @returns {NodeList}
  */
