@@ -62,6 +62,9 @@ toc:
       - $getStyle
       - $setStyle
       - $removeStyle
+  - name: Sizes values
+    children:
+      - $getHeight
   - name: Todo
     file: src/doc/todo.md
 
