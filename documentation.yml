@@ -66,6 +66,7 @@ toc:
     children:
       - $getHeight
       - $getWidth
+      - $getOffset
   - name: Todo
     file: src/doc/todo.md
 

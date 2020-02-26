@@ -678,31 +678,31 @@
 //   element.textContent = text;
 // }
 
-function $getHeight(element = $$false) {
-  if (element === $$false) {
-    return $$window.innerHeight;
-  }
-  return parseFloat(
-    getComputedStyle(element, $$null).height.replace($$_px, $$_emptyString)
-  );
-}
+// function $getHeight(element = $$false) {
+//   if (element === $$false) {
+//     return $$window.innerHeight;
+//   }
+//   return parseFloat(
+//     getComputedStyle(element, $$null).height.replace($$_px, $$_emptyString)
+//   );
+// }
 
-function $getWidth(element = $$false) {
-  if (element === $$false) {
-    return $$window.innerWidth;
-  }
-  return parseFloat(
-    getComputedStyle(element, $$null).width.replace($$_px, $$_emptyString)
-  );
-}
+// function $getWidth(element = $$false) {
+//   if (element === $$false) {
+//     return $$window.innerWidth;
+//   }
+//   return parseFloat(
+//     getComputedStyle(element, $$null).width.replace($$_px, $$_emptyString)
+//   );
+// }
 
-function $offset(element) {
-  var rect = element.getBoundingClientRect();
-  return {
-    top: rect.top + $$docBody.scrollTop,
-    left: rect.left + $$docBody.scrollLeft
-  };
-}
+// function $offset(element) {
+//   var rect = element.getBoundingClientRect();
+//   return {
+//     top: rect.top + $$docBody.scrollTop,
+//     left: rect.left + $$docBody.scrollLeft
+//   };
+// }
 
 // function $parent(element) {
 //   return element.parentElement;

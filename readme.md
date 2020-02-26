@@ -91,7 +91,9 @@
         -   [Parameters][87]
     -   [$getWidth][88]
         -   [Parameters][89]
--   [Todo][90]
+    -   [$getOffset][90]
+        -   [Parameters][91]
+-   [Todo][92]
 
 ## Introduction
 
@@ -1089,7 +1091,7 @@ To be used like this :
 
 -   `variable` **any** 
 
-Returns **[boolean][91]** 
+Returns **[boolean][93]** 
 
 ### $isExisting
 
@@ -1105,10 +1107,10 @@ To be used like this :
 
 #### Parameters
 
--   `query` **[string][92]** 
--   `element` **[HTMLElement][93]**  (optional, default `document`)
+-   `query` **[string][94]** 
+-   `element` **[HTMLElement][95]**  (optional, default `document`)
 
-Returns **[boolean][91]** 
+Returns **[boolean][93]** 
 
 ### $isArray
 
@@ -1122,7 +1124,7 @@ To be used like this :
 
 -   `input` **any** 
 
-Returns **[boolean][91]** 
+Returns **[boolean][93]** 
 
 ### $isCollection
 
@@ -1136,7 +1138,7 @@ To be used like this :
 
 -   `input` **any** 
 
-Returns **[boolean][91]** 
+Returns **[boolean][93]** 
 
 ### $isNodeList
 
@@ -1150,7 +1152,7 @@ To be used like this :
 
 -   `input` **any** 
 
-Returns **[boolean][91]** 
+Returns **[boolean][93]** 
 
 ### $isHtmlElement
 
@@ -1164,7 +1166,7 @@ To be used like this :
 
 -   `input` **any** 
 
-Returns **[boolean][91]** 
+Returns **[boolean][93]** 
 
 ### $selectorToArray
 
@@ -1182,7 +1184,7 @@ To be used like this :
 
 -   `input`  
 
-Returns **[Array][94]&lt;[string][92]>** 
+Returns **[Array][96]&lt;[string][94]>** 
 
 ### $selectorArrayToString
 
@@ -1200,13 +1202,13 @@ To be used like this :
 
 #### Parameters
 
--   `input` **([string][92] \| [Array][94]&lt;[string][92]>)** A string value will output the same string with or without '.' at start
+-   `input` **([string][94] \| [Array][96]&lt;[string][94]>)** A string value will output the same string with or without '.' at start
     according to the argument 'dot' received. An array of string will return
     a concatened string with or without '.' at start according
     to the argument 'dot' received.
--   `dot` **[boolean][91]** true will set separator as '.' and false will set separator as a space. (optional, default `true`)
+-   `dot` **[boolean][93]** true will set separator as '.' and false will set separator as a space. (optional, default `true`)
 
-Returns **[string][92]** 
+Returns **[string][94]** 
 
 ### $forEach
 
@@ -1235,7 +1237,7 @@ Note that $forEach return nothing.
 
 #### Parameters
 
--   `functionToExecute` **[function][95]** This is the function that will be executed in the forEach loop.
+-   `functionToExecute` **[function][97]** This is the function that will be executed in the forEach loop.
 -   `element` **any** This is the array, the nodelist, the HTMLCollection or the HTMLElement that
     will be processed by the for loop.
     If this is not an array, an HTMLCollection or a nodelist,
@@ -1253,11 +1255,11 @@ To be used like this :
 
 #### Parameters
 
--   `filter` **[string][92]** The filter like in querySelector :
-     [https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector][96]
--   `element` **[HTMLElement][93]** 
+-   `filter` **[string][94]** The filter like in querySelector :
+     [https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector][98]
+-   `element` **[HTMLElement][95]** 
 
-Returns **([array][94] | null)** An array of HTMLElement.
+Returns **([array][96] | null)** An array of HTMLElement.
 
 ### $cleanSelector
 
@@ -1269,9 +1271,9 @@ The spaces at the start and end of the string will be removed.
 
 #### Parameters
 
--   `selector` **[string][92]** 
+-   `selector` **[string][94]** 
 
-Returns **[string][92]** 
+Returns **[string][94]** 
 
 ## Selectors
 
@@ -1293,11 +1295,11 @@ To be used like this :
 
 #### Parameters
 
--   `classList` **([string][92] \| [Array][94]&lt;[string][92]>)** The string and strings in array can start with a dot or not.
+-   `classList` **([string][94] \| [Array][96]&lt;[string][94]>)** The string and strings in array can start with a dot or not.
     The string and strings in array can have spaces at start an end.
--   `element` **[HTMLElement][93]**  (optional, default `document`)
+-   `element` **[HTMLElement][95]**  (optional, default `document`)
 
-Returns **[NodeList][97]** 
+Returns **[NodeList][99]** 
 
 ### $byClassLive
 
@@ -1315,9 +1317,9 @@ To be used like this :
 
 #### Parameters
 
--   `classList` **([string][92] \| [Array][94]&lt;[string][92]>)** The string and strings in array can start with a dot or not.
+-   `classList` **([string][94] \| [Array][96]&lt;[string][94]>)** The string and strings in array can start with a dot or not.
     The string and strings in array can have spaces at start an end.
--   `element` **[HTMLElement][93]**  (optional, default `document`)
+-   `element` **[HTMLElement][95]**  (optional, default `document`)
 
 ### $byId
 
@@ -1333,12 +1335,12 @@ To be used like this :
 -   `id` **sting** The string and strings in array can start with a # or not.
     The string and strings in array can have spaces at start an end.
 
-Returns **([HTMLElement][93] | null)** 
+Returns **([HTMLElement][95] | null)** 
 
 ### $select
 
 Select elements based on querySelectorAll :
- [https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll][98]
+ [https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll][100]
 
 Wich return a nodeList of elements containing specified selectors.
 
@@ -1353,15 +1355,15 @@ To be used like this :
 
 #### Parameters
 
--   `query` **[string][92]** 
--   `element` **[element][99]**  (optional, default `document`)
+-   `query` **[string][94]** 
+-   `element` **[element][101]**  (optional, default `document`)
 
-Returns **[NodeList][97]** 
+Returns **[NodeList][99]** 
 
 ### $findParent
 
 Replace native JS  property element.parentElement.
- [https://developer.mozilla.org/en-US/docs/Web/API/Node/parentElement][100]
+ [https://developer.mozilla.org/en-US/docs/Web/API/Node/parentElement][102]
 
 Return an HTMLElement wich is the parent of the specified HTMLElement.
 
@@ -1371,9 +1373,9 @@ To be used like this :
 
 #### Parameters
 
--   `element` **[HTMLElement][93]** 
+-   `element` **[HTMLElement][95]** 
 
-Returns **[HTMLElement][93]** 
+Returns **[HTMLElement][95]** 
 
 ### $findSiblings
 
@@ -1387,9 +1389,9 @@ To be used like this :
 
 #### Parameters
 
--   `element` **[HTMLElement][93]** 
+-   `element` **[HTMLElement][95]** 
 
-Returns **([array][94] | null)** 
+Returns **([array][96] | null)** 
 
 ### $findPreviousSiblings
 
@@ -1407,9 +1409,9 @@ To be used like this :
 
 #### Parameters
 
--   `element` **[HTMLElement][93]** 
+-   `element` **[HTMLElement][95]** 
 
-Returns **([array][94] | null)** 
+Returns **([array][96] | null)** 
 
 ### $findNextSiblings
 
@@ -1424,7 +1426,7 @@ To be used like this :
 
 #### Parameters
 
--   `element` **[HTMLElement][93]** 
+-   `element` **[HTMLElement][95]** 
 
 ## Class manipulators
 
@@ -1444,11 +1446,11 @@ To be used like this :
 
 #### Parameters
 
--   `className` **[string][92]** The string can start with a dot or not with no influence on the output.
+-   `className` **[string][94]** The string can start with a dot or not with no influence on the output.
     The string can have spaces at start an end with no influence on the output.
--   `element` **[HTMLElement][93]** 
+-   `element` **[HTMLElement][95]** 
 
-Returns **[boolean][91]** 
+Returns **[boolean][93]** 
 
 ### $addClass
 
@@ -1475,8 +1477,8 @@ already used. In this case, the best is to use $addClass.
 
 #### Parameters
 
--   `classList` **([string][92] \| [Array][94]&lt;[string][92]>)** 
--   `element` **([HTMLElement][93] \| [nodeList][97] | HTMLCollection)** 
+-   `classList` **([string][94] \| [Array][96]&lt;[string][94]>)** 
+-   `element` **([HTMLElement][95] \| [nodeList][99] | HTMLCollection)** 
 
 ### $removeClass
 
@@ -1503,8 +1505,8 @@ already used. In this case, the best is to use $removeClass.
 
 #### Parameters
 
--   `classList` **([string][92] \| [Array][94]&lt;[string][92]>)** 
--   `element` **([HTMLElement][93] \| [nodeList][97] | HTMLCollection)** 
+-   `classList` **([string][94] \| [Array][96]&lt;[string][94]>)** 
+-   `element` **([HTMLElement][95] \| [nodeList][99] | HTMLCollection)** 
 
 ### $toggleClass
 
@@ -1531,8 +1533,8 @@ already used. In this case, the best is to use $toggleClass.
 
 #### Parameters
 
--   `classList` **([string][92] \| [Array][94]&lt;[string][92]>)** 
--   `element` **([HTMLElement][93] \| [nodeList][97] | HTMLCollection)** 
+-   `classList` **([string][94] \| [Array][96]&lt;[string][94]>)** 
+-   `element` **([HTMLElement][95] \| [nodeList][99] | HTMLCollection)** 
 
 ### $replaceClass
 
@@ -1540,7 +1542,7 @@ Replace a class by another in an HTMLElement
 or in all HTMLElements of a nodeList or an HTMLCollection.
 
 Based on native element.classList.replace that is not well
-supported : [https://caniuse.com/#search=classlist%20replace][101].
+supported : [https://caniuse.com/#search=classlist%20replace][103].
 Until it's well supported, the best would be to use $toggleClass
 on the two classes.
 
@@ -1559,9 +1561,9 @@ already used. In this case, the best is to use $replaceClass.
 
 #### Parameters
 
--   `oldClass` **[string][92]** 
--   `newClass` **[string][92]** 
--   `element` **([HTMLElement][93] \| [nodeList][97] | HTMLCollection)** 
+-   `oldClass` **[string][94]** 
+-   `newClass` **[string][94]** 
+-   `element` **([HTMLElement][95] \| [nodeList][99] | HTMLCollection)** 
 
 ## Attribute manipulators
 
@@ -1579,8 +1581,8 @@ To be used like this :
 
 #### Parameters
 
--   `attribute` **[string][92]** 
--   `element` **[HTMLElement][93]** 
+-   `attribute` **[string][94]** 
+-   `element` **[HTMLElement][95]** 
 
 ### $getAttributes
 
@@ -1614,9 +1616,9 @@ of $getAttributes.
 
 #### Parameters
 
--   `element` **[HTMLElement][93]** 
+-   `element` **[HTMLElement][95]** 
 
-Returns **[Object][102]** 
+Returns **[Object][104]** 
 
 ### $setAttribute
 
@@ -1633,8 +1635,8 @@ E.g. :
 
 #### Parameters
 
--   `value` **[string][92]** 
--   `attribute` **[string][92]** 
+-   `value` **[string][94]** 
+-   `attribute` **[string][94]** 
 -   `element`  
 
 ## Data manipulators
@@ -1660,8 +1662,8 @@ Will return the data-weight of the Element.
 
 #### Parameters
 
--   `data` **[string][92]** The data without data- at start (E.g. : color 'refer' to 'data-color')
--   `element` **[HTMLElement][93]** 
+-   `data` **[string][94]** The data without data- at start (E.g. : color 'refer' to 'data-color')
+-   `element` **[HTMLElement][95]** 
 
 ## Text manipulators
 
@@ -1678,9 +1680,9 @@ To be used like this :
 
 #### Parameters
 
--   `element` **[HTMLElement][93]** 
+-   `element` **[HTMLElement][95]** 
 
-Returns **[string][92]** 
+Returns **[string][94]** 
 
 ### $setText
 
@@ -1692,8 +1694,8 @@ To be used like this :
 
 #### Parameters
 
--   `text` **[string][92]** 
--   `element` **[HTMLElement][93]** 
+-   `text` **[string][94]** 
+-   `element` **[HTMLElement][95]** 
 
 ## Value manipulators
 
@@ -1710,9 +1712,9 @@ To be used like this :
 
 #### Parameters
 
--   `input` **[HTMLElement][93]** 
+-   `input` **[HTMLElement][95]** 
 
-Returns **[string][92]** 
+Returns **[string][94]** 
 
 ### $setValue
 
@@ -1724,8 +1726,8 @@ To be used like this :
 
 #### Parameters
 
--   `value` **([string][92] \| [number][103] \| [boolean][91])** 
--   `input` **[HTMLBaseElement][104]** 
+-   `value` **([string][94] \| [number][105] \| [boolean][93])** 
+-   `input` **[HTMLBaseElement][106]** 
 
 ## Style manipulators
 
@@ -1756,10 +1758,10 @@ Will return the background-color of the element.
 
 #### Parameters
 
--   `property` **[string][92]** The style property : the css-property's constants can be used for maximum
+-   `property` **[string][94]** The style property : the css-property's constants can be used for maximum
     minification when used several times. In this case,
     the $js prefixed constants must be used.
--   `element` **[HTMLElement][93]** 
+-   `element` **[HTMLElement][95]** 
 
 ### $setStyle
 
@@ -1785,11 +1787,11 @@ Will set the background-color of the element.
 
 #### Parameters
 
--   `value` **[string][92]** 
--   `property` **[string][92]** The style property : the css-property's constants can be used
+-   `value` **[string][94]** 
+-   `property` **[string][94]** The style property : the css-property's constants can be used
     for maximum minification when used several times.
     In this case, the $js prefixed constants must be used.
--   `element` **[HTMLElement][93]** 
+-   `element` **[HTMLElement][95]** 
 
 ### $removeStyle
 
@@ -1814,11 +1816,11 @@ Will remove the background-color style of the element.
 
 #### Parameters
 
--   `property` **[string][92]** The style property : the css-property's constants can be used
+-   `property` **[string][94]** The style property : the css-property's constants can be used
     for maximum minification when used several times.
     In this case, unlike $setStyle and $getStyle,
     $css prefixed constants must be used.
--   `element` **[HTMLElement][93]** 
+-   `element` **[HTMLElement][95]** 
 
 ## Sizes values
 
@@ -1836,9 +1838,9 @@ To be used like this :
 
 #### Parameters
 
--   `element` **[HTMLElement][93]**  (optional, default `null`)
+-   `element` **[HTMLElement][95]**  (optional, default `null`)
 
-Returns **[number][103]** 
+Returns **[number][105]** 
 
 ### $getWidth
 
@@ -1852,13 +1854,30 @@ To be used like this :
 
 #### Parameters
 
--   `element` **[HTMLElement][93]**  (optional, default `null`)
+-   `element` **[HTMLElement][95]**  (optional, default `null`)
 
-Returns **[number][103]** 
+Returns **[number][105]** 
+
+### $getOffset
+
+Return an object containing the top and left position of a specified element
+relative to the top and left of the view.
+
+To be used like this :
+
+    let a = $getOffset(element)
+    console.log(a.top)
+    console.log(a.left)
+
+#### Parameters
+
+-   `element` **[HTMLElement][95]** 
+
+Returns **[object][104]** The returned object contain the keys top and left that can be accessed.
 
 ## Todo
 
--   Improve $getData with [https://developer.mozilla.org/fr/docs/Apprendre/HTML/Comment/Utiliser_attributs_donnes][105].
+-   Improve $getData with [https://developer.mozilla.org/fr/docs/Apprendre/HTML/Comment/Utiliser_attributs_donnes][107].
 -   Investigate a $setData function.
 
 
@@ -2040,34 +2059,38 @@ Returns **[number][103]**
 
 [89]: #parameters-36
 
-[90]: #todo
+[90]: #getoffset
 
-[91]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+[91]: #parameters-37
 
-[92]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
+[92]: #todo
 
-[93]: https://developer.mozilla.org/docs/Web/HTML/Element
+[93]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
 
-[94]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
+[94]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
 
-[95]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function
+[95]: https://developer.mozilla.org/docs/Web/HTML/Element
 
-[96]: https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector
+[96]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
 
-[97]: https://developer.mozilla.org/docs/Web/API/NodeList
+[97]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function
 
-[98]: https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll
+[98]: https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector
 
-[99]: https://developer.mozilla.org/docs/Web/API/Element
+[99]: https://developer.mozilla.org/docs/Web/API/NodeList
 
-[100]: https://developer.mozilla.org/en-US/docs/Web/API/Node/parentElement
+[100]: https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll
 
-[101]: https://caniuse.com/#search=classlist%20replace
+[101]: https://developer.mozilla.org/docs/Web/API/Element
 
-[102]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object
+[102]: https://developer.mozilla.org/en-US/docs/Web/API/Node/parentElement
 
-[103]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number
+[103]: https://caniuse.com/#search=classlist%20replace
 
-[104]: https://developer.mozilla.org/docs/Web/API/HTMLBaseElement
+[104]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object
 
-[105]: https://developer.mozilla.org/fr/docs/Apprendre/HTML/Comment/Utiliser_attributs_donnes
+[105]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number
+
+[106]: https://developer.mozilla.org/docs/Web/API/HTMLBaseElement
+
+[107]: https://developer.mozilla.org/fr/docs/Apprendre/HTML/Comment/Utiliser_attributs_donnes
