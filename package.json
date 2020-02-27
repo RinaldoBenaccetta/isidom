@@ -26,7 +26,6 @@
     "test": "test"
   },
   "scripts": {
-    "start": "node -r esm .",
     "test": "jest",
     "testwatch": "jest --watchAll",
     "build": "npx rollup --config",
