@@ -1,0 +1,17 @@
+# ignore node_modules
+/node_modules
+
+# ignore doc source
+/src/doc
+documentation.yml
+
+# ignore gitignore
+.gitignore
+
+# ignore test
+/src/test
+jest.config.js
+jest.setup.js
+
+#ignore package-lock
+package-lock.json
