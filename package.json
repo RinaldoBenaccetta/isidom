@@ -33,6 +33,6 @@
     "docwatch": "documentation build --config documentation.yml build src/lib/** -f md -o readme.md -w"
   },
   "author": "Rinaldo Benaccetta",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {}
 }
