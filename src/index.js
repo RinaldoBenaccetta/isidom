@@ -1,3 +1,10 @@
+/*!
+ * isi v1.0.0
+ * Easy and light DOM manipulation and minification.
+ * (c) 2020 Rinaldo Benaccetta
+ * MIT License
+ */
+
 export * from './lib/constants/elements'
 export * from './lib/constants/values'
 export * from './lib/constants/css-properties'
