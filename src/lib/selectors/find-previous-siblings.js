@@ -8,7 +8,7 @@ import * as values from '../constants/values'
  * The closest sibling is the first of the array, then the second closest,
  * and so on.
  *
- * Return null if there is no next siblings.
+ * Return null if there is no previous siblings found.
  *
  * To be used like this :
  *
