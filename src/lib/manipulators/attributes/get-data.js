@@ -2,19 +2,18 @@ import { $getAttribute } from './get-attribute'
 
 /**
  * @description
- * Return the value of the specified data (E.g. : data-color).
+ * Return the value of the specified data (E.g. : data-color) of the element.
  *
  * If the specified data is not present in the HTMLElement, null is returned.
  *
- * To be used like this :
+ * @example
+ * let a = $getData(data, element)
+ * 
+ * // Or
+ * 
+ * let a = $getData('color', element)
  *
- *     let a = $getData(data, element)
- *
- * E.g. :
- *
- *     let a = $getData('weight', element)
- *
- * Will return the data-weight of the Element.
+ * // Will return the data-color of the Element.
  *
  * @export
  *

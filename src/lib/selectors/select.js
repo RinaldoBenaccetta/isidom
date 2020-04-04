@@ -11,10 +11,9 @@ import * as elements from '../constants/elements'
  *
  * A nodeList accept native JS forEach.
  *
- * To be used like this :
- *
- *     let query = "div.myClass, div.myOtherClass"
- *     let a = $select(query, element)
+ * @example
+ * let query = "div.myClass, div.myOtherClass"
+ * let a = $select(query, element)
  *
  * @export
  *

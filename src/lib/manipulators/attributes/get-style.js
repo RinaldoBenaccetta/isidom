@@ -2,23 +2,24 @@
  * @description
  * Get the value of the specified style of the specified HTMLElement.
  *
- * The property must be in JS like :
+ * The property must be in JS camel case like :
  * 'backgroundColor' for the 'background-color' CSS property.
  *
  * If Isi's constants are used, the $js prefixed ones must be used.
  * E.g. : $jsBackgroundColor instead of $cssBackgroundColor.
  *
- * To be used like this :
+ * @example
+ * let a = $getStyle(property, element)
  *
- *     let a = $getStyle(property, element)
+ * // E.g. :
  *
- * E.g. :
+ * let a = $getStyle('backgroundColor', element)
+ * 
+ * // or
+ * 
+ * let a = $getStyle($jsBackgroundColor, element)
  *
- *     let a = $getStyle('backgroundColor', element)
- *     // or
- *     let a = $getStyle($jsBackgroundColor, element)
- *
- * Will return the background-color of the element.
+ * // Will return the background-color of the element.
  *
  * @export
  *

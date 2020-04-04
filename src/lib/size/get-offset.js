@@ -5,11 +5,10 @@ import * as elements from '../constants/elements'
  * Return an object containing the top and left position of a specified element
  * relative to the top and left of the view.
  *
- * To be used like this :
- *
- *     let a = $getOffset(element)
- *     console.log(a.top)
- *     console.log(a.left)
+ * @example
+ * let a = $getOffset(element)
+ * console.log(a.top)
+ * console.log(a.left)
  *
  * @export
  *

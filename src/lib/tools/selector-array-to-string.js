@@ -6,14 +6,16 @@ import { $selectorToArray } from './selector-to-array'
  * Return a string concatened from an array of string.
  *
  * Each string from the array will be transformed in a class name
- * if 'dot' is set to true. eg. : 'myClass' become '.myClass',
- * '.myClass' stay '.myClass'
+ * if 'dot' is set to true. e.g. : 'myClass' become '.myClass',
+ * '.myClass' stay '.myClass'.
+ * 
+ * If 'dot' is set to false, any dot in class name will be removed.
+ * e.g. : '.myClass' become 'myClass'.
  *
  * Spaces from start and end of strings will be removed.
  *
- * To be used like this :
- *
- *     let a = $selectorArrayToString(input, false)
+ * @example
+ * let a = $selectorArrayToString(input, false)
  *
  * @param {string|string[]} input
  * A string value will output the same string with or without '.' at start

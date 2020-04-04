@@ -2,15 +2,14 @@
  * @description
  * Set the specified value of the specified input.
  *
- * To be used like this :
- *
- *     $setValue(value, input)
+ * @example
+ * $setValue(value, input)
  *
  * @export
  *
  * @param {string|number|boolean} value
  *
- * @param {HTMLBaseElement} input
+ * @param {HTMLElement} input
  */
 export function $setValue (value, input) {
   input.value = value

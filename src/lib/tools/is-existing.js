@@ -3,15 +3,14 @@ import * as values from '../constants/values'
 
 /**
  * @description
- * Return true if selector match an element in the document or in
+ * Return true if selector matches an element in the document or in
  * the specified parent element.
  *
- * Return false if selector match no element in the document or in
+ * Return false if selector matches no element in the document or in
  * the specified parent element.
  *
- * To be used like this :
- *
- *     if($isExisting(query)) { do something }
+ * @example
+ * if($isExisting(query)) { make something }
  *
  * @export
  *

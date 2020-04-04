@@ -8,9 +8,8 @@ import * as properties from '../constants/css-properties'
  * If no HTMLElement is specified, or the element value is null,
  * the width of the window is returned.
  *
- * To be used like this :
- *
- *     let a = $getWidth(element)
+ * @example
+ * let a = $getWidth(element)
  *
  * @export
  *

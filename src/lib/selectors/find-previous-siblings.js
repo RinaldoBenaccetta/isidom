@@ -10,9 +10,8 @@ import * as values from '../constants/values'
  *
  * Return null if there is no previous siblings found.
  *
- * To be used like this :
- *
- *     let a = $findPreviousSiblings(element)
+ * @example
+ * let a = $findPreviousSiblings(element)
  *
  * @export
  *

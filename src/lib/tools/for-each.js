@@ -4,28 +4,36 @@ import { $isCollection } from './is-collection'
 
 /**
  * @description
- * Replacement for the forEach native Javascript function and based on for loop.
- * To be used like this :
- *
- *     $forEach(functionToExecute}, element)
- *
- * or :
- *
- *     $forEach(itemsInElement => {
- *       itemsInElement.doSomething
- *     }, element)
- *
- * Outside of the DOM elements, the $forEach function does not act
- * on the element itself. E.g. :
- *
- *     let myArray = [1, 2, 3]
- *     $forEach(item => {
- *       items = item * 2
- *     }, myArray)
- *
- * will not transform myArray in [2, 4, 6]. myArray will stay [1, 2, 3].
- *
+ * Replacement based on for loop for the forEach native Javascript function.
  * Note that $forEach return nothing.
+ * 
+ * @example
+ * $forEach(functionToExecute}, element)
+ * 
+ * // Or :
+ * 
+ * $forEach(itemsInElement => {
+ *     itemsInElement.doSomething
+ * }, element)
+ *
+ * // Note that outside of the DOM elements, the $forEach function does not act
+ * // on the element itself.
+ * // E.g. :
+ * 
+ * let myArray = [1, 2, 3]
+ * $forEach(item => {
+ *     items = item * 2
+ * }, myArray)
+ *
+ * // Will not transform myArray in [2, 4, 6]. myArray will stay [1, 2, 3].
+ * // To do that, this code will do the job :
+ * 
+ * let myArray = [1, 2, 3]
+ * let outputArray = []
+ * $forEach(item => {
+ *     outputArray.push(item * 2)
+ * }, myArray)
+ * console.log(outputArray) // this should output [2, 4, 6].
  *
  * @export
  *

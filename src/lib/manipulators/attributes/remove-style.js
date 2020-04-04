@@ -7,17 +7,18 @@
  * If Isi's constants are used, the $css prefixed ones must be used.
  * E.g. : $cssBackgroundColor instead of $jsBackgroundColor.
  *
- * To be used like this :
+ * @example
+ * $removeStyle(property, element)
  *
- *     $removeStyle(property, element)
+ * // E.g. :
  *
- * E.g. :
- *
- *     $setStyle('background-color', element)
- *     // or
- *     $setStyle($cssBackgroundColor, element)
- *
- * Will remove the background-color style of the element.
+ * $setStyle('background-color', element)
+ * 
+ * // or
+ * 
+ * $setStyle($cssBackgroundColor, element)
+ * 
+ * // Will remove the background-color style of the element.
  *
  * @export
  *

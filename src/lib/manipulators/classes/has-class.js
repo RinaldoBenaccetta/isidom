@@ -8,9 +8,8 @@ import * as elements from '../../constants/elements'
  *
  * Can test only one class at a time.
  *
- * To be used like this :
- *
- *     if($hasClass('className', element)) { do something }
+ * @example
+ * if($hasClass('className', element)) { make something }
  *
  * @export
  *

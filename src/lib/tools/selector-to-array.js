@@ -7,15 +7,14 @@ import { $cleanSelector } from './clean-selector'
  *
  * The spaces at the start and end of the string will be removed.
  *
- * A string return an array with the string as the only item in the array.
+ * A sole string will return an array with the string as the only item in the array.
  *
- * To be used like this :
- *
- *     let a = $selectorToArray(input)
+ * @example
+ * let a = $selectorToArray(input)
  *
  * @export
  *
- * @param {string, string[]} input
+ * @param {string|string[]} input
  *
  * @returns  {string[]}
  */

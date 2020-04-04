@@ -6,9 +6,8 @@ import * as values from '../constants/values'
  *
  * Return null if there is no siblings.
  *
- * To be used like this :
- *
- *     let a = $findSiblings(element)
+ * @example
+ * let a = $findSiblings(element)
  *
  * @export
  *

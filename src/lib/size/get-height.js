@@ -7,9 +7,8 @@ import * as properties from '../constants/css-properties'
  * Return the Height in pixels of an HTMLElement.
  * If no HTMLElement is specified, the height of the window is returned.
  *
- * To be used like this :
- *
- *     let a = $getHeight(element)
+ * @example
+ * let a = $getHeight(element)
  *
  * @export
  *

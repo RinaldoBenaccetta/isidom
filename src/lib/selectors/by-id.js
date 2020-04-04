@@ -6,13 +6,12 @@ import * as elements from '../constants/elements'
  * Return an HTMLElement based on getElementById.
  * Return null if nothing is found.
  *
- * To be used like this :
- *
- *     let a = $byId('id')
+ * @example
+ * let a = $byId('id')
  *
  * @export
  *
- * @param {sting} id
+ * @param {string} id
  * The string and strings in array can start with a # or not.
  * The string and strings in array can have spaces at start an end.
  *

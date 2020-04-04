@@ -2,9 +2,8 @@
  * @description
  * Return the value of an input element.
  *
- * To be used like this :
- *
- *     let a = $getValue(input)
+ * @example
+ * let a = $getValue(input)
  *
  * @export
  *

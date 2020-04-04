@@ -2,9 +2,12 @@
  * @description
  * Remove '.' and '#' from start of selectors names.
  *
- * '.myClass' become 'myClass' and '#myId' become 'myId'
- *
+ * '.myClass' become 'myClass' and '#myId' become 'myId'.
+ * 
  * The spaces at the start and end of the string will be removed.
+ * 
+ * @example
+ * let a = $cleanSelector(myElement)
  *
  * @param {string} selector
  *

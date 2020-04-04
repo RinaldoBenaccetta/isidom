@@ -2,23 +2,25 @@
  * @description
  * Add or replace specified style's value to the specified HTMLElement.
  *
- * The property must be in JS like :
+ * The property must be in JS camel case like :
  * 'backgroundColor' for the 'background-color' CSS property.
  *
  * If Isi's constants are used, the $js prefixed ones must be used.
  * E.g. : $jsBackgroundColor instead of $cssBackgroundColor.
  *
- * To be used like this :
+ * @example
+ * $setStyle(value, property, element)
  *
- *     $setStyle(value, property, element)
+ * // E.g. :
  *
- * E.g. :
+ * $setStyle('red', 'backgroundColor', element)
+ * 
+ * // or
+ * 
+ * $setStyle('red', $jsBackgroundColor, element)
+ * 
  *
- *     $setStyle('red', 'backgroundColor', element)
- *     // or
- *     $setStyle('red', $jsBackgroundColor, element)
- *
- * Will set the background-color of the element.
+ * // Will set the background-color of the element.
  *
  * @export
  *

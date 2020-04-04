@@ -2,9 +2,8 @@
  * @description
  * Check if input is an array or not and return true or false.
  *
- * To be used like this :
- *
- *     if($isArray(input)) { do something }
+ * @example 
+ * if($isArray(input)) { make something }
  *
  * @param {*} input
  *

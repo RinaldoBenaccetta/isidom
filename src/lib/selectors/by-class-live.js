@@ -4,7 +4,7 @@ import * as elements from '../constants/elements'
 
 /**
  * @description
- * Select elements based on getElementsByClassName wich return
+ * Select elements based on getElementsByClassName(https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName) wich return
  * an HTMLCollection of elements containing specified class.
  *
  * An HTMLCollection is live : a modification in the DOM is reflected
@@ -12,9 +12,8 @@ import * as elements from '../constants/elements'
  *
  * An HTMLCollection don't accept forEach. Use other loops with it.
  *
- * To be used like this :
- *
- *     let a = $byClassLive('classList', element)
+ * @example
+ * let a = $byClassLive('classList', element)
  *
  * @export
  *
@@ -23,7 +22,7 @@ import * as elements from '../constants/elements'
  * The string and strings in array can have spaces at start an end.
  * @param {HTMLElement=} [element=document]
  *
- * @returns
+ * @returns {HTMLCollection} 
  */
 export function $byClassLive (classList, element = elements.$document) {
   return element.getElementsByClassName(

@@ -7,9 +7,8 @@ import * as values from '../constants/values'
  *
  * Return null if there is no next siblings found.
  *
- * To be used like this :
- *
- *     let a = $findNextSiblings(element)
+ * @example
+ * let a = $findNextSiblings(element)
  *
  * @export
  *

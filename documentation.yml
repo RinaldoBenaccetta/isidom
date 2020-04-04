@@ -5,6 +5,8 @@ toc:
     file: src/doc/conventions.md
   - name: Constants
     children:
+      - name: Use
+        file: src/doc/use.md
       - name: Common values
         file: src/doc/common-values.md
       - name: Elements

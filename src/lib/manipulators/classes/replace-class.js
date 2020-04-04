@@ -11,11 +11,7 @@ import { $cleanSelector } from '../../tools/clean-selector'
  * supported : https://caniuse.com/#search=classlist%20replace.
  * Until it's well supported, the best would be to use $toggleClass
  * on the two classes.
- *
- * To be used like this :
- *
- *     $replaceClass('oldClass', 'newClass', element)
- *
+ * 
  * If in the application, classes are replaced only on HTMLELement a
  * few number of times, the best for minification would be to use
  * this instead of $replaceClass :
@@ -24,6 +20,9 @@ import { $cleanSelector } from '../../tools/clean-selector'
  *
  * That's not apply if $forEach or other class and attributes manipulators are
  * already used. In this case, the best is to use $replaceClass.
+ *
+ * @example
+ * $replaceClass('oldClass', 'newClass', element)
  *
  * @export
  *

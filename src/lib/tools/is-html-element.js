@@ -1,10 +1,9 @@
 /**
  * @description
- * Check if input is an HTML element and return true or false.
+ * Check if input is an HTMLelement and return true or false.
  *
- * To be used like this :
- *
- *     if($isHtmlElement(input)) { do something }
+ * @example
+ * if($isHtmlElement(input)) { make something }
  *
  * @export
  *
