@@ -5,8 +5,6 @@
  * @example
  * if($isHtmlElement(input)) { make something }
  *
- * @export
- *
  * @param {*} input
  *
  * @returns {boolean}

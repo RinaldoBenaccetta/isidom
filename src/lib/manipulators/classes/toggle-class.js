@@ -19,8 +19,6 @@ import * as elements from '../../constants/elements'
  * $toggleClass('myClass', element)
  * $toggleClass(['myClass', 'myOtherClass'], element)
  * 
- * @export
- *
  * @param {(string|string[])} classList
  * @param {(HTMLElement|nodeList|HTMLCollection)} element
  */

@@ -22,8 +22,6 @@
  *
  * // Will set the background-color of the element.
  *
- * @export
- *
  * @param {string} value
  * @param {string} property
  * The style property : the css-property's constants can be used

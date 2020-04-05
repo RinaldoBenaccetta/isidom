@@ -10,8 +10,6 @@ import * as values from '../constants/values'
  * @example
  * let a = $findNextSiblings(element)
  *
- * @export
- *
  * @param {HTMLElement} element
  *
  * @returns {array, null}

@@ -9,11 +9,9 @@ import * as values from '../constants/values'
  * @example
  * let a = $findSiblings(element)
  *
- * @export
- *
  * @param {HTMLElement} element
  *
- * @returns {array|null}
+ * @returns {Array|null}
  */
 export function $findSiblings (element) {
   const output = Array.prototype.filter.call(

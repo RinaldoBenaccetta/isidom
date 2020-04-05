@@ -3,16 +3,6 @@ toc:
     file: src/doc/introduction.md
   - name: Conventions
     file: src/doc/conventions.md
-  - name: Constants
-    children:
-      - name: Use
-        file: src/doc/use.md
-      - name: Common values
-        file: src/doc/common-values.md
-      - name: Elements
-        file: src/doc/elements.md
-      - name: CSS properties
-        file: src/doc/css-properties.md
   - name: Tools
     children:
       - $isUndefined
@@ -69,6 +59,16 @@ toc:
       - $getHeight
       - $getWidth
       - $getOffset
+  - name: Constants
+    children:
+      - name: Use
+        file: src/doc/use.md
+      - name: Common values
+        file: src/doc/common-values.md
+      - name: Elements
+        file: src/doc/elements.md
+      - name: CSS properties
+        file: src/doc/css-properties.md
   - name: Todo
     file: src/doc/todo.md
 

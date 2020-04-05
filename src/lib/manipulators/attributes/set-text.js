@@ -5,8 +5,6 @@
  * @example
  * $setText('text', element)
  *
- * @export
- *
  * @param {string} text
  * @param {HTMLElement} element
  */

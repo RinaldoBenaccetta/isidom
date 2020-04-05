@@ -1,1 +1,2 @@
--
+- Add some shortcut function like $addClassToId for *$addClass(classes, $byID('myID'))*
+- ... and some other function, like $addClassToClass, $addTextToId, $getVlaueFromId,...

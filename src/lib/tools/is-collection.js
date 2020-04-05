@@ -5,8 +5,6 @@
  * @example
  * if($isCollection(input)) { make something }
  * 
- * @export
- *
  * @param {*} input
  *
  * @returns {boolean}

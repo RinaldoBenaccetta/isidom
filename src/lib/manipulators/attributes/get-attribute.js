@@ -6,8 +6,6 @@
  * @example
  * let a = $getAttribute('attribute', element)
  *
- * @export
- *
  * @param {string} attribute
  * @param {HTMLElement} element
  *

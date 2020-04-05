@@ -5,8 +5,6 @@
  * @example
  * $setValue(value, input)
  *
- * @export
- *
  * @param {string|number|boolean} value
  *
  * @param {HTMLElement} input

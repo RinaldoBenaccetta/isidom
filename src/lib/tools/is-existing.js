@@ -12,8 +12,6 @@ import * as values from '../constants/values'
  * @example
  * if($isExisting(query)) { make something }
  *
- * @export
- *
  * @param {string} query
  * @param {HTMLElement=} [element=document]
  *

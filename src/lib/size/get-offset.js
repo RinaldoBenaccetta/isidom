@@ -10,11 +10,9 @@ import * as elements from '../constants/elements'
  * console.log(a.top)
  * console.log(a.left)
  *
- * @export
- *
  * @param {HTMLElement} element
  *
- * @returns {object}
+ * @returns {Object}
  * The returned object contain the keys top and left that can be accessed.
  */
 export function $getOffset (element) {

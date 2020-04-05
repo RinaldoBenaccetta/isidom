@@ -5,8 +5,6 @@
  * @example
  * let a = $getText(element)
  *
- * @export
- *
  * @param {HTMLElement} element
  *
  * @returns {string}

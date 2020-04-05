@@ -5,8 +5,6 @@
  * @example
  * let a = $getValue(input)
  *
- * @export
- *
  * @param {HTMLElement} input
  *
  * @returns {string}

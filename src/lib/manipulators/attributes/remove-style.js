@@ -20,8 +20,6 @@
  * 
  * // Will remove the background-color style of the element.
  *
- * @export
- *
  * @param {string} property
  * The style property : the css-property's constants can be used
  * for maximum minification when used several times.

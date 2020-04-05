@@ -29,8 +29,9 @@
     "test": "jest",
     "testwatch": "jest --watchAll",
     "build": "npx rollup --config",
-    "doc": "documentation build --config documentation.yml build src/lib/** -f md -o readme.md",
-    "docwatch": "documentation build --config documentation.yml build src/lib/** -f md -o readme.md -w"
+    "doc": "documentation build --config documentation.yml build src/lib/** -f md -o readme.md --markdown-toc-max-depth 3",
+    "docwatch": "documentation build --config documentation.yml build src/lib/** -f md -o readme.md -w --markdown-toc-max-depth 3",
+    "doclint": "documentation lint src/lib/**"
   },
   "author": "Rinaldo Benaccetta",
   "license": "MIT",

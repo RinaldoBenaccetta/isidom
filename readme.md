@@ -4,141 +4,99 @@
 
 -   [Introduction][1]
 -   [Conventions][2]
--   [Constants][3]
-    -   [Use][4]
-    -   [Common values][5]
-    -   [Elements][6]
-    -   [CSS properties][7]
--   [Tools][8]
-    -   [$isUndefined][9]
-        -   [Parameters][10]
-        -   [Examples][11]
-    -   [$isExisting][12]
-        -   [Parameters][13]
-        -   [Examples][14]
-    -   [$isArray][15]
-        -   [Parameters][16]
-        -   [Examples][17]
-    -   [$isCollection][18]
-        -   [Parameters][19]
-        -   [Examples][20]
-    -   [$isNodeList][21]
-        -   [Parameters][22]
-        -   [Examples][23]
-    -   [$isHtmlElement][24]
-        -   [Parameters][25]
-        -   [Examples][26]
-    -   [$selectorToArray][27]
-        -   [Parameters][28]
-        -   [Examples][29]
-    -   [$selectorArrayToString][30]
-        -   [Parameters][31]
-        -   [Examples][32]
-    -   [$forEach][33]
-        -   [Parameters][34]
-        -   [Examples][35]
-    -   [$filterCollection][36]
-        -   [Parameters][37]
-        -   [Examples][38]
-    -   [$cleanSelector][39]
-        -   [Parameters][40]
-        -   [Examples][41]
--   [Selectors][42]
-    -   [$byClass][43]
-        -   [Parameters][44]
-        -   [Examples][45]
-    -   [$byClassLive][46]
-        -   [Parameters][47]
-        -   [Examples][48]
-    -   [$byId][49]
-        -   [Parameters][50]
-        -   [Examples][51]
-    -   [$select][52]
-        -   [Parameters][53]
-        -   [Examples][54]
-    -   [$findParent][55]
-        -   [Parameters][56]
-        -   [Examples][57]
-    -   [$findSiblings][58]
-        -   [Parameters][59]
-        -   [Examples][60]
-    -   [$findPreviousSiblings][61]
-        -   [Parameters][62]
-        -   [Examples][63]
-    -   [$findNextSiblings][64]
-        -   [Parameters][65]
-        -   [Examples][66]
--   [Class manipulators][67]
-    -   [$hasClass][68]
-        -   [Parameters][69]
-        -   [Examples][70]
-    -   [$addClass][71]
-        -   [Parameters][72]
-        -   [Examples][73]
-    -   [$removeClass][74]
-        -   [Parameters][75]
-        -   [Examples][76]
-    -   [$toggleClass][77]
-        -   [Parameters][78]
-        -   [Examples][79]
-    -   [$replaceClass][80]
-        -   [Parameters][81]
-        -   [Examples][82]
--   [Attribute manipulators][83]
-    -   [$getAttribute][84]
-        -   [Parameters][85]
-        -   [Examples][86]
-    -   [$getAttributes][87]
-        -   [Parameters][88]
-        -   [Examples][89]
-    -   [$setAttribute][90]
-        -   [Parameters][91]
-        -   [Examples][92]
--   [Data manipulators][93]
-    -   [$getData][94]
-        -   [Parameters][95]
-        -   [Examples][96]
--   [Text manipulators][97]
-    -   [$getText][98]
-        -   [Parameters][99]
-        -   [Examples][100]
-    -   [$setText][101]
-        -   [Parameters][102]
-        -   [Examples][103]
--   [Value manipulators][104]
-    -   [$getValue][105]
-        -   [Parameters][106]
-        -   [Examples][107]
-    -   [$setValue][108]
-        -   [Parameters][109]
-        -   [Examples][110]
--   [Style manipulators][111]
-    -   [$getStyle][112]
-        -   [Parameters][113]
-        -   [Examples][114]
-    -   [$setStyle][115]
-        -   [Parameters][116]
-        -   [Examples][117]
-    -   [$removeStyle][118]
-        -   [Parameters][119]
-        -   [Examples][120]
--   [Sizes values][121]
-    -   [$getHeight][122]
-        -   [Parameters][123]
-        -   [Examples][124]
-    -   [$getWidth][125]
-        -   [Parameters][126]
-        -   [Examples][127]
-    -   [$getOffset][128]
-        -   [Parameters][129]
-        -   [Examples][130]
--   [Todo][131]
+-   [Tools][3]
+    -   [$isUndefined][4]
+    -   [$isExisting][5]
+    -   [$isArray][6]
+    -   [$isCollection][7]
+    -   [$isNodeList][8]
+    -   [$isHtmlElement][9]
+    -   [$selectorToArray][10]
+    -   [$selectorArrayToString][11]
+    -   [$forEach][12]
+    -   [$filterCollection][13]
+    -   [$cleanSelector][14]
+-   [Selectors][15]
+    -   [$byClass][16]
+    -   [$byClassLive][17]
+    -   [$byId][18]
+    -   [$select][19]
+    -   [$findParent][20]
+    -   [$findSiblings][21]
+    -   [$findPreviousSiblings][22]
+    -   [$findNextSiblings][23]
+-   [Class manipulators][24]
+    -   [$hasClass][25]
+    -   [$addClass][26]
+    -   [$removeClass][27]
+    -   [$toggleClass][28]
+    -   [$replaceClass][29]
+-   [Attribute manipulators][30]
+    -   [$getAttribute][31]
+    -   [$getAttributes][32]
+    -   [$setAttribute][33]
+-   [Data manipulators][34]
+    -   [$getData][35]
+-   [Text manipulators][36]
+    -   [$getText][37]
+    -   [$setText][38]
+-   [Value manipulators][39]
+    -   [$getValue][40]
+    -   [$setValue][41]
+-   [Style manipulators][42]
+    -   [$getStyle][43]
+    -   [$setStyle][44]
+    -   [$removeStyle][45]
+-   [Sizes values][46]
+    -   [$getHeight][47]
+    -   [$getWidth][48]
+    -   [$getOffset][49]
+-   [Constants][50]
+    -   [Use][51]
+    -   [Common values][52]
+    -   [Elements][53]
+    -   [CSS properties][54]
+-   [Todo][55]
 
 ## Introduction
 
 The first goal of isi is to maximise minification of vanilla dom manipulation, and also ease of use.
 Isi should replace method, chained methods and values for optimisation of minification.
 Isi should stay simple and light. For lightweight, no errors should be throw by isi, nor validation for input types.
+
+Example code with vanilla Javascript :
+
+```javascript
+let classes = [
+    'myNewClass',
+    'anotherClass',
+    'andAgain'
+    ]
+elements.document.getElementById('myId').classList.add(...classes)
+
+// Will be minified like this :
+
+elements.document.getElementById('myId').classList.add(...['myNewClass','anotherClass','andAgain')
+// That make 98 characters.
+```
+
+The same example with Isi :
+
+```javascript
+let classes = [
+    'myNewClass',
+    'anotherClass',
+    'andAgain'
+    ]
+$addClass(classes, $byID('myID'))
+
+// Will be minified like this :
+
+a(['myNewClass','anotherClass','andAgain'],b('myID'))
+// That make 53 characters.
+```
+
+But be care : the two functions (and there subfunction) $addClass and $byId together use something like 500 characters (minified), so the example above would make about 550 characters. To be interesting in term of minification, theses function should be written at least 5 or 6 times. For minification of small piece of code, Isi can not make sense, but with larger application, it can. By the way, Isi stay simpler and shorter to write.
 
 
 ## Conventions
@@ -157,6 +115,903 @@ Functions are camel case named with _$_ in front. eg. : _$isArray_
 The arguments in function are in this order : _value, property, element_.
 
 
+## Tools
+
+
+
+
+### $isUndefined
+
+Replacement for : typeof variable === 'undefined'
+
+#### Parameters
+
+-   `variable` **any** 
+
+#### Examples
+
+```javascript
+// instead of this :
+typeof variable === 'undefined'
+
+// Use this :
+if($isUndefined(variable)) { make something }
+```
+
+Returns **[boolean][56]** 
+
+### $isExisting
+
+Return true if selector matches an element in the document or in
+the specified parent element.
+
+Return false if selector matches no element in the document or in
+the specified parent element.
+
+#### Parameters
+
+-   `query` **[string][57]** 
+-   `element` **[HTMLElement][58]**  (optional, default `document`)
+
+#### Examples
+
+```javascript
+if($isExisting(query)) { make something }
+```
+
+Returns **[boolean][56]** 
+
+### $isArray
+
+Check if input is an array or not and return true or false.
+
+#### Parameters
+
+-   `input` **any** 
+
+#### Examples
+
+```javascript
+if($isArray(input)) { make something }
+```
+
+Returns **[boolean][56]** 
+
+### $isCollection
+
+Check if input is an HTMLcollection and return true or false.
+
+#### Parameters
+
+-   `input` **any** 
+
+#### Examples
+
+```javascript
+if($isCollection(input)) { make something }
+```
+
+Returns **[boolean][56]** 
+
+### $isNodeList
+
+Check if input is a nodelist and return true or false.
+
+#### Parameters
+
+-   `input` **any** 
+
+#### Examples
+
+```javascript
+if($isNodeList(input)) { make something }
+```
+
+Returns **[boolean][56]** 
+
+### $isHtmlElement
+
+Check if input is an HTMLelement and return true or false.
+
+#### Parameters
+
+-   `input` **any** 
+
+#### Examples
+
+```javascript
+if($isHtmlElement(input)) { make something }
+```
+
+Returns **[boolean][56]** 
+
+### $selectorToArray
+
+Return an array of strings without '.' and '#' at start of strings.
+
+The spaces at the start and end of the string will be removed.
+
+A sole string will return an array with the string as the only item in the array.
+
+#### Parameters
+
+-   `input` **([string][57] \| [Array][59]&lt;[string][57]>)** 
+
+#### Examples
+
+```javascript
+let a = $selectorToArray(input)
+```
+
+Returns **[Array][59]&lt;[string][57]>** 
+
+### $selectorArrayToString
+
+Return a string concatened from an array of string.
+
+Each string from the array will be transformed in a class name
+if 'dot' is set to true. e.g. : 'myClass' become '.myClass',
+'.myClass' stay '.myClass'.
+
+If 'dot' is set to false, any dot in class name will be removed.
+e.g. : '.myClass' become 'myClass'.
+
+Spaces from start and end of strings will be removed.
+
+#### Parameters
+
+-   `input` **([string][57] \| [Array][59]&lt;[string][57]>)** A string value will output the same string with or without '.' at start
+    according to the argument 'dot' received. An array of string will return
+    a concatened string with or without '.' at start according
+    to the argument 'dot' received.
+-   `dot` **[boolean][56]** true will set separator as '.' and false will set separator as a space. (optional, default `true`)
+
+#### Examples
+
+```javascript
+let a = $selectorArrayToString(input, false)
+```
+
+Returns **[string][57]** 
+
+### $forEach
+
+Replacement based on for loop for the forEach native Javascript function.
+Note that $forEach return nothing.
+
+#### Parameters
+
+-   `functionToExecute` **[function][60]** This is the function that will be executed in the forEach loop.
+-   `element` **any** This is the array, the nodelist, the HTMLCollection or the HTMLElement that
+    will be processed by the for loop.
+    If this is not an array, an HTMLCollection or a nodelist,
+    the function will be executed once on the argument. Note : a string is
+    an array of letters.
+
+#### Examples
+
+```javascript
+$forEach(functionToExecute}, element)
+
+// Or :
+
+$forEach(itemsInElement => {
+    itemsInElement.doSomething
+}, element)
+
+// Note that outside of the DOM elements, the $forEach function does not act
+// on the element itself.
+// E.g. :
+
+let myArray = [1, 2, 3]
+$forEach(item => {
+    items = item * 2
+}, myArray)
+
+// Will not transform myArray in [2, 4, 6]. myArray will stay [1, 2, 3].
+// To do that, this code will do the job :
+
+let myArray = [1, 2, 3]
+let outputArray = []
+$forEach(item => {
+    outputArray.push(item * 2)
+}, myArray)
+console.log(outputArray) // this should output [2, 4, 6].
+```
+
+### $filterCollection
+
+Filter an HTMLCollection and return an array with the fitered HTMLElements.
+Return null if nothing is matching the filter.
+
+#### Parameters
+
+-   `filter` **[string][57]** The filter like in querySelector :
+     [https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector][61]
+-   `element` **[HTMLElement][58]** 
+
+#### Examples
+
+```javascript
+let a = $filterCollection("div.myClass input[name='myName']", myElement)
+```
+
+Returns **([Array][59] | null)** An array of HTMLElement.
+
+### $cleanSelector
+
+Remove '.' and '#' from start of selectors names.
+
+'.myClass' become 'myClass' and '#myId' become 'myId'.
+
+The spaces at the start and end of the string will be removed.
+
+#### Parameters
+
+-   `selector` **[string][57]** 
+
+#### Examples
+
+```javascript
+let a = $cleanSelector(myElement)
+```
+
+Returns **[string][57]** 
+
+## Selectors
+
+
+
+
+### $byClass
+
+Select elements based on querySelectorAll([https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll][62]) wich return a static nodeList of
+elements containing specified class.
+
+The result is not live : Change in the DOM does not affect the nodeList content.
+[https://developer.mozilla.org/en-US/docs/Web/API/NodeList][63]
+
+The nodeList accept native JS forEach.
+
+#### Parameters
+
+-   `classList` **([string][57] \| [Array][59]&lt;[string][57]>)** The string and strings in array can start with a dot or not.
+    The string and strings in array can have spaces at start an end.
+-   `element` **[HTMLElement][58]**  (optional, default `document`)
+
+#### Examples
+
+```javascript
+let a = $byClass('classList', element)
+```
+
+Returns **[NodeList][64]** 
+
+### $byClassLive
+
+Select elements based on getElementsByClassName([https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName][65]) wich return
+an HTMLCollection of elements containing specified class.
+
+An HTMLCollection is live : a modification in the DOM is reflected
+in the HTMLCollection.
+
+An HTMLCollection don't accept forEach. Use other loops with it.
+
+#### Parameters
+
+-   `classList` **([string][57] \| [Array][59]&lt;[string][57]>)** The string and strings in array can start with a dot or not.
+    The string and strings in array can have spaces at start an end.
+-   `element` **[HTMLElement][58]**  (optional, default `document`)
+
+#### Examples
+
+```javascript
+let a = $byClassLive('classList', element)
+```
+
+Returns **HTMLCollection** 
+
+### $byId
+
+Return an HTMLElement based on getElementById.
+Return null if nothing is found.
+
+#### Parameters
+
+-   `id` **[string][57]** The string and strings in array can start with a # or not.
+    The string and strings in array can have spaces at start an end.
+
+#### Examples
+
+```javascript
+let a = $byId('id')
+```
+
+Returns **([HTMLElement][58] | null)** 
+
+### $select
+
+Select elements based on querySelectorAll :
+ [https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll][62]
+
+Wich return a nodeList of elements containing specified selectors.
+
+A nodeList is static and is not live. It's like a snapshot of the DOM.
+
+A nodeList accept native JS forEach.
+
+#### Parameters
+
+-   `query` **[string][57]** 
+-   `element` **[element][66]**  (optional, default `document`)
+
+#### Examples
+
+```javascript
+let query = "div.myClass, div.myOtherClass"
+let a = $select(query, element)
+```
+
+Returns **[NodeList][64]** 
+
+### $findParent
+
+Replace native JS property element.parentElement.
+([https://developer.mozilla.org/en-US/docs/Web/API/Node/parentElement][67])
+
+Return an HTMLElement wich is the parent of the specified HTMLElement.
+
+#### Parameters
+
+-   `element` **[HTMLElement][58]** 
+
+#### Examples
+
+```javascript
+let a = $findParent(element)
+```
+
+Returns **[HTMLElement][58]** 
+
+### $findSiblings
+
+Return an array containing siblings HTMLElement from a specified HTMLElement.
+
+Return null if there is no siblings.
+
+#### Parameters
+
+-   `element` **[HTMLElement][58]** 
+
+#### Examples
+
+```javascript
+let a = $findSiblings(element)
+```
+
+Returns **([Array][59] | null)** 
+
+### $findPreviousSiblings
+
+Return an array containing all previous HTMLElements siblings from
+a specified HTMLElement.
+
+The closest sibling is the first of the array, then the second closest,
+and so on.
+
+Return null if there is no previous siblings found.
+
+#### Parameters
+
+-   `element` **[HTMLElement][58]** 
+
+#### Examples
+
+```javascript
+let a = $findPreviousSiblings(element)
+```
+
+Returns **([Array][59] | null)** 
+
+### $findNextSiblings
+
+Return an array containing all next HTMLElements siblings from
+a specified HTMLElement.
+
+Return null if there is no next siblings found.
+
+#### Parameters
+
+-   `element` **[HTMLElement][58]** 
+
+#### Examples
+
+```javascript
+let a = $findNextSiblings(element)
+```
+
+## Class manipulators
+
+
+
+
+### $hasClass
+
+Return true if a class is present in the specified HTMLElement.
+Return true if not.
+
+Can test only one class at a time.
+
+#### Parameters
+
+-   `className` **[string][57]** The string can start with a dot or not with no influence on the output.
+    The string can have spaces at start an end with no influence on the output.
+-   `element` **[HTMLElement][58]** 
+
+#### Examples
+
+```javascript
+if($hasClass('className', element)) { make something }
+```
+
+Returns **[boolean][56]** 
+
+### $addClass
+
+Add a class or a list of classes to an HTMLElement
+or to all HTMLElements of a nodeList or an HTMLCollection.
+
+If in the application, classes are added only on HTMLELement a few
+number of times, the best for minification would be to use this
+instead of $addClass :
+
+    myElement[$classList].add(class)
+
+That's not apply if $forEach or other class and attributes manipulators are
+already used. In this case, the best is to use $addClass.
+
+#### Parameters
+
+-   `classList` **([string][57] \| [Array][59]&lt;[string][57]>)** 
+-   `element` **([HTMLElement][58] \| [nodeList][64] | HTMLCollection)** 
+
+#### Examples
+
+```javascript
+$addClass('myClass', element)
+$addClass(['myClass', 'myOtherClass'], element)
+```
+
+### $removeClass
+
+Remove class or a list of classes from an HTMLElement or
+from all HTMLElement of a nodeList or an HTMLCollection.
+
+If in the application, classes are removed only on HTMLELement a few
+number of times, the best for minification would be to use this
+instead of $removeClass :
+
+    myElement[$classList].remove(class)
+
+That's not apply if $forEach or other class and attributes manipulators are
+already used. In this case, the best is to use $removeClass.
+
+#### Parameters
+
+-   `classList` **([string][57] \| [Array][59]&lt;[string][57]>)** 
+-   `element` **([HTMLElement][58] \| [nodeList][64] | HTMLCollection)** 
+
+#### Examples
+
+```javascript
+$removeClass('myClass', element)
+$removeClass(['myClass', 'myOtherClass'], element)
+```
+
+### $toggleClass
+
+Toggle a class or a list of classes of an HTMLElement
+or of all HTMLElements of a nodeList or an HTMLCollection.
+
+If in application, classes are toggled only on HTMLELement a few
+number of times, the best for minification would be to use this
+instead of $toggleClass :
+
+    myElement[$classList].toggle(class)
+
+That's not apply if $forEach or other class and attributes manipulators are
+already used. In this case, the best is to use $toggleClass.
+
+#### Parameters
+
+-   `classList` **([string][57] \| [Array][59]&lt;[string][57]>)** 
+-   `element` **([HTMLElement][58] \| [nodeList][64] | HTMLCollection)** 
+
+#### Examples
+
+```javascript
+$toggleClass('myClass', element)
+$toggleClass(['myClass', 'myOtherClass'], element)
+```
+
+### $replaceClass
+
+Replace a class by another in an HTMLElement
+or in all HTMLElements of a nodeList or an HTMLCollection.
+
+Based on native element.classList.replace that is not well
+supported : [https://caniuse.com/#search=classlist%20replace][68].
+Until it's well supported, the best would be to use $toggleClass
+on the two classes.
+
+If in the application, classes are replaced only on HTMLELement a
+few number of times, the best for minification would be to use
+this instead of $replaceClass :
+
+    myElement[$classList].replace('oldClass', 'newClass')
+
+That's not apply if $forEach or other class and attributes manipulators are
+already used. In this case, the best is to use $replaceClass.
+
+#### Parameters
+
+-   `oldClass` **[string][57]** 
+-   `newClass` **[string][57]** 
+-   `element` **([HTMLElement][58] \| [nodeList][64] | HTMLCollection)** 
+
+#### Examples
+
+```javascript
+$replaceClass('oldClass', 'newClass', element)
+```
+
+## Attribute manipulators
+
+
+
+
+### $getAttribute
+
+Shortcut for getAttribute vannilla JS method.
+Return the specified attribute of the specified HTMLElement.
+
+#### Parameters
+
+-   `attribute` **[string][57]** 
+-   `element` **[HTMLElement][58]** 
+
+#### Examples
+
+```javascript
+let a = $getAttribute('attribute', element)
+```
+
+Returns **[string][57]** 
+
+### $getAttributes
+
+Return an object filled with all attributes and values of
+the specified HTMLElement.
+
+#### Parameters
+
+-   `element` **[HTMLElement][58]** 
+
+#### Examples
+
+```javascript
+let a = $getAttributes(element)
+
+// The returned object is like this :
+
+{
+    id: 'myId',
+    class: 'myClass',
+    type: 'range'
+}
+
+// The values can then be accessed like this :
+
+a.id
+a.class
+a.type
+
+// The data can be directly accessed like this :
+
+let a = $getAttributes(element).type
+
+// But in this case, the best would be to use the $getAttribute function
+// instead of $getAttributes.
+```
+
+Returns **[Object][69]** 
+
+### $setAttribute
+
+Change or add specified value to the specified attribute of HTMLElement
+or all HTMLElement of the specified array, HTMLCollection or nodeList.
+
+To be used like this :
+
+    $setAttributes(value, attribute, element)
+
+#### Parameters
+
+-   `value` **[string][57]** 
+-   `attribute` **[string][57]** 
+-   `element` **([HTMLElement][58] \| [Array][59]&lt;[HTMLElement][58]> | [nodeList][64] | HTMLCollection)** 
+
+#### Examples
+
+```javascript
+$setAttributes('Jhon Doe', 'name', element)
+```
+
+## Data manipulators
+
+
+
+
+### $getData
+
+Return the value of the specified data (E.g. : data-color) of the element.
+
+If the specified data is not present in the HTMLElement, null is returned.
+
+#### Parameters
+
+-   `data` **[string][57]** The data without data- at start (E.g. : color 'refer' to 'data-color')
+-   `element` **[HTMLElement][58]** 
+
+#### Examples
+
+```javascript
+let a = $getData(data, element)
+
+// Or
+
+let a = $getData('color', element)
+
+// Will return the data-color of the Element.
+```
+
+## Text manipulators
+
+
+
+
+### $getText
+
+Return the text value of the specified HTMLElement.
+
+#### Parameters
+
+-   `element` **[HTMLElement][58]** 
+
+#### Examples
+
+```javascript
+let a = $getText(element)
+```
+
+Returns **[string][57]** 
+
+### $setText
+
+Replace the specified HTMLElement's text by the new specified one.
+
+#### Parameters
+
+-   `text` **[string][57]** 
+-   `element` **[HTMLElement][58]** 
+
+#### Examples
+
+```javascript
+$setText('text', element)
+```
+
+## Value manipulators
+
+
+
+
+### $getValue
+
+Return the value of an input element.
+
+#### Parameters
+
+-   `input` **[HTMLElement][58]** 
+
+#### Examples
+
+```javascript
+let a = $getValue(input)
+```
+
+Returns **[string][57]** 
+
+### $setValue
+
+Set the specified value of the specified input.
+
+#### Parameters
+
+-   `value` **([string][57] \| [number][70] \| [boolean][56])** 
+-   `input` **[HTMLElement][58]** 
+
+#### Examples
+
+```javascript
+$setValue(value, input)
+```
+
+## Style manipulators
+
+
+
+
+### $getStyle
+
+Get the value of the specified style of the specified HTMLElement.
+
+The property must be in JS camel case like :
+'backgroundColor' for the 'background-color' CSS property.
+
+If Isi's constants are used, the $js prefixed ones must be used.
+E.g. : $jsBackgroundColor instead of $cssBackgroundColor.
+
+#### Parameters
+
+-   `property` **[string][57]** The style property : the css-property's constants can be used for maximum
+    minification when used several times. In this case,
+    the $js prefixed constants must be used.
+-   `element` **[HTMLElement][58]** 
+
+#### Examples
+
+```javascript
+let a = $getStyle(property, element)
+
+// E.g. :
+
+let a = $getStyle('backgroundColor', element)
+
+// or
+
+let a = $getStyle($jsBackgroundColor, element)
+
+// Will return the background-color of the element.
+```
+
+### $setStyle
+
+Add or replace specified style's value to the specified HTMLElement.
+
+The property must be in JS camel case like :
+'backgroundColor' for the 'background-color' CSS property.
+
+If Isi's constants are used, the $js prefixed ones must be used.
+E.g. : $jsBackgroundColor instead of $cssBackgroundColor.
+
+#### Parameters
+
+-   `value` **[string][57]** 
+-   `property` **[string][57]** The style property : the css-property's constants can be used
+    for maximum minification when used several times.
+    In this case, the $js prefixed constants must be used.
+-   `element` **[HTMLElement][58]** 
+
+#### Examples
+
+```javascript
+$setStyle(value, property, element)
+
+// E.g. :
+
+$setStyle('red', 'backgroundColor', element)
+
+// or
+
+$setStyle('red', $jsBackgroundColor, element)
+
+
+// Will set the background-color of the element.
+```
+
+### $removeStyle
+
+Remove the specified style of the specified HTMLElement.
+
+The property must be in CSS like, E.g. : 'background-color'.
+
+If Isi's constants are used, the $css prefixed ones must be used.
+E.g. : $cssBackgroundColor instead of $jsBackgroundColor.
+
+#### Parameters
+
+-   `property` **[string][57]** The style property : the css-property's constants can be used
+    for maximum minification when used several times.
+    In this case, unlike $setStyle and $getStyle,
+    $css prefixed constants must be used.
+-   `element` **[HTMLElement][58]** 
+
+#### Examples
+
+```javascript
+$removeStyle(property, element)
+
+// E.g. :
+
+$setStyle('background-color', element)
+
+// or
+
+$setStyle($cssBackgroundColor, element)
+
+// Will remove the background-color style of the element.
+```
+
+## Sizes values
+
+
+
+
+### $getHeight
+
+Return the Height in pixels of an HTMLElement.
+If no HTMLElement is specified, the height of the window is returned.
+
+#### Parameters
+
+-   `element` **[HTMLElement][58]**  (optional, default `null`)
+
+#### Examples
+
+```javascript
+let a = $getHeight(element)
+```
+
+Returns **[number][70]** 
+
+### $getWidth
+
+Return the Width in pixels of an HTMLElement.
+If no HTMLElement is specified, or the element value is null,
+the width of the window is returned.
+
+#### Parameters
+
+-   `element` **[HTMLElement][58]**  (optional, default `null`)
+
+#### Examples
+
+```javascript
+let a = $getWidth(element)
+```
+
+Returns **[number][70]** 
+
+### $getOffset
+
+Return an object containing the top and left position of a specified element
+relative to the top and left of the view.
+
+#### Parameters
+
+-   `element` **[HTMLElement][58]** 
+
+#### Examples
+
+```javascript
+let a = $getOffset(element)
+console.log(a.top)
+console.log(a.left)
+```
+
+Returns **[Object][69]** The returned object contain the keys top and left that can be accessed.
+
 ## Constants
 
 
@@ -169,51 +1024,67 @@ E.G. :
 
 with use of constant :
 
-    $setStyle('red', $jsBackgroundColor, firstElement)
+```javascript
+$setStyle('red', $jsBackgroundColor, firstElement)
+```
 
 Will be minified like this :
 
-    var b='backgroundColor'
-    a('red',b,c)
-    // 35 characters.
+```javascript
+var b='backgroundColor'
+a('red',b,c)
+// Total : 35 characters.
+```
 
 Without use of constant :
 
-    $setStyle('red', 'backgroundColor', firstElement)
+```javascript
+$setStyle('red', 'backgroundColor', firstElement)
+```
 
 Will be minified like this :
 
-    a('red','backgroundColor',c)
-    // 29 characters.
+```javascript
+a('red','backgroundColor',c)
+// Total : 28 characters.
+```
 
-for one occurence of $jsBackgroundColor, that make 35 characters with constant VS 29 characters without constant. That's not so interresting.
+for one occurence of $jsBackgroundColor, that make 35 characters with constant V.S. 29 characters without constant. That's not so interresting.
 
-But with two occurences...
+_But with two occurences..._
 
 with use of constant :
 
-    $setStyle('red', $jsBackgroundColor, firstElement)
-    $setStyle('green', $jsBackgroundColor, secondElement)
+```javascript
+$setStyle('red', $jsBackgroundColor, firstElement)
+$setStyle('green', $jsBackgroundColor, secondElement)
+```
 
 Will be minified like this :
 
-    var b='backgroundColor'
-    a('red',b,c)
-    a('red',b,d)
-    // 47 characters.
+```javascript
+var b='backgroundColor'
+a('red',b,c)
+a('red',b,d)
+// Total : 47 characters.
+```
 
  Without use of constant :
 
-    $setStyle('red', 'backgroundColor', firstElement)
-    $setStyle('green', 'backgroundColor', secondElement)
+```javascript
+$setStyle('red', 'backgroundColor', firstElement)
+$setStyle('green', 'backgroundColor', secondElement)
+```
 
 Will be minified like this :
 
-    a('red','backgroundColor',c)
-    a('red','backgroundColor',d)
-    // 56 characters.
+```javascript
+a('red','backgroundColor',c)
+a('red','backgroundColor',d)
+// Total : 56 characters.
+```
 
-For two occurences of $jsBackgroundColor, that make 47 characters with constant VS 56 characters without constant. That become interesting. And that will become and more interesting with more occurences. (59 characters VS 84 for three occurences, 71 VS 112 for four occurences, ...).
+For two occurences of $jsBackgroundColor, that make 47 characters with constant V.S. 56 characters without constant. That become interesting. And that will become more and more interesting with more occurences. (59 characters V.S. 84 for three occurences, 71 V.S. 112 for four occurences, ...).
 
 
 ### Common values
@@ -297,7 +1168,9 @@ $undefined = undefined
 These values are useable for maximum minification.
 Exemple : $window.content is the same as window.content but will be minified like this :
 
-    a.content
+```javascript
+a.content
+```
 
 #### List
 
@@ -316,29 +1189,41 @@ $classList = 'classList'
 
 #### Use
 
--   $css prefixed is for CSS properties used in CSS format :
+##### $css prefixed is for CSS properties used in CSS format :
 
-          element.removeProperty('background-color');
+```javascript
+element.removeProperty('background-color');
+```
 
-    The Isi way is :
+The Isi way is :
 
-          element.removeProperty($cssBackgroundColor);
+```javascript
+element.removeProperty($cssBackgroundColor);
+```
 
-    And will be minified like this :
+And will be minified like this :
 
-          element.removeProperty(a);
+```javascript
+element.removeProperty(a);
+```
 
--   $js prefixed is for CSS properties used in JS format :
+##### $js prefixed is for CSS properties used in JS format :
 
-          element.style.backgroundColor = 'red';
+```javascript
+element.style.backgroundColor = 'red';
+```
 
-    The Isi way is :
+The Isi way is :
 
-          element.style.[$jsBackgroundColor] = 'red';
+```javascript
+element.style.[$jsBackgroundColor] = 'red';
+```
 
-    And will be minified like this :
+And will be minified like this :
 
-          element.style.[a] = 'red';
+```javascript
+element.style.[a] = 'red';
+```
 
 #### List
 
@@ -1165,1196 +2050,148 @@ $cssZoom = 'zoom'
 $jsZoom = 'zoom'
 
 
-## Tools
-
-
-
-
-### $isUndefined
-
-Replacement for : typeof variable === 'undefined'
-
-#### Parameters
-
--   `variable` **any** 
-
-#### Examples
-
-```javascript
-// instead of this :
-typeof variable === 'undefined'
-
-// Use this :
-if($isUndefined(variable)) { make something }
-```
-
-Returns **[boolean][132]** 
-
-### $isExisting
-
-Return true if selector matches an element in the document or in
-the specified parent element.
-
-Return false if selector matches no element in the document or in
-the specified parent element.
-
-#### Parameters
-
--   `query` **[string][133]** 
--   `element` **[HTMLElement][134]**  (optional, default `document`)
-
-#### Examples
-
-```javascript
-if($isExisting(query)) { make something }
-```
-
-Returns **[boolean][132]** 
-
-### $isArray
-
-Check if input is an array or not and return true or false.
-
-#### Parameters
-
--   `input` **any** 
-
-#### Examples
-
-```javascript
-if($isArray(input)) { make something }
-```
-
-Returns **[boolean][132]** 
-
-### $isCollection
-
-Check if input is an HTMLcollection and return true or false.
-
-#### Parameters
-
--   `input` **any** 
-
-#### Examples
-
-```javascript
-if($isCollection(input)) { make something }
-```
-
-Returns **[boolean][132]** 
-
-### $isNodeList
-
-Check if input is a nodelist and return true or false.
-
-#### Parameters
-
--   `input` **any** 
-
-#### Examples
-
-```javascript
-if($isNodeList(input)) { make something }
-```
-
-Returns **[boolean][132]** 
-
-### $isHtmlElement
-
-Check if input is an HTMLelement and return true or false.
-
-#### Parameters
-
--   `input` **any** 
-
-#### Examples
-
-```javascript
-if($isHtmlElement(input)) { make something }
-```
-
-Returns **[boolean][132]** 
-
-### $selectorToArray
-
-Return an array of strings without '.' and '#' at start of strings.
-
-The spaces at the start and end of the string will be removed.
-
-A sole string will return an array with the string as the only item in the array.
-
-#### Parameters
-
--   `input` **([string][133] \| [Array][135]&lt;[string][133]>)** 
-
-#### Examples
-
-```javascript
-let a = $selectorToArray(input)
-```
-
-Returns **[Array][135]&lt;[string][133]>** 
-
-### $selectorArrayToString
-
-Return a string concatened from an array of string.
-
-Each string from the array will be transformed in a class name
-if 'dot' is set to true. e.g. : 'myClass' become '.myClass',
-'.myClass' stay '.myClass'.
-
-If 'dot' is set to false, any dot in class name will be removed.
-e.g. : '.myClass' become 'myClass'.
-
-Spaces from start and end of strings will be removed.
-
-#### Parameters
-
--   `input` **([string][133] \| [Array][135]&lt;[string][133]>)** A string value will output the same string with or without '.' at start
-    according to the argument 'dot' received. An array of string will return
-    a concatened string with or without '.' at start according
-    to the argument 'dot' received.
--   `dot` **[boolean][132]** true will set separator as '.' and false will set separator as a space. (optional, default `true`)
-
-#### Examples
-
-```javascript
-let a = $selectorArrayToString(input, false)
-```
-
-Returns **[string][133]** 
-
-### $forEach
-
-Replacement based on for loop for the forEach native Javascript function.
-Note that $forEach return nothing.
-
-#### Parameters
-
--   `functionToExecute` **[function][136]** This is the function that will be executed in the forEach loop.
--   `element` **any** This is the array, the nodelist, the HTMLCollection or the HTMLElement that
-    will be processed by the for loop.
-    If this is not an array, an HTMLCollection or a nodelist,
-    the function will be executed once on the argument. Note : a string is
-    an array of letters.
-
-#### Examples
-
-```javascript
-$forEach(functionToExecute}, element)
-
-// Or :
-
-$forEach(itemsInElement => {
-    itemsInElement.doSomething
-}, element)
-
-// Note that outside of the DOM elements, the $forEach function does not act
-// on the element itself.
-// E.g. :
-
-let myArray = [1, 2, 3]
-$forEach(item => {
-    items = item * 2
-}, myArray)
-
-// Will not transform myArray in [2, 4, 6]. myArray will stay [1, 2, 3].
-// To do that, this code will do the job :
-
-let myArray = [1, 2, 3]
-let outputArray = []
-$forEach(item => {
-    outputArray.push(item * 2)
-}, myArray)
-console.log(outputArray) // this should output [2, 4, 6].
-```
-
-### $filterCollection
-
-Filter an HTMLCollection and return an array with the fitered HTMLElements.
-Return null if nothing is matching the filter.
-
-#### Parameters
-
--   `filter` **[string][133]** The filter like in querySelector :
-     [https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector][137]
--   `element` **[HTMLElement][134]** 
-
-#### Examples
-
-```javascript
-let a = $filterCollection("div.myClass input[name='myName']", myElement)
-```
-
-Returns **([array][135] | null)** An array of HTMLElement.
-
-### $cleanSelector
-
-Remove '.' and '#' from start of selectors names.
-
-'.myClass' become 'myClass' and '#myId' become 'myId'.
-
-The spaces at the start and end of the string will be removed.
-
-#### Parameters
-
--   `selector` **[string][133]** 
-
-#### Examples
-
-```javascript
-let a = $cleanSelector(myElement)
-```
-
-Returns **[string][133]** 
-
-## Selectors
-
-
-
-
-### $byClass
-
-Select elements based on querySelectorAll([https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll][138]) wich return a static nodeList of
-elements containing specified class.
-
-The result is not live : Change in the DOM does not affect the nodeList content.
-[https://developer.mozilla.org/en-US/docs/Web/API/NodeList][139]
-
-The nodeList accept native JS forEach.
-
-#### Parameters
-
--   `classList` **([string][133] \| [Array][135]&lt;[string][133]>)** The string and strings in array can start with a dot or not.
-    The string and strings in array can have spaces at start an end.
--   `element` **[HTMLElement][134]**  (optional, default `document`)
-
-#### Examples
-
-```javascript
-let a = $byClass('classList', element)
-```
-
-Returns **[NodeList][140]** 
-
-### $byClassLive
-
-Select elements based on getElementsByClassName([https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName][141]) wich return
-an HTMLCollection of elements containing specified class.
-
-An HTMLCollection is live : a modification in the DOM is reflected
-in the HTMLCollection.
-
-An HTMLCollection don't accept forEach. Use other loops with it.
-
-#### Parameters
-
--   `classList` **([string][133] \| [Array][135]&lt;[string][133]>)** The string and strings in array can start with a dot or not.
-    The string and strings in array can have spaces at start an end.
--   `element` **[HTMLElement][134]**  (optional, default `document`)
-
-#### Examples
-
-```javascript
-let a = $byClassLive('classList', element)
-```
-
-Returns **HTMLCollection** 
-
-### $byId
-
-Return an HTMLElement based on getElementById.
-Return null if nothing is found.
-
-#### Parameters
-
--   `id` **[string][133]** The string and strings in array can start with a # or not.
-    The string and strings in array can have spaces at start an end.
-
-#### Examples
-
-```javascript
-let a = $byId('id')
-```
-
-Returns **([HTMLElement][134] | null)** 
-
-### $select
-
-Select elements based on querySelectorAll :
- [https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll][138]
-
-Wich return a nodeList of elements containing specified selectors.
-
-A nodeList is static and is not live. It's like a snapshot of the DOM.
-
-A nodeList accept native JS forEach.
-
-#### Parameters
-
--   `query` **[string][133]** 
--   `element` **[element][142]**  (optional, default `document`)
-
-#### Examples
-
-```javascript
-let query = "div.myClass, div.myOtherClass"
-let a = $select(query, element)
-```
-
-Returns **[NodeList][140]** 
-
-### $findParent
-
-Replace native JS property element.parentElement.
-([https://developer.mozilla.org/en-US/docs/Web/API/Node/parentElement][143])
-
-Return an HTMLElement wich is the parent of the specified HTMLElement.
-
-#### Parameters
-
--   `element` **[HTMLElement][134]** 
-
-#### Examples
-
-```javascript
-let a = $findParent(element)
-```
-
-Returns **[HTMLElement][134]** 
-
-### $findSiblings
-
-Return an array containing siblings HTMLElement from a specified HTMLElement.
-
-Return null if there is no siblings.
-
-#### Parameters
-
--   `element` **[HTMLElement][134]** 
-
-#### Examples
-
-```javascript
-let a = $findSiblings(element)
-```
-
-Returns **([array][135] | null)** 
-
-### $findPreviousSiblings
-
-Return an array containing all previous HTMLElements siblings from
-a specified HTMLElement.
-
-The closest sibling is the first of the array, then the second closest,
-and so on.
-
-Return null if there is no previous siblings found.
-
-#### Parameters
-
--   `element` **[HTMLElement][134]** 
-
-#### Examples
-
-```javascript
-let a = $findPreviousSiblings(element)
-```
-
-Returns **([array][135] | null)** 
-
-### $findNextSiblings
-
-Return an array containing all next HTMLElements siblings from
-a specified HTMLElement.
-
-Return null if there is no next siblings found.
-
-#### Parameters
-
--   `element` **[HTMLElement][134]** 
-
-#### Examples
-
-```javascript
-let a = $findNextSiblings(element)
-```
-
-## Class manipulators
-
-
-
-
-### $hasClass
-
-Return true if a class is present in the specified HTMLElement.
-Return true if not.
-
-Can test only one class at a time.
-
-#### Parameters
-
--   `className` **[string][133]** The string can start with a dot or not with no influence on the output.
-    The string can have spaces at start an end with no influence on the output.
--   `element` **[HTMLElement][134]** 
-
-#### Examples
-
-```javascript
-if($hasClass('className', element)) { make something }
-```
-
-Returns **[boolean][132]** 
-
-### $addClass
-
-Add a class or a list of classes to an HTMLElement
-or to all HTMLElements of a nodeList or an HTMLCollection.
-
-If in the application, classes are added only on HTMLELement a few
-number of times, the best for minification would be to use this
-instead of $addClass :
-
-    myElement[$classList].add(class)
-
-That's not apply if $forEach or other class and attributes manipulators are
-already used. In this case, the best is to use $addClass.
-
-#### Parameters
-
--   `classList` **([string][133] \| [Array][135]&lt;[string][133]>)** 
--   `element` **([HTMLElement][134] \| [nodeList][140] | HTMLCollection)** 
-
-#### Examples
-
-```javascript
-$addClass('myClass', element)
-$addClass(['myClass', 'myOtherClass'], element)
-```
-
-### $removeClass
-
-Remove class or a list of classes from an HTMLElement or
-from all HTMLElement of a nodeList or an HTMLCollection.
-
-If in the application, classes are removed only on HTMLELement a few
-number of times, the best for minification would be to use this
-instead of $removeClass :
-
-    myElement[$classList].remove(class)
-
-That's not apply if $forEach or other class and attributes manipulators are
-already used. In this case, the best is to use $removeClass.
-
-#### Parameters
-
--   `classList` **([string][133] \| [Array][135]&lt;[string][133]>)** 
--   `element` **([HTMLElement][134] \| [nodeList][140] | HTMLCollection)** 
-
-#### Examples
-
-```javascript
-$removeClass('myClass', element)
-$removeClass(['myClass', 'myOtherClass'], element)
-```
-
-### $toggleClass
-
-Toggle a class or a list of classes of an HTMLElement
-or of all HTMLElements of a nodeList or an HTMLCollection.
-
-If in application, classes are toggled only on HTMLELement a few
-number of times, the best for minification would be to use this
-instead of $toggleClass :
-
-    myElement[$classList].toggle(class)
-
-That's not apply if $forEach or other class and attributes manipulators are
-already used. In this case, the best is to use $toggleClass.
-
-#### Parameters
-
--   `classList` **([string][133] \| [Array][135]&lt;[string][133]>)** 
--   `element` **([HTMLElement][134] \| [nodeList][140] | HTMLCollection)** 
-
-#### Examples
-
-```javascript
-$toggleClass('myClass', element)
-$toggleClass(['myClass', 'myOtherClass'], element)
-```
-
-### $replaceClass
-
-Replace a class by another in an HTMLElement
-or in all HTMLElements of a nodeList or an HTMLCollection.
-
-Based on native element.classList.replace that is not well
-supported : [https://caniuse.com/#search=classlist%20replace][144].
-Until it's well supported, the best would be to use $toggleClass
-on the two classes.
-
-If in the application, classes are replaced only on HTMLELement a
-few number of times, the best for minification would be to use
-this instead of $replaceClass :
-
-    myElement[$classList].replace('oldClass', 'newClass')
-
-That's not apply if $forEach or other class and attributes manipulators are
-already used. In this case, the best is to use $replaceClass.
-
-#### Parameters
-
--   `oldClass` **[string][133]** 
--   `newClass` **[string][133]** 
--   `element` **([HTMLElement][134] \| [nodeList][140] | HTMLCollection)** 
-
-#### Examples
-
-```javascript
-$replaceClass('oldClass', 'newClass', element)
-```
-
-## Attribute manipulators
-
-
-
-
-### $getAttribute
-
-Shortcut for getAttribute vannilla JS method.
-Return the specified attribute of the specified HTMLElement.
-
-#### Parameters
-
--   `attribute` **[string][133]** 
--   `element` **[HTMLElement][134]** 
-
-#### Examples
-
-```javascript
-let a = $getAttribute('attribute', element)
-```
-
-Returns **[string][133]** 
-
-### $getAttributes
-
-Return an object filled with all attributes and values of
-the specified HTMLElement.
-
-#### Parameters
-
--   `element` **[HTMLElement][134]** 
-
-#### Examples
-
-```javascript
-let a = $getAttributes(element)
-
-// The returned object is like this :
-
-{
-    id: 'myId',
-    class: 'myClass',
-    type: 'range'
-}
-
-// The values can then be accessed like this :
-
-a.id
-a.class
-a.type
-
-// The data can be directly accessed like this :
-
-let a = $getAttributes(element).type
-
-// But in this case, the best would be to use the $getAttribute function
-// instead of $getAttributes.
-```
-
-Returns **[Object][145]** 
-
-### $setAttribute
-
-Change or add specified value to the specified attribute of HTMLElement
-or all HTMLElement of the specified array, HTMLCollection or nodeList.
-
-To be used like this :
-
-    $setAttributes(value, attribute, element)
-
-#### Parameters
-
--   `value` **[string][133]** 
--   `attribute` **[string][133]** 
--   `element` **([HTMLElement][134] \| [Array][135]&lt;[HTMLElement][134]> | [nodeList][140] | HTMLCollection)** 
-
-#### Examples
-
-```javascript
-$setAttributes('Jhon Doe', 'name', element)
-```
-
-## Data manipulators
-
-
-
-
-### $getData
-
-Return the value of the specified data (E.g. : data-color) of the element.
-
-If the specified data is not present in the HTMLElement, null is returned.
-
-#### Parameters
-
--   `data` **[string][133]** The data without data- at start (E.g. : color 'refer' to 'data-color')
--   `element` **[HTMLElement][134]** 
-
-#### Examples
-
-```javascript
-let a = $getData(data, element)
-
-// Or
-
-let a = $getData('color', element)
-
-// Will return the data-color of the Element.
-```
-
-## Text manipulators
-
-
-
-
-### $getText
-
-Return the text value of the specified HTMLElement.
-
-#### Parameters
-
--   `element` **[HTMLElement][134]** 
-
-#### Examples
-
-```javascript
-let a = $getText(element)
-```
-
-Returns **[string][133]** 
-
-### $setText
-
-Replace the specified HTMLElement's text by the new specified one.
-
-#### Parameters
-
--   `text` **[string][133]** 
--   `element` **[HTMLElement][134]** 
-
-#### Examples
-
-```javascript
-$setText('text', element)
-```
-
-## Value manipulators
-
-
-
-
-### $getValue
-
-Return the value of an input element.
-
-#### Parameters
-
--   `input` **[HTMLElement][134]** 
-
-#### Examples
-
-```javascript
-let a = $getValue(input)
-```
-
-Returns **[string][133]** 
-
-### $setValue
-
-Set the specified value of the specified input.
-
-#### Parameters
-
--   `value` **([string][133] \| [number][146] \| [boolean][132])** 
--   `input` **[HTMLElement][134]** 
-
-#### Examples
-
-```javascript
-$setValue(value, input)
-```
-
-## Style manipulators
-
-
-
-
-### $getStyle
-
-Get the value of the specified style of the specified HTMLElement.
-
-The property must be in JS camel case like :
-'backgroundColor' for the 'background-color' CSS property.
-
-If Isi's constants are used, the $js prefixed ones must be used.
-E.g. : $jsBackgroundColor instead of $cssBackgroundColor.
-
-#### Parameters
-
--   `property` **[string][133]** The style property : the css-property's constants can be used for maximum
-    minification when used several times. In this case,
-    the $js prefixed constants must be used.
--   `element` **[HTMLElement][134]** 
-
-#### Examples
-
-```javascript
-let a = $getStyle(property, element)
-
-// E.g. :
-
-let a = $getStyle('backgroundColor', element)
-
-// or
-
-let a = $getStyle($jsBackgroundColor, element)
-
-// Will return the background-color of the element.
-```
-
-### $setStyle
-
-Add or replace specified style's value to the specified HTMLElement.
-
-The property must be in JS camel case like :
-'backgroundColor' for the 'background-color' CSS property.
-
-If Isi's constants are used, the $js prefixed ones must be used.
-E.g. : $jsBackgroundColor instead of $cssBackgroundColor.
-
-#### Parameters
-
--   `value` **[string][133]** 
--   `property` **[string][133]** The style property : the css-property's constants can be used
-    for maximum minification when used several times.
-    In this case, the $js prefixed constants must be used.
--   `element` **[HTMLElement][134]** 
-
-#### Examples
-
-```javascript
-$setStyle(value, property, element)
-
-// E.g. :
-
-$setStyle('red', 'backgroundColor', element)
-
-// or
-
-$setStyle('red', $jsBackgroundColor, element)
-
-
-// Will set the background-color of the element.
-```
-
-### $removeStyle
-
-Remove the specified style of the specified HTMLElement.
-
-The property must be in CSS like, E.g. : 'background-color'.
-
-If Isi's constants are used, the $css prefixed ones must be used.
-E.g. : $cssBackgroundColor instead of $jsBackgroundColor.
-
-#### Parameters
-
--   `property` **[string][133]** The style property : the css-property's constants can be used
-    for maximum minification when used several times.
-    In this case, unlike $setStyle and $getStyle,
-    $css prefixed constants must be used.
--   `element` **[HTMLElement][134]** 
-
-#### Examples
-
-```javascript
-$removeStyle(property, element)
-
-// E.g. :
-
-$setStyle('background-color', element)
-
-// or
-
-$setStyle($cssBackgroundColor, element)
-
-// Will remove the background-color style of the element.
-```
-
-## Sizes values
-
-
-
-
-### $getHeight
-
-Return the Height in pixels of an HTMLElement.
-If no HTMLElement is specified, the height of the window is returned.
-
-#### Parameters
-
--   `element` **[HTMLElement][134]**  (optional, default `null`)
-
-#### Examples
-
-```javascript
-let a = $getHeight(element)
-```
-
-Returns **[number][146]** 
-
-### $getWidth
-
-Return the Width in pixels of an HTMLElement.
-If no HTMLElement is specified, or the element value is null,
-the width of the window is returned.
-
-#### Parameters
-
--   `element` **[HTMLElement][134]**  (optional, default `null`)
-
-#### Examples
-
-```javascript
-let a = $getWidth(element)
-```
-
-Returns **[number][146]** 
-
-### $getOffset
-
-Return an object containing the top and left position of a specified element
-relative to the top and left of the view.
-
-#### Parameters
-
--   `element` **[HTMLElement][134]** 
-
-#### Examples
-
-```javascript
-let a = $getOffset(element)
-console.log(a.top)
-console.log(a.left)
-```
-
-Returns **[object][145]** The returned object contain the keys top and left that can be accessed.
-
 ## Todo
 
-\-
+-   Add some shortcut function like $addClassToId for _$addClass(classes, $byID('myID'))_
+-   ... and some other function, like $addClassToClass, $addTextToId, $getVlaueFromId,...
 
 
 [1]: #introduction
 
 [2]: #conventions
 
-[3]: #constants
+[3]: #tools
 
-[4]: #use
+[4]: #isundefined
 
-[5]: #common-values
+[5]: #isexisting
 
-[6]: #elements
+[6]: #isarray
 
-[7]: #css-properties
+[7]: #iscollection
 
-[8]: #tools
+[8]: #isnodelist
 
-[9]: #isundefined
+[9]: #ishtmlelement
 
-[10]: #parameters
+[10]: #selectortoarray
 
-[11]: #examples
+[11]: #selectorarraytostring
 
-[12]: #isexisting
+[12]: #foreach
 
-[13]: #parameters-1
+[13]: #filtercollection
 
-[14]: #examples-1
+[14]: #cleanselector
 
-[15]: #isarray
+[15]: #selectors
 
-[16]: #parameters-2
+[16]: #byclass
 
-[17]: #examples-2
+[17]: #byclasslive
 
-[18]: #iscollection
+[18]: #byid
 
-[19]: #parameters-3
+[19]: #select
 
-[20]: #examples-3
+[20]: #findparent
 
-[21]: #isnodelist
+[21]: #findsiblings
 
-[22]: #parameters-4
+[22]: #findprevioussiblings
 
-[23]: #examples-4
+[23]: #findnextsiblings
 
-[24]: #ishtmlelement
+[24]: #class-manipulators
 
-[25]: #parameters-5
+[25]: #hasclass
 
-[26]: #examples-5
+[26]: #addclass
 
-[27]: #selectortoarray
+[27]: #removeclass
 
-[28]: #parameters-6
+[28]: #toggleclass
 
-[29]: #examples-6
+[29]: #replaceclass
 
-[30]: #selectorarraytostring
+[30]: #attribute-manipulators
 
-[31]: #parameters-7
+[31]: #getattribute
 
-[32]: #examples-7
+[32]: #getattributes
 
-[33]: #foreach
+[33]: #setattribute
 
-[34]: #parameters-8
+[34]: #data-manipulators
 
-[35]: #examples-8
+[35]: #getdata
 
-[36]: #filtercollection
+[36]: #text-manipulators
 
-[37]: #parameters-9
+[37]: #gettext
 
-[38]: #examples-9
+[38]: #settext
 
-[39]: #cleanselector
+[39]: #value-manipulators
 
-[40]: #parameters-10
+[40]: #getvalue
 
-[41]: #examples-10
+[41]: #setvalue
 
-[42]: #selectors
+[42]: #style-manipulators
 
-[43]: #byclass
+[43]: #getstyle
 
-[44]: #parameters-11
+[44]: #setstyle
 
-[45]: #examples-11
+[45]: #removestyle
 
-[46]: #byclasslive
+[46]: #sizes-values
 
-[47]: #parameters-12
+[47]: #getheight
 
-[48]: #examples-12
+[48]: #getwidth
 
-[49]: #byid
+[49]: #getoffset
 
-[50]: #parameters-13
+[50]: #constants
 
-[51]: #examples-13
+[51]: #use
 
-[52]: #select
+[52]: #common-values
 
-[53]: #parameters-14
+[53]: #elements
 
-[54]: #examples-14
+[54]: #css-properties
 
-[55]: #findparent
+[55]: #todo
 
-[56]: #parameters-15
+[56]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
 
-[57]: #examples-15
+[57]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
 
-[58]: #findsiblings
+[58]: https://developer.mozilla.org/docs/Web/HTML/Element
 
-[59]: #parameters-16
+[59]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
 
-[60]: #examples-16
+[60]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function
 
-[61]: #findprevioussiblings
+[61]: https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector
 
-[62]: #parameters-17
+[62]: https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll
 
-[63]: #examples-17
+[63]: https://developer.mozilla.org/en-US/docs/Web/API/NodeList
 
-[64]: #findnextsiblings
+[64]: https://developer.mozilla.org/docs/Web/API/NodeList
 
-[65]: #parameters-18
+[65]: https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName
 
-[66]: #examples-18
+[66]: https://developer.mozilla.org/docs/Web/API/Element
 
-[67]: #class-manipulators
+[67]: https://developer.mozilla.org/en-US/docs/Web/API/Node/parentElement
 
-[68]: #hasclass
+[68]: https://caniuse.com/#search=classlist%20replace
 
-[69]: #parameters-19
+[69]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object
 
-[70]: #examples-19
-
-[71]: #addclass
-
-[72]: #parameters-20
-
-[73]: #examples-20
-
-[74]: #removeclass
-
-[75]: #parameters-21
-
-[76]: #examples-21
-
-[77]: #toggleclass
-
-[78]: #parameters-22
-
-[79]: #examples-22
-
-[80]: #replaceclass
-
-[81]: #parameters-23
-
-[82]: #examples-23
-
-[83]: #attribute-manipulators
-
-[84]: #getattribute
-
-[85]: #parameters-24
-
-[86]: #examples-24
-
-[87]: #getattributes
-
-[88]: #parameters-25
-
-[89]: #examples-25
-
-[90]: #setattribute
-
-[91]: #parameters-26
-
-[92]: #examples-26
-
-[93]: #data-manipulators
-
-[94]: #getdata
-
-[95]: #parameters-27
-
-[96]: #examples-27
-
-[97]: #text-manipulators
-
-[98]: #gettext
-
-[99]: #parameters-28
-
-[100]: #examples-28
-
-[101]: #settext
-
-[102]: #parameters-29
-
-[103]: #examples-29
-
-[104]: #value-manipulators
-
-[105]: #getvalue
-
-[106]: #parameters-30
-
-[107]: #examples-30
-
-[108]: #setvalue
-
-[109]: #parameters-31
-
-[110]: #examples-31
-
-[111]: #style-manipulators
-
-[112]: #getstyle
-
-[113]: #parameters-32
-
-[114]: #examples-32
-
-[115]: #setstyle
-
-[116]: #parameters-33
-
-[117]: #examples-33
-
-[118]: #removestyle
-
-[119]: #parameters-34
-
-[120]: #examples-34
-
-[121]: #sizes-values
-
-[122]: #getheight
-
-[123]: #parameters-35
-
-[124]: #examples-35
-
-[125]: #getwidth
-
-[126]: #parameters-36
-
-[127]: #examples-36
-
-[128]: #getoffset
-
-[129]: #parameters-37
-
-[130]: #examples-37
-
-[131]: #todo
-
-[132]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
-
-[133]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
-
-[134]: https://developer.mozilla.org/docs/Web/HTML/Element
-
-[135]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
-
-[136]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function
-
-[137]: https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector
-
-[138]: https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll
-
-[139]: https://developer.mozilla.org/en-US/docs/Web/API/NodeList
-
-[140]: https://developer.mozilla.org/docs/Web/API/NodeList
-
-[141]: https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName
-
-[142]: https://developer.mozilla.org/docs/Web/API/Element
-
-[143]: https://developer.mozilla.org/en-US/docs/Web/API/Node/parentElement
-
-[144]: https://caniuse.com/#search=classlist%20replace
-
-[145]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object
-
-[146]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number
+[70]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number

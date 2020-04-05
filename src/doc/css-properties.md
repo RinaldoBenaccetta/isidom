@@ -1,27 +1,40 @@
 #### Use
-* $css prefixed is for CSS properties used in CSS format :
+##### $css prefixed is for CSS properties used in CSS format :
 
-        element.removeProperty('background-color');
+```javascript
+element.removeProperty('background-color');
+```
 
-  The Isi way is :
-    
-        element.removeProperty($cssBackgroundColor);
+The Isi way is :
 
-  And will be minified like this :
+```javascript
+element.removeProperty($cssBackgroundColor);
+```
 
-        element.removeProperty(a);
+And will be minified like this :
 
-* $js prefixed is for CSS properties used in JS format :
+```javascript
+element.removeProperty(a);
+```
 
-        element.style.backgroundColor = 'red';
+##### $js prefixed is for CSS properties used in JS format :
 
-  The Isi way is :
 
-        element.style.[$jsBackgroundColor] = 'red';
+```javascript
+element.style.backgroundColor = 'red';
+```
 
-  And will be minified like this :
+The Isi way is :
 
-        element.style.[a] = 'red';
+```javascript
+element.style.[$jsBackgroundColor] = 'red';
+```
+
+And will be minified like this :
+
+```javascript
+element.style.[a] = 'red';
+```
 
 #### List
 

@@ -24,8 +24,6 @@ import { $cleanSelector } from '../../tools/clean-selector'
  * @example
  * $replaceClass('oldClass', 'newClass', element)
  *
- * @export
- *
  * @param {string} oldClass
  * @param {string} newClass
  * @param {(HTMLElement|nodeList|HTMLCollection)} element

@@ -9,8 +9,6 @@ import * as constant from '../constants/values'
  * // Use this :
  * if($isUndefined(variable)) { make something }
  *
- * @export
- *
  * @param {*} variable
  *
  * @returns {boolean}

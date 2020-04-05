@@ -20,8 +20,6 @@ import * as elements from '../../constants/elements'
  * $addClass('myClass', element)
  * $addClass(['myClass', 'myOtherClass'], element)
  *
- * @export
- *
  * @param {(string|string[])} classList
  * @param {(HTMLElement|nodeList|HTMLCollection)} element
  */

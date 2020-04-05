@@ -8,14 +8,12 @@ import * as values from '../constants/values'
  * @example
  * let a = $filterCollection("div.myClass input[name='myName']", myElement)
  *
- * @export
- *
  * @param {string} filter
  * The filter like in querySelector :
  *  https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector
  * @param {HTMLElement} element
  *
- * @returns {array|null}
+ * @returns {Array|null}
  * An array of HTMLElement.
  */
 export function $filterCollection (filter, element) {

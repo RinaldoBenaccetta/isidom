@@ -15,8 +15,6 @@ import * as elements from '../constants/elements'
  * @example
  * let a = $byClassLive('classList', element)
  *
- * @export
- *
  * @param {string|string[]} classList
  * The string and strings in array can start with a dot or not.
  * The string and strings in array can have spaces at start an end.

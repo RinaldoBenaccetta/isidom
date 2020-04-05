@@ -15,8 +15,6 @@ import * as elements from '../constants/elements'
  * let query = "div.myClass, div.myOtherClass"
  * let a = $select(query, element)
  *
- * @export
- *
  * @param {string} query
  * @param {element} [element=document]
  *

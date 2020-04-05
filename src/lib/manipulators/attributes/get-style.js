@@ -21,8 +21,6 @@
  *
  * // Will return the background-color of the element.
  *
- * @export
- *
  * @param {string} property
  * The style property : the css-property's constants can be used for maximum
  * minification when used several times. In this case,

@@ -11,8 +11,6 @@ import * as elements from '../../constants/elements'
  * @example
  * if($hasClass('className', element)) { make something }
  *
- * @export
- *
  * @param {string} className
  * The string can start with a dot or not with no influence on the output.
  * The string can have spaces at start an end with no influence on the output.

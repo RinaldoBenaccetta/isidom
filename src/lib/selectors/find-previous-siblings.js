@@ -13,11 +13,9 @@ import * as values from '../constants/values'
  * @example
  * let a = $findPreviousSiblings(element)
  *
- * @export
- *
  * @param {HTMLElement} element
  *
- * @returns {array|null}
+ * @returns {Array|null}
  */
 export function $findPreviousSiblings (element) {
   const SIBLINGS = []

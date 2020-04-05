@@ -5,8 +5,6 @@
  * @example
  * if($isNodeList(input)) { make something }
  * 
- * @export
- *
  * @param {*} input
  *
  * @returns {boolean}

@@ -27,8 +27,6 @@
  * // But in this case, the best would be to use the $getAttribute function
  * // instead of $getAttributes.
  *
- * @export
- *
  * @param {HTMLElement} element
  *
  * @returns {Object}

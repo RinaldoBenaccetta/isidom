@@ -35,8 +35,6 @@ import { $isCollection } from './is-collection'
  * }, myArray)
  * console.log(outputArray) // this should output [2, 4, 6].
  *
- * @export
- *
  * @param {function} functionToExecute
  * This is the function that will be executed in the forEach loop.
  *

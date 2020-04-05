@@ -9,8 +9,6 @@ import * as elements from '../constants/elements'
  * @example
  * let a = $byId('id')
  *
- * @export
- *
  * @param {string} id
  * The string and strings in array can start with a # or not.
  * The string and strings in array can have spaces at start an end.

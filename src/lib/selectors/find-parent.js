@@ -8,8 +8,6 @@
  * @example
  * let a = $findParent(element)
  *
- * @export
- *
  * @param {HTMLElement} element
  *
  * @returns {HTMLElement}

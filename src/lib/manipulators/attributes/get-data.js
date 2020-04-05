@@ -15,8 +15,6 @@ import { $getAttribute } from './get-attribute'
  *
  * // Will return the data-color of the Element.
  *
- * @export
- *
  * @param {string} data
  * The data without data- at start (E.g. : color 'refer' to 'data-color')
  * @param {HTMLElement} element

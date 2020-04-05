@@ -11,8 +11,6 @@ import * as properties from '../constants/css-properties'
  * @example
  * let a = $getWidth(element)
  *
- * @export
- *
  * @param {HTMLElement} [element=null]
  *
  * @returns {number}

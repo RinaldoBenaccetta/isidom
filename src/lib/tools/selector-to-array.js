@@ -12,8 +12,6 @@ import { $cleanSelector } from './clean-selector'
  * @example
  * let a = $selectorToArray(input)
  *
- * @export
- *
  * @param {string|string[]} input
  *
  * @returns  {string[]}

@@ -12,8 +12,6 @@ import { $forEach } from '../../tools/for-each'
  * @example
  * $setAttributes('Jhon Doe', 'name', element)
  *
- * @export
- *
  * @param {string} value
  * @param {string} attribute
  * @param {HTMLElement|HTMLElement[]|nodeList|HTMLCollection} element
