@@ -1,6 +1,4 @@
-/**
- * importation and use model.
- */
+
 
 // first import isi library
 import * as isi from '../dist/isi'
