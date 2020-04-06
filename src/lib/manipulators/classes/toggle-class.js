@@ -3,17 +3,15 @@ import { $selectorToArray } from '../../tools/selector-to-array'
 import * as elements from '../../constants/elements'
 /**
  * @description
- * Toggle a class or a list of classes of an HTMLElement
+ * Toggles a class or a list of classes of an HTMLElement
  * or of all HTMLElements of a nodeList or an HTMLCollection.
  * 
  * If in application, classes are toggled only on HTMLELement a few
- * number of times, the best for minification would be to use this
- * instead of $toggleClass :
+ * number of times, then the best for minification would be to not use $toggleClass, but instead use this :
  *
  *     myElement[$classList].toggle(class)
  *
- * That's not apply if $forEach or other class and attributes manipulators are
- * already used. In this case, the best is to use $toggleClass.
+ * That's doesn't apply if $forEach or other classes and attributes manipulators are already used. In this case, the best is to use $toggleClass.
  *
  * @example
  * $toggleClass('myClass', element)

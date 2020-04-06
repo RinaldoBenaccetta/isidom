@@ -1,6 +1,6 @@
 /**
  * @description
- * Get the value of the specified style of the specified HTMLElement.
+ * Gets the value of the specified style of the specified HTMLElement.
  *
  * The property must be in JS camel case like :
  * 'backgroundColor' for the 'background-color' CSS property.

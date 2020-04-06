@@ -1,6 +1,6 @@
 /**
  * @description
- * Check if input is an HTMLcollection and return true or false.
+ * Checks if input is an HTMLcollection and returns true or false.
  *
  * @example
  * if($isCollection(input)) { make something }

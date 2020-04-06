@@ -3,17 +3,17 @@ import * as elements from '../../constants/elements'
 
 /**
  * @description
- * Return true if a class is present in the specified HTMLElement.
- * Return true if not.
+ * Returns true if a class is present in the specified HTMLElement.
+ * Returns false if not.
  *
- * Can test only one class at a time.
+ * Can only test one class at a time.
  *
  * @example
  * if($hasClass('className', element)) { make something }
  *
  * @param {string} className
  * The string can start with a dot or not with no influence on the output.
- * The string can have spaces at start an end with no influence on the output.
+ * The string can have spaces at start and end with no influence on the output.
  * @param {HTMLElement} element
  *
  * @returns {boolean}

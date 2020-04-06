@@ -2,10 +2,10 @@ import * as values from '../constants/values'
 
 /**
  * @description
- * Return an array containing all next HTMLElements siblings from
+ * Returns an array containing all next HTMLElements siblings from
  * a specified HTMLElement.
  *
- * Return null if there is no next siblings found.
+ * Returns null if there are no next siblings found.
  *
  * @example
  * let a = $findNextSiblings(element)

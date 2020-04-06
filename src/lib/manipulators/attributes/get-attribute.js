@@ -1,7 +1,7 @@
 /**
  * @description
  * Shortcut for getAttribute vannilla JS method.
- * Return the specified attribute of the specified HTMLElement.
+ * Returns the specified attribute of the specified HTMLElement.
  *
  * @example
  * let a = $getAttribute('attribute', element)

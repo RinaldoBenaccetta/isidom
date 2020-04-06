@@ -4,8 +4,8 @@ import { $isCollection } from './is-collection'
 
 /**
  * @description
- * Replacement based on for loop for the forEach native Javascript function.
- * Note that $forEach return nothing.
+ * Replacement based on *for* loop for the *forEach* native Javascript function.
+ * Note that $forEach returns nothing.
  * 
  * @example
  * $forEach(functionToExecute}, element)

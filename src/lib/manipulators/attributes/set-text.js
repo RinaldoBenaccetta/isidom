@@ -1,6 +1,6 @@
 /**
  * @description
- * Replace the specified HTMLElement's text by the new specified one.
+ * Replaces the specified HTMLElement's text by the new specified one.
  *
  * @example
  * $setText('text', element)

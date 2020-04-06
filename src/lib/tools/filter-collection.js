@@ -2,8 +2,8 @@ import * as values from '../constants/values'
 
 /**
  * @description
- * Filter an HTMLCollection and return an array with the fitered HTMLElements.
- * Return null if nothing is matching the filter.
+ * Filters an HTMLCollection and returns an array with the fitered HTMLElements.
+ * Returns null if nothing matches the filter.
  * 
  * @example
  * let a = $filterCollection("div.myClass input[name='myName']", myElement)

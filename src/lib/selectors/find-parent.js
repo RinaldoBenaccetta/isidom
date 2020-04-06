@@ -1,9 +1,9 @@
 /**
  * @description
- * Replace native JS property element.parentElement.
+ * Replaces native JS property element.parentElement.
  * (https://developer.mozilla.org/en-US/docs/Web/API/Node/parentElement)
  *
- * Return an HTMLElement wich is the parent of the specified HTMLElement.
+ * Returns an HTMLElement wich is the parent of the specified HTMLElement.
  *
  * @example
  * let a = $findParent(element)

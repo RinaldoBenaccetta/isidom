@@ -3,13 +3,13 @@ import * as constant from '../constants/elements'
 
 /**
  * @description
- * Select elements based on querySelectorAll(https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll) wich return a static nodeList of
- * elements containing specified class.
+ * Selects elements based on querySelectorAll(https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll) wich returns a static nodeList of
+ * elements containing specified classes.
  *
- * The result is not live : Change in the DOM does not affect the nodeList content.
+ * The result is not live : Change in the DOM do not affect the nodeList content.
  * https://developer.mozilla.org/en-US/docs/Web/API/NodeList
  *
- * The nodeList accept native JS forEach.
+ * The nodeList accepts native JS forEach.
  *
  * @example
  * let a = $byClass('classList', element)

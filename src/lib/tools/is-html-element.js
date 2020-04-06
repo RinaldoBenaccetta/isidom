@@ -1,6 +1,6 @@
 /**
  * @description
- * Check if input is an HTMLelement and return true or false.
+ * Checks if input is an HTMLelement and returns true or false.
  *
  * @example
  * if($isHtmlElement(input)) { make something }

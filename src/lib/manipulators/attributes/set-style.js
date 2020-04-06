@@ -1,6 +1,6 @@
 /**
  * @description
- * Add or replace specified style's value to the specified HTMLElement.
+ * Adds or replaces specified style's value to the specified HTMLElement.
  *
  * The property must be in JS camel case like :
  * 'backgroundColor' for the 'background-color' CSS property.

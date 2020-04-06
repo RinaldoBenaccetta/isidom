@@ -1,6 +1,6 @@
 /**
  * @description
- * Check if input is a nodelist and return true or false.
+ * Checks if input is a nodelist and returns true or false.
  *
  * @example
  * if($isNodeList(input)) { make something }

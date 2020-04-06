@@ -2,13 +2,13 @@ import * as values from '../constants/values'
 
 /**
  * @description
- * Return an array containing all previous HTMLElements siblings from
+ * Returns an array containing all previous HTMLElements siblings from
  * a specified HTMLElement.
  *
  * The closest sibling is the first of the array, then the second closest,
  * and so on.
  *
- * Return null if there is no previous siblings found.
+ * Returns null if there are no previous siblings found.
  *
  * @example
  * let a = $findPreviousSiblings(element)

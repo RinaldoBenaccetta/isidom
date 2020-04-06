@@ -3,14 +3,14 @@ import { $selectorToArray } from './selector-to-array'
 
 /**
  * @description
- * Return a string concatened from an array of string.
+ * Returns a string concatened from an array of strings.
  *
  * Each string from the array will be transformed in a class name
- * if 'dot' is set to true. e.g. : 'myClass' become '.myClass',
- * '.myClass' stay '.myClass'.
+ * if 'dot' is set to true. e.g. : 'myClass' becomes '.myClass',
+ * '.myClass' stays '.myClass'.
  * 
  * If 'dot' is set to false, any dot in class name will be removed.
- * e.g. : '.myClass' become 'myClass'.
+ * e.g. : '.myClass' becomes 'myClass'.
  *
  * Spaces from start and end of strings will be removed.
  *
@@ -19,7 +19,7 @@ import { $selectorToArray } from './selector-to-array'
  *
  * @param {string|string[]} input
  * A string value will output the same string with or without '.' at start
- * according to the argument 'dot' received. An array of string will return
+ * according to the argument 'dot' received. An array of strings will return
  * a concatened string with or without '.' at start according
  * to the argument 'dot' received.
  * @param {boolean=} [dot=true]

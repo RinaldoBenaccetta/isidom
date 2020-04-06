@@ -2,9 +2,9 @@ import * as values from '../constants/values'
 
 /**
  * @description
- * Return an array containing siblings HTMLElement from a specified HTMLElement.
+ * Returns an array containing siblings HTMLElement from a specified HTMLElement.
  *
- * Return null if there is no siblings.
+ * Returns null if there are no siblings.
  *
  * @example
  * let a = $findSiblings(element)

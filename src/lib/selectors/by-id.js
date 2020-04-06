@@ -3,8 +3,8 @@ import * as elements from '../constants/elements'
 
 /**
  * @description
- * Return an HTMLElement based on getElementById.
- * Return null if nothing is found.
+ * Returns an HTMLElement based on getElementById.
+ * Returns null if nothing is found.
  *
  * @example
  * let a = $byId('id')

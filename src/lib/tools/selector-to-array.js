@@ -3,7 +3,7 @@ import { $cleanSelector } from './clean-selector'
 
 /**
  * @description
- * Return an array of strings without '.' and '#' at start of strings.
+ * Returns an array of strings without '.' and '#' at start of strings.
  *
  * The spaces at the start and end of the string will be removed.
  *

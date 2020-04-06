@@ -4,13 +4,13 @@ import * as elements from '../constants/elements'
 
 /**
  * @description
- * Select elements based on getElementsByClassName(https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName) wich return
+ * Selects elements based on getElementsByClassName(https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName) wich returns
  * an HTMLCollection of elements containing specified class.
  *
- * An HTMLCollection is live : a modification in the DOM is reflected
+ * An HTMLCollection is live : change in the DOM is reflected
  * in the HTMLCollection.
  *
- * An HTMLCollection don't accept forEach. Use other loops with it.
+ * An HTMLCollection doesn't accept forEach. Use other loops with it.
  *
  * @example
  * let a = $byClassLive('classList', element)

@@ -1,6 +1,6 @@
 /**
  * @description
- * Return an object filled with all attributes and values of
+ * Returns an object filled with all attributes and values of
  * the specified HTMLElement.
  *
  * @example

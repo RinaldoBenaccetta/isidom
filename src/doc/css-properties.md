@@ -1,5 +1,5 @@
 #### Use
-##### $css prefixed is for CSS properties used in CSS format :
+##### $css prefix is for CSS properties used in CSS format :
 
 ```javascript
 element.removeProperty('background-color');
@@ -17,7 +17,7 @@ And will be minified like this :
 element.removeProperty(a);
 ```
 
-##### $js prefixed is for CSS properties used in JS format :
+##### $js prefix is for CSS properties used in JS format :
 
 
 ```javascript

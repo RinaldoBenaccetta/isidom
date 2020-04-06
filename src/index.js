@@ -29,3 +29,5 @@ export * from './lib/selectors/find-parent'
 export * from './lib/selectors/find-previous-siblings'
 export * from './lib/selectors/find-siblings'
 export * from './lib/selectors/select'
+
+export * from './lib/manipulators/classes/add-class'

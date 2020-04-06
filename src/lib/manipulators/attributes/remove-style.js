@@ -1,6 +1,6 @@
 /**
  * @description
- * Remove the specified style of the specified HTMLElement.
+ * Removes the specified style of the specified HTMLElement.
  *
  * The property must be in CSS like, E.g. : 'background-color'.
  *

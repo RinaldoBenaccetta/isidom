@@ -1,4 +1,4 @@
-Use theses constants only if they are used more than one time in code.
+Use these constants only if they are used more than one time in code.
 E.G. :
 
 with use of constant :
@@ -28,7 +28,7 @@ a('red','backgroundColor',c)
 // Total : 28 characters.
 ```
 
-for one occurence of $jsBackgroundColor, that make 35 characters with constant V.S. 29 characters without constant. That's not so interresting.
+for one occurence of $jsBackgroundColor, that makes 35 characters with constant vs. 29 characters without constant. That's not so interresting.
 
 *But with two occurences...*
 
@@ -63,5 +63,5 @@ a('red','backgroundColor',d)
 // Total : 56 characters.
 ```
     
-For two occurences of $jsBackgroundColor, that make 47 characters with constant V.S. 56 characters without constant. That become interesting. And that will become more and more interesting with more occurences. (59 characters V.S. 84 for three occurences, 71 V.S. 112 for four occurences, ...).
+For two occurences of $jsBackgroundColor, that make 47 characters with constant vs. 56 characters without constant. That becomes interesting. And that will become more and more interesting with more occurences. (59 characters vs. 84 for three occurences, 71 vs. 112 for four occurences, ...).
 

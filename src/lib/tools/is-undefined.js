@@ -1,7 +1,9 @@
 import * as constant from '../constants/values'
 
 /**
- * @description Replacement for : typeof variable === 'undefined'
+ * @description
+ * Replacement for : typeof variable === 'undefined'
+ * 
  * @example
  * // instead of this :
  * typeof variable === 'undefined'

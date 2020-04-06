@@ -1,6 +1,6 @@
 /**
  * @description
- * Return the value of an input element.
+ * Returns the value of an input element.
  *
  * @example
  * let a = $getValue(input)

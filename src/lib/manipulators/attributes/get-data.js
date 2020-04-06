@@ -2,7 +2,7 @@ import { $getAttribute } from './get-attribute'
 
 /**
  * @description
- * Return the value of the specified data (E.g. : data-color) of the element.
+ * Returns the value of the specified data (E.g. : data-color) of the element.
  *
  * If the specified data is not present in the HTMLElement, null is returned.
  *

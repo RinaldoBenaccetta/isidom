@@ -4,7 +4,7 @@ import * as properties from '../constants/css-properties'
 
 /**
  * @description
- * Return the Width in pixels of an HTMLElement.
+ * Returns the width in pixels of an HTMLElement.
  * If no HTMLElement is specified, or the element value is null,
  * the width of the window is returned.
  *

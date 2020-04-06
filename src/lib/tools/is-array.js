@@ -1,6 +1,6 @@
 /**
  * @description
- * Check if input is an array or not and return true or false.
+ * Checks if input is an array or not and returns true or false.
  *
  * @example 
  * if($isArray(input)) { make something }

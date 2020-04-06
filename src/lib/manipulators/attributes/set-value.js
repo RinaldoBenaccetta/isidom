@@ -1,6 +1,6 @@
 /**
  * @description
- * Set the specified value of the specified input.
+ * Sets the specified value of the specified input element.
  *
  * @example
  * $setValue(value, input)
