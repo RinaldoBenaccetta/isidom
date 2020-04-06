@@ -5,7 +5,8 @@
         "removeComments": true,
         "preserveConstEnums": true,
         "sourceMap": true,
-        "allowJs": true
+        "allowJs": true,
+        "outDir": "src/"
     },
     "include": [
         "src/**/*"
