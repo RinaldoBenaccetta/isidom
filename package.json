@@ -10,8 +10,6 @@
     "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
-    "gulp": "^4.0.2",
-    "gulp-better-rollup": "^4.0.1",
     "jest": "^25.1.0",
     "jest-cli": "^24.9.0",
     "prettier": "^1.19.1",
@@ -20,10 +18,29 @@
     "ts-jest": "^25.1.0",
     "typescript": "^3.7.5"
   },
-  "description": "The first goal of isi is to maximise minification of vanilla dom manipulation scripts",
-  "main": "src/index.js",
+  "description": "A browser side Javascript library, for helping to easily and intuitively manipulate the DOM with minification efficiency of bundled apps.",
+  "browser": "src/index.js",
+  "keywords": [
+    "DOM",
+    "manipulation",
+    "browser",
+    "class",
+    "id",
+    "selector",
+    "attribute",
+    "value",
+    "data",
+    "style",
+    "text",
+    "sibling"
+  ],
   "directories": {
-    "test": "test"
+    "lib": "src/lib",
+    "test": "src/test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RinaldoBenaccetta/isi.git"
   },
   "scripts": {
     "test": "jest",
