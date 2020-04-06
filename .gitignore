@@ -1,2 +1,5 @@
 # ignore node_modules
 /node_modules
+
+base.js
+/src/experiment.js
