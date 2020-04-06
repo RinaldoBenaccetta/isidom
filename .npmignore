@@ -1,6 +1,9 @@
 # ignore node_modules
 /node_modules
 
+# ignore dist
+/dist
+
 # ignore doc source
 /src/doc
 documentation.yml
@@ -8,10 +11,16 @@ documentation.yml
 # ignore gitignore
 .gitignore
 
-# ignore test
-/src/test
-jest.config.js
-jest.setup.js
+# ignore eslint
+.eslintignore
+.eslintrc.json
 
 #ignore package-lock
 package-lock.json
+
+#ignore files
+base.js
+/src/experimernt.js
+index.html
+rollup.config.js
+tsconfig.json
