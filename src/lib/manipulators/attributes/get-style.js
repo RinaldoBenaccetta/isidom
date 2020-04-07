@@ -13,11 +13,11 @@
  *
  * // E.g. :
  *
- * let a = $getStyle('backgroundColor', element)
+ * let a = isi.$getStyle('backgroundColor', element)
  * 
  * // or
  * 
- * let a = $getStyle($jsBackgroundColor, element)
+ * let a = isi.$getStyle($jsBackgroundColor, element)
  *
  * // Will return the background-color of the element.
  *

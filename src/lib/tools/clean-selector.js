@@ -7,7 +7,7 @@
  * The spaces at the start and end of the string will be removed.
  * 
  * @example
- * let a = $cleanSelector(myElement)
+ * let a = isi.$cleanSelector(myElement)
  *
  * @param {string} selector
  *

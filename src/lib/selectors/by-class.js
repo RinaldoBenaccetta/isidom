@@ -12,7 +12,7 @@ import * as constant from '../constants/elements'
  * The nodeList accepts native JS forEach.
  *
  * @example
- * let a = $byClass('classList', element)
+ * let a = isi.$byClass('classList', element)
  *
  * @param {string|string[]} classList
  * The string and strings in array can start with a dot or not.

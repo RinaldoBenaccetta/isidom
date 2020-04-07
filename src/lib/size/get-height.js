@@ -8,7 +8,7 @@ import * as properties from '../constants/css-properties'
  * If no HTMLElement is specified, the height of the window is returned.
  *
  * @example
- * let a = $getHeight(element)
+ * let a = isi.$getHeight(element)
  *
  * @param {HTMLElement} [element=null]
  *

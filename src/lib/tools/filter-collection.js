@@ -6,7 +6,7 @@ import * as values from '../constants/values'
  * Returns null if nothing matches the filter.
  * 
  * @example
- * let a = $filterCollection("div.myClass input[name='myName']", myElement)
+ * let a = isi.$filterCollection("div.myClass input[name='myName']", myElement)
  *
  * @param {string} filter
  * The filter like in querySelector :

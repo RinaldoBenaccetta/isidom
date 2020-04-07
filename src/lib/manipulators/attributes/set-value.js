@@ -3,7 +3,7 @@
  * Sets the specified value of the specified input element.
  *
  * @example
- * $setValue(value, input)
+ * isi.$setValue(value, input)
  *
  * @param {string|number|boolean} value
  *

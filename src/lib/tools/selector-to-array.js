@@ -10,7 +10,7 @@ import { $cleanSelector } from './clean-selector'
  * A sole string will return an array with the string as the only item in the array.
  *
  * @example
- * let a = $selectorToArray(input)
+ * let a = isi.$selectorToArray(input)
  *
  * @param {string|string[]} input
  *

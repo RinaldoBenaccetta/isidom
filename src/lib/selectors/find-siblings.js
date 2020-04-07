@@ -7,7 +7,7 @@ import * as values from '../constants/values'
  * Returns null if there are no siblings.
  *
  * @example
- * let a = $findSiblings(element)
+ * let a = isi.$findSiblings(element)
  *
  * @param {HTMLElement} element
  *

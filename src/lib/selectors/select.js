@@ -13,7 +13,7 @@ import * as elements from '../constants/elements'
  *
  * @example
  * let query = "div.myClass, div.myOtherClass"
- * let a = $select(query, element)
+ * let a = isi.$select(query, element)
  *
  * @param {string} query
  * @param {element} [element=document]

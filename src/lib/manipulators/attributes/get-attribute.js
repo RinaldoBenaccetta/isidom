@@ -4,7 +4,7 @@
  * Returns the specified attribute of the specified HTMLElement.
  *
  * @example
- * let a = $getAttribute('attribute', element)
+ * let a = isi.$getAttribute('attribute', element)
  *
  * @param {string} attribute
  * @param {HTMLElement} element

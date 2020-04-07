@@ -15,8 +15,8 @@ import * as elements from '../../constants/elements'
  * That's doesn't apply if $forEach or other classes and attributes manipulators are already used. In this case, the best is to use $addClass.
  *
  * @example
- * $addClass('myClass', element)
- * $addClass(['myClass', 'myOtherClass'], element)
+ * isi.$addClass('myClass', element)
+ * isi.$addClass(['myClass', 'myOtherClass'], element)
  *
  * @param {(string|string[])} classList
  * @param {(HTMLElement|nodeList|HTMLCollection)} element

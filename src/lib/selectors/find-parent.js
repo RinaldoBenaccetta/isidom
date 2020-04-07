@@ -6,7 +6,7 @@
  * Returns an HTMLElement wich is the parent of the specified HTMLElement.
  *
  * @example
- * let a = $findParent(element)
+ * let a = isi.$findParent(element)
  *
  * @param {HTMLElement} element
  *

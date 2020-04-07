@@ -1,6 +1,6 @@
 #### Use
 These values are useable for maximum minification.
-Exemple : $window.content is the same as window.content but will be minified like this :
+Example : $window.content is the same as window.content but will be minified like this :
 
 ```javascript
 a.content

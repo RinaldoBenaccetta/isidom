@@ -3,7 +3,7 @@
  * Checks if input is an HTMLelement and returns true or false.
  *
  * @example
- * if($isHtmlElement(input)) { make something }
+ * if(isi.$isHtmlElement(input)) { make something }
  *
  * @param {*} input
  *

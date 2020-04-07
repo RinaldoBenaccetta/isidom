@@ -8,11 +8,11 @@ import { $isCollection } from './is-collection'
  * Note that $forEach returns nothing.
  * 
  * @example
- * $forEach(functionToExecute}, element)
+ * isi.$forEach(functionToExecute}, element)
  * 
  * // Or :
  * 
- * $forEach(itemsInElement => {
+ * isi.$forEach(itemsInElement => {
  *     itemsInElement.doSomething
  * }, element)
  *
@@ -21,7 +21,7 @@ import { $isCollection } from './is-collection'
  * // E.g. :
  * 
  * let myArray = [1, 2, 3]
- * $forEach(item => {
+ * isi.$forEach(item => {
  *     items = item * 2
  * }, myArray)
  *
@@ -30,7 +30,7 @@ import { $isCollection } from './is-collection'
  * 
  * let myArray = [1, 2, 3]
  * let outputArray = []
- * $forEach(item => {
+ * isi.$forEach(item => {
  *     outputArray.push(item * 2)
  * }, myArray)
  * console.log(outputArray) // this should output [2, 4, 6].

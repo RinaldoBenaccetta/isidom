@@ -7,7 +7,7 @@ import * as elements from '../constants/elements'
  * Returns null if nothing is found.
  *
  * @example
- * let a = $byId('id')
+ * let a = isi.$byId('id')
  *
  * @param {string} id
  * The string and strings in array can start with a # or not.

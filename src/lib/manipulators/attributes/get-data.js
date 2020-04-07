@@ -7,11 +7,11 @@ import { $getAttribute } from './get-attribute'
  * If the specified data is not present in the HTMLElement, null is returned.
  *
  * @example
- * let a = $getData(data, element)
+ * let a = isi.$getData(data, element)
  * 
  * // Or
  * 
- * let a = $getData('color', element)
+ * let a = isi.$getData('color', element)
  *
  * // Will return the data-color of the Element.
  *

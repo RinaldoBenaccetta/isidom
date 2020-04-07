@@ -3,7 +3,7 @@
  * Returns the value of an input element.
  *
  * @example
- * let a = $getValue(input)
+ * let a = isi.$getValue(input)
  *
  * @param {HTMLElement} input
  *

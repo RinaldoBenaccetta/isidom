@@ -9,15 +9,15 @@
  * E.g. : $jsBackgroundColor instead of $cssBackgroundColor.
  *
  * @example
- * $setStyle(value, property, element)
+ * isi.$setStyle(value, property, element)
  *
  * // E.g. :
  *
- * $setStyle('red', 'backgroundColor', element)
+ * isi.$setStyle('red', 'backgroundColor', element)
  * 
  * // or
  * 
- * $setStyle('red', $jsBackgroundColor, element)
+ * isi.$setStyle('red', $jsBackgroundColor, element)
  * 
  *
  * // Will set the background-color of the element.

@@ -9,7 +9,7 @@ import * as elements from '../../constants/elements'
  * Can only test one class at a time.
  *
  * @example
- * if($hasClass('className', element)) { make something }
+ * isi.if($hasClass('className', element)) { make something }
  *
  * @param {string} className
  * The string can start with a dot or not with no influence on the output.

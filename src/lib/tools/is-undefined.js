@@ -9,7 +9,7 @@ import * as constant from '../constants/values'
  * typeof variable === 'undefined'
  * 
  * // Use this :
- * if($isUndefined(variable)) { make something }
+ * if(isi.$isUndefined(variable)) { make something }
  *
  * @param {*} variable
  *

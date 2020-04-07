@@ -1,0 +1,7 @@
+{
+    "build": "readme.md",
+    "files": [
+        "./src/doc/bundle-doc.md"
+    ]
+
+}

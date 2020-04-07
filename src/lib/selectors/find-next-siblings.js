@@ -8,7 +8,7 @@ import * as values from '../constants/values'
  * Returns null if there are no next siblings found.
  *
  * @example
- * let a = $findNextSiblings(element)
+ * let a = isi.$findNextSiblings(element)
  *
  * @param {HTMLElement} element
  *

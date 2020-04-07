@@ -13,7 +13,7 @@ import * as elements from '../constants/elements'
  * An HTMLCollection doesn't accept forEach. Use other loops with it.
  *
  * @example
- * let a = $byClassLive('classList', element)
+ * let a = isi.$byClassLive('classList', element)
  *
  * @param {string|string[]} classList
  * The string and strings in array can start with a dot or not.

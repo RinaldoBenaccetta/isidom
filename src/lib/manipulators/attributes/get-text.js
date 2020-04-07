@@ -3,7 +3,7 @@
  * Returns the text value of the specified HTMLElement.
  *
  * @example
- * let a = $getText(element)
+ * let a = isi.$getText(element)
  *
  * @param {HTMLElement} element
  *

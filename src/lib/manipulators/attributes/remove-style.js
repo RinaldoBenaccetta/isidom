@@ -8,15 +8,15 @@
  * E.g. : $cssBackgroundColor instead of $jsBackgroundColor.
  *
  * @example
- * $removeStyle(property, element)
+ * isi.$removeStyle(property, element)
  *
  * // E.g. :
  *
- * $setStyle('background-color', element)
+ * isi.$setStyle('background-color', element)
  * 
  * // or
  * 
- * $setStyle($cssBackgroundColor, element)
+ * isi.$setStyle($cssBackgroundColor, element)
  * 
  * // Will remove the background-color style of the element.
  *

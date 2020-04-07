@@ -11,7 +11,7 @@ import * as values from '../constants/values'
  * Returns null if there are no previous siblings found.
  *
  * @example
- * let a = $findPreviousSiblings(element)
+ * let a = isi.$findPreviousSiblings(element)
  *
  * @param {HTMLElement} element
  *

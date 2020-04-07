@@ -3,7 +3,7 @@
  * Checks if input is an HTMLcollection and returns true or false.
  *
  * @example
- * if($isCollection(input)) { make something }
+ * if(isi.$isCollection(input)) { make something }
  * 
  * @param {*} input
  *

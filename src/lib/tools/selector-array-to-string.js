@@ -15,7 +15,7 @@ import { $selectorToArray } from './selector-to-array'
  * Spaces from start and end of strings will be removed.
  *
  * @example
- * let a = $selectorArrayToString(input, false)
+ * let a = isi.$selectorArrayToString(input, false)
  *
  * @param {string|string[]} input
  * A string value will output the same string with or without '.' at start

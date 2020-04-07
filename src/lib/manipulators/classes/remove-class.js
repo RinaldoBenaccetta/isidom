@@ -16,8 +16,8 @@ import * as elements from '../../constants/elements'
  * already used. In this case, the best is to use $removeClass.
  *
  * @example
- * $removeClass('myClass', element)
- * $removeClass(['myClass', 'myOtherClass'], element)
+ * isi.$removeClass('myClass', element)
+ * isi.$removeClass(['myClass', 'myOtherClass'], element)
  *
  * @param {(string|string[])} classList
  * @param {(HTMLElement|nodeList|HTMLCollection)} element

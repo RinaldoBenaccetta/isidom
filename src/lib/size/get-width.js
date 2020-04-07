@@ -9,7 +9,7 @@ import * as properties from '../constants/css-properties'
  * the width of the window is returned.
  *
  * @example
- * let a = $getWidth(element)
+ * let a = isi.$getWidth(element)
  *
  * @param {HTMLElement} [element=null]
  *

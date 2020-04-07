@@ -21,7 +21,7 @@ import { $cleanSelector } from '../../tools/clean-selector'
  * That's doen't apply if $forEach or other classes and attributes manipulators are already used. In this case, the best is to use $replaceClass.
  *
  * @example
- * $replaceClass('oldClass', 'newClass', element)
+ * isi.$replaceClass('oldClass', 'newClass', element)
  *
  * @param {string} oldClass
  * @param {string} newClass

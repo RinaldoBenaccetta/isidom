@@ -1,6 +1,8 @@
 toc:
   - name: Introduction
     file: src/doc/introduction.md
+  - name: How to use
+    file: src/doc/how-to-use.md
   - name: Conventions
     file: src/doc/conventions.md
   - name: Tools
@@ -62,7 +64,7 @@ toc:
   - name: Constants
     children:
       - name: Use
-        file: src/doc/use.md
+        file: src/doc/constant-use.md
       - name: Common values
         file: src/doc/common-values.md
       - name: Elements

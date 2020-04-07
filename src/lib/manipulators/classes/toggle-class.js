@@ -14,8 +14,8 @@ import * as elements from '../../constants/elements'
  * That's doesn't apply if $forEach or other classes and attributes manipulators are already used. In this case, the best is to use $toggleClass.
  *
  * @example
- * $toggleClass('myClass', element)
- * $toggleClass(['myClass', 'myOtherClass'], element)
+ * isi.$toggleClass('myClass', element)
+ * isi.$toggleClass(['myClass', 'myOtherClass'], element)
  * 
  * @param {(string|string[])} classList
  * @param {(HTMLElement|nodeList|HTMLCollection)} element

@@ -3,7 +3,7 @@
  * Checks if input is a nodelist and returns true or false.
  *
  * @example
- * if($isNodeList(input)) { make something }
+ * if(isi.$isNodeList(input)) { make something }
  * 
  * @param {*} input
  *

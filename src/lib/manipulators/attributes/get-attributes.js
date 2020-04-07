@@ -22,7 +22,7 @@
  *
  * // The data can be directly accessed like this :
  *
- * let a = $getAttributes(element).type
+ * let a = isi.$getAttributes(element).type
  *
  * // But in this case, the best would be to use the $getAttribute function
  * // instead of $getAttributes.

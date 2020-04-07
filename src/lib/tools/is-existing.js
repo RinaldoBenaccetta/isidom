@@ -10,7 +10,7 @@ import * as values from '../constants/values'
  * the specified parent element.
  *
  * @example
- * if($isExisting(query)) { make something }
+ * if(isi.$isExisting(query)) { make something }
  *
  * @param {string} query
  * @param {HTMLElement=} [element=document]
