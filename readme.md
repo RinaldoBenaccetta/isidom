@@ -108,7 +108,7 @@ Be carefull care : the two functions (and their subfunctions) $addClass and $byI
 
 ### Use with Isidom file
 
-Put _Isidom.js_ in a vendor path ( or a path of your choice) and import it in your app like this :
+Download _dist/Isidom.js_ from GitHub and put it in a vendor path ( or a path of your choice ) and import it in your app like this :
 
 ```javascript
 import * as isi from './path/to/isidom.js'
@@ -171,8 +171,8 @@ export default {
   input: 'index.js', // your entry point.
   output: {
     file: 'dist/index.js', // The bundled file.
-    format: 'iife', // This wrap the code.
-    //format: 'esm', // This don't wrap code.
+    format: 'iife', // This wraps the code.
+    //format: 'esm', // This doesn't wrap the code.
     name: 'MyModule'
   },
   plugins: [resolve(), commonjs()]
