@@ -4,6 +4,9 @@
 # ignore dist
 /dist
 
+#ignore tmp
+/tmp
+
 # ignore doc source
 /src/doc
 documentation.yml
