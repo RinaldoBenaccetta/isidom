@@ -54,7 +54,7 @@
     "docinclude": "npx markdown-include markdown.json",
     "doc": "npm run codedoc && npm run docinclude"
   },
-  "author": "Rinaldo Benaccetta",
+  "author": "npm",
   "license": "MIT",
   "dependencies": {
     "markdown-include": "^0.4.3"
