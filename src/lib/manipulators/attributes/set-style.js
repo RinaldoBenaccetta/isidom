@@ -14,9 +14,7 @@
  * // E.g. :
  *
  * isi.$setStyle('red', 'backgroundColor', element)
- * 
  * // or
- * 
  * isi.$setStyle('red', $jsBackgroundColor, element)
  * 
  *

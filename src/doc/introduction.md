@@ -33,4 +33,4 @@ a(['myNewClass','anotherClass','andAgain'],b('myID'))
 // That makes 53 characters.
 ```
 
-Be carefull care : the two functions (and their subfunctions) $addClass and $byId together use something like 450 characters (minified), so the example above would make about 500 characters. To be interesting in term of minification, theses function should be written at least 5 or 6 times. Note that subfunction are reused by all tools of Isidom. For small piece of code, Isidom not make sense, but with larger application, with several DOM manipulation, it can. By the way, Isidom stays simpler and shorter to write.
+Be carefull : the two functions (and their subfunctions) $addClass and $byId together use something like 450 characters (minified), so the example above would make about 500 characters. To be interesting in term of minification, theses function should be written at least 5 or 6 times. Note that subfunction are reused by all tools of Isidom. For small piece of code, Isidom not make sense, but with larger application, with several DOM manipulation, it can. By the way, Isidom stays simpler and shorter to write.

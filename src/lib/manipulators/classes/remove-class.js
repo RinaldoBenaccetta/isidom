@@ -11,6 +11,8 @@ import * as elements from '../../constants/elements'
  * number of times, then the best for minification would be to not use $removeClass, but instead use this :
  *
  *     myElement[$classList].remove(class)
+ *     // Or :
+ *     myElement['classList'].remove(class)
  *
  * That's doesn't apply if $forEach or other classes and attributes manipulators are
  * already used. In this case, the best is to use $removeClass.

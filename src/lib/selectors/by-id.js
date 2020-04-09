@@ -10,8 +10,8 @@ import * as elements from '../constants/elements'
  * let a = isi.$byId('id')
  *
  * @param {string} id
- * The string and strings in array can start with a # or not.
- * The string and strings in array can have spaces at start an end.
+ * The string can start with a # or not.
+ * The string can have spaces at start an end.
  *
  * @returns {HTMLElement|null}
  */

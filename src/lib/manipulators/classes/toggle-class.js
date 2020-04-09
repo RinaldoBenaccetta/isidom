@@ -10,6 +10,8 @@ import * as elements from '../../constants/elements'
  * number of times, then the best for minification would be to not use $toggleClass, but instead use this :
  *
  *     myElement[$classList].toggle(class)
+ *     //Or :
+ *     myElement['classList'].toggle(class)
  *
  * That's doesn't apply if $forEach or other classes and attributes manipulators are already used. In this case, the best is to use $toggleClass.
  *

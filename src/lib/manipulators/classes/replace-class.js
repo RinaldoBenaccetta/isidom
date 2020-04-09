@@ -17,6 +17,8 @@ import { $cleanSelector } from '../../tools/clean-selector'
  * $replaceClass, but instead use this :
  *
  *     myElement[$classList].replace('oldClass', 'newClass')
+ *     // Or :
+ *     myElement['classList'].replace('oldClass', 'newClass')
  *
  * That's doen't apply if $forEach or other classes and attributes manipulators are already used. In this case, the best is to use $replaceClass.
  *

@@ -14,11 +14,8 @@
  * // E.g. :
  *
  * let a = isi.$getStyle('backgroundColor', element)
- * 
  * // or
- * 
  * let a = isi.$getStyle($jsBackgroundColor, element)
- *
  * // Will return the background-color of the element.
  *
  * @param {string} property

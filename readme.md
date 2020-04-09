@@ -101,7 +101,7 @@ a(['myNewClass','anotherClass','andAgain'],b('myID'))
 // That makes 53 characters.
 ```
 
-Be carefull care : the two functions (and their subfunctions) $addClass and $byId together use something like 450 characters (minified), so the example above would make about 500 characters. To be interesting in term of minification, theses function should be written at least 5 or 6 times. Note that subfunction are reused by all tools of Isidom. For small piece of code, Isidom not make sense, but with larger application, with several DOM manipulation, it can. By the way, Isidom stays simpler and shorter to write.
+Be carefull : the two functions (and their subfunctions) $addClass and $byId together use something like 450 characters (minified), so the example above would make about 500 characters. To be interesting in term of minification, theses function should be written at least 5 or 6 times. Note that subfunction are reused by all tools of Isidom. For small piece of code, Isidom not make sense, but with larger application, with several DOM manipulation, it can. By the way, Isidom stays simpler and shorter to write.
 
 
 ## How to use
@@ -435,7 +435,7 @@ Returns null if nothing matches the filter.
 
 -   `filter` **[string][58]** The filter like in querySelector :
      [https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector][62]
--   `element` **[HTMLElement][59]** 
+-   `collection` **HTMLCollection** 
 
 #### Examples
 
@@ -525,8 +525,8 @@ Returns null if nothing is found.
 
 #### Parameters
 
--   `id` **[string][58]** The string and strings in array can start with a # or not.
-    The string and strings in array can have spaces at start an end.
+-   `id` **[string][58]** The string can start with a # or not.
+    The string can have spaces at start an end.
 
 #### Examples
 
@@ -671,7 +671,9 @@ or to all HTMLElements of a nodeList or an HTMLCollection.
 If in the application, classes are added only on HTMLELement a few
 number of times, then the best for minification would be to not use $addClass, but instead use this :
 
-    myElement[$classList].add(class)
+    myElement[isi.$classList].add(class)
+    // Or :
+    myElement['classList'].add(class)
 
 That's doesn't apply if $forEach or other classes and attributes manipulators are already used. In this case, the best is to use $addClass.
 
@@ -696,6 +698,8 @@ If in the application, classes are removed only on HTMLELement a few
 number of times, then the best for minification would be to not use $removeClass, but instead use this :
 
     myElement[$classList].remove(class)
+    // Or :
+    myElement['classList'].remove(class)
 
 That's doesn't apply if $forEach or other classes and attributes manipulators are
 already used. In this case, the best is to use $removeClass.
@@ -721,6 +725,8 @@ If in application, classes are toggled only on HTMLELement a few
 number of times, then the best for minification would be to not use $toggleClass, but instead use this :
 
     myElement[$classList].toggle(class)
+    //Or :
+    myElement['classList'].toggle(class)
 
 That's doesn't apply if $forEach or other classes and attributes manipulators are already used. In this case, the best is to use $toggleClass.
 
@@ -751,6 +757,8 @@ few number of times, then the best for minification would be to not use
 $replaceClass, but instead use this :
 
     myElement[$classList].replace('oldClass', 'newClass')
+    // Or :
+    myElement['classList'].replace('oldClass', 'newClass')
 
 That's doen't apply if $forEach or other classes and attributes manipulators are already used. In this case, the best is to use $replaceClass.
 
@@ -869,10 +877,9 @@ If the specified data is not present in the HTMLElement, null is returned.
 ```javascript
 let a = isi.$getData(data, element)
 
-// Or
+// E.g. :
 
 let a = isi.$getData('color', element)
-
 // Will return the data-color of the Element.
 ```
 
@@ -978,11 +985,8 @@ let a = $getStyle(property, element)
 // E.g. :
 
 let a = isi.$getStyle('backgroundColor', element)
-
 // or
-
 let a = isi.$getStyle($jsBackgroundColor, element)
-
 // Will return the background-color of the element.
 ```
 
@@ -1012,9 +1016,7 @@ isi.$setStyle(value, property, element)
 // E.g. :
 
 isi.$setStyle('red', 'backgroundColor', element)
-
 // or
-
 isi.$setStyle('red', $jsBackgroundColor, element)
 
 
@@ -1295,7 +1297,7 @@ $classList = 'classList'
 element.removeProperty('background-color');
 ```
 
-The Isi way is :
+The Isidom way is :
 
 ```javascript
 element.removeProperty($cssBackgroundColor);
@@ -1313,7 +1315,7 @@ element.removeProperty(a);
 element.style.backgroundColor = 'red';
 ```
 
-The Isi way is :
+The Isidom way is :
 
 ```javascript
 element.style.[$jsBackgroundColor] = 'red';

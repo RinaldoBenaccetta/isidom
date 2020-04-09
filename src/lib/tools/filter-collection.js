@@ -11,18 +11,18 @@ import * as values from '../constants/values'
  * @param {string} filter
  * The filter like in querySelector :
  *  https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector
- * @param {HTMLElement} element
+ * @param {HTMLCollection} collection
  *
  * @returns {Array|null}
  * An array of HTMLElement.
  */
-export function $filterCollection (filter, element) {
+export function $filterCollection (filter, collection) {
   var output = []
-  for (var i = 0; i < element.length; i++) {
+  for (var i = 0; i < collection.length; i++) {
     // if nodetype is an element and match selector :
     // push the element in the array
-    if (element[i].nodeType === 1 && element[i].matches(filter)) {
-      output.push(element[i])
+    if (collection[i].nodeType === 1 && collection[i].matches(filter)) {
+      output.push(collection[i])
     }
   }
 

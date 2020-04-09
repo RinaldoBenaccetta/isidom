@@ -5,7 +5,7 @@
 element.removeProperty('background-color');
 ```
 
-The Isi way is :
+The Isidom way is :
 
 ```javascript
 element.removeProperty($cssBackgroundColor);
@@ -24,7 +24,7 @@ element.removeProperty(a);
 element.style.backgroundColor = 'red';
 ```
 
-The Isi way is :
+The Isidom way is :
 
 ```javascript
 element.style.[$jsBackgroundColor] = 'red';
