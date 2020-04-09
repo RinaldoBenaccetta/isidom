@@ -24,7 +24,7 @@ isi.$addClass( 'myClass', isi.$byId( 'myId' ))
 install :
 
 ```
-npm install isidom --save-dev
+npm install isidom
 ```
 
 Then import Isidom in your entry point :
