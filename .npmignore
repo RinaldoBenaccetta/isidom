@@ -10,6 +10,7 @@
 # ignore doc source
 /src/doc
 documentation.yml
+markdown.json
 
 # ignore gitignore
 .gitignore
@@ -23,7 +24,7 @@ package-lock.json
 
 #ignore files
 base.js
-/src/experimernt.js
+/src/experiment.js
 index.html
 rollup.config.js
 tsconfig.json
