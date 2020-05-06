@@ -1,20 +1,13 @@
 {
-    "compilerOptions": {
-        "module": "commonjs",
-        "noImplicitAny": true,
-        "removeComments": true,
-        "preserveConstEnums": true,
-        "sourceMap": true,
-        "allowJs": true,
-        "outDir": "src/"
-    },
-    "include": [
-        "src/**/*"
-    ],
-    "exclude": [
-        "dist",
-        "docs",
-        "build",
-        "node_modules"
-    ]
+  "compilerOptions": {
+    "module": "commonjs",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "allowJs": true,
+    "outDir": "src/"
+  },
+  "include": ["src/**/*", "src/.experiment.js"],
+  "exclude": ["dist", "docs", "build", "node_modules"]
 }
