@@ -47,12 +47,13 @@
   "scripts": {
     "test": "jest",
     "testwatch": "jest --watchAll",
-    "build": "npx rollup --config",
+    "rollup": "npx rollup --config",
     "codedoc": "documentation --config documentation.yml build src/lib/** -f md -o tmp/doc.md --markdown-toc-max-depth 3",
     "codedocwatch": "documentation --config documentation.yml build src/lib/** -f md -o ./tmp/doc.md -w --markdown-toc-max-depth 3",
     "doclint": "documentation lint src/lib/**",
     "docinclude": "npx markdown-include markdown.json",
     "doc": "npm run codedoc && npm run docinclude",
+    "build": "rollup && doc",
     "lint": "eslint ."
   },
   "author": "npm",
