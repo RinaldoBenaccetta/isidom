@@ -6,7 +6,7 @@
     "preserveConstEnums": true,
     "sourceMap": true,
     "allowJs": true,
-    "outDir": "src/"
+    "outDir": "default"
   },
   "include": ["src/**/*", "src/.experiment.js"],
   "exclude": ["dist", "docs", "build", "node_modules"]
