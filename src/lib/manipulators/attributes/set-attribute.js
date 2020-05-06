@@ -10,7 +10,7 @@ import { $forEach } from '../../tools/for-each'
  *     isi.$setAttributes(value, attribute, element)
  *
  * @example
- * isi.$setAttributes('Jhon Doe', 'name', element)
+ * isi.$setAttributes('John Doe', 'name', element)
  *
  * @param {string} value
  * @param {string} attribute

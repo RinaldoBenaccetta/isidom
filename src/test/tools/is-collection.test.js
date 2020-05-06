@@ -2,7 +2,7 @@ import { $isCollection } from '../../index'
 
 describe('$isCollection', () => {
   describe('given a nodeList', () => {
-    test('is nodelist', () => {
+    test('is nodeList', () => {
       const nodeList = document.querySelectorAll('div')
       expect($isCollection(nodeList)).toBeFalsy()
     })

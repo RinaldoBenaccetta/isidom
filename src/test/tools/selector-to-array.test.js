@@ -2,7 +2,7 @@ import { $selectorToArray } from '../../index'
 
 describe('$selectorArrayClean', () => {
   describe('given an array of selectors', () => {
-    test('wich is a mix of class, id and string return an array of string without . or # at the start and without space at start and end of the string', () => {
+    test('Which is a mix of class, id and string return an array of string without . or # at the start and without space at start and end of the string', () => {
       const SELECTOR_ARRAY = [
         'myClass',
         '.myOtherClass',
@@ -16,7 +16,7 @@ describe('$selectorArrayClean', () => {
         'anOtherSelector'
       ])
     })
-    test('wich is a string return an array of the string without . or # at the start and without space at start and end of the string', () => {
+    test('Which is a string return an array of the string without . or # at the start and without space at start and end of the string', () => {
       const SELECTOR_STRING = '.myClass'
       expect($selectorToArray(SELECTOR_STRING)).toStrictEqual(['myClass'])
     })

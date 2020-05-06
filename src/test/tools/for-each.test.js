@@ -18,8 +18,8 @@ describe('$forEach', () => {
     })
   })
 
-  describe('given a nodelist', () => {
-    test('process the nodelist', () => {
+  describe('given a nodeList', () => {
+    test('process the nodeList', () => {
       document.body.innerHTML = '<div>hello</div><div>world</div><div>!</div>'
       const NODE_LIST = document.querySelectorAll('div')
       const FUNCTION_TO_EXECUTE = function (target) {
@@ -34,7 +34,7 @@ describe('$forEach', () => {
     })
   })
 
-  describe('given other element than nodelist or array', () => {
+  describe('given other element than nodeList or array', () => {
     test('given a string, process with the string', () => {
       let testString
       const MY_STRING = 'Hello world!'

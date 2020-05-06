@@ -3,15 +3,15 @@ import '@testing-library/jest-dom'
 
 document.body.innerHTML =
   // eslint-disable-next-line no-multi-str
-  '<div class="myFirstClass myFirdClass">hello</div>\
+  '<div class="myFirstClass myThirdClass">hello</div>\
   <div class="mySecondClass"></div>\
-  <div class="myFirdClass">world</div>\
+  <div class="myThirdClass">world</div>\
   <div class="myFourthClass"></div>\
   <div class ="myFirstClass">!</div>\
   <div class ="myFifthClass mySixthClass">!</div>\
   <div class="myFirstClass" id="myId">\
     <div class="myFirstClass"></div>\
-    <div class="myFirdClass mySecondClass"></div>\
+    <div class="myThirdClass mySecondClass"></div>\
     <div class="myFirstClass myThirdClass"></div>\
     <div class="mySecondClass myThirdClass"></div>\
   </div>'
@@ -24,7 +24,7 @@ describe('$byClassLive', () => {
       expect(TEST_COLLECTION).toBeTruthy()
     })
 
-    test('wich appear in the dom return an HTMLCollection containing only elements with this class', () => {
+    test('Which appear in the dom return an HTMLCollection containing only elements with this class', () => {
       const COLLECTION = $byClassLive('myFirstClass')
       expect(COLLECTION.length).toBe(5)
       expect(COLLECTION[0]).toHaveClass('myFirstClass')
@@ -33,7 +33,7 @@ describe('$byClassLive', () => {
       expect(COLLECTION[1]).not.toHaveClass('mySecondClass')
     })
 
-    test('containing a dot at start wich appear in the dom return an HTMLCollection containing only elements with this class', () => {
+    test('containing a dot at start Which appear in the dom return an HTMLCollection containing only elements with this class', () => {
       const COLLECTION = $byClassLive('.myFirstClass')
       expect(COLLECTION.length).toBe(5)
       expect(COLLECTION[0]).toHaveClass('myFirstClass')
@@ -42,7 +42,7 @@ describe('$byClassLive', () => {
       expect(COLLECTION[1]).not.toHaveClass('mySecondClass')
     })
 
-    test('containing spaces at start and end wich appear in the dom return an HTMLCollection containing only elements with this class', () => {
+    test('containing spaces at start and end Which appear in the dom return an HTMLCollection containing only elements with this class', () => {
       const COLLECTION = $byClassLive('   myFirstClass ')
       expect(COLLECTION.length).toBe(5)
       expect(COLLECTION[0]).toHaveClass('myFirstClass')
@@ -51,7 +51,7 @@ describe('$byClassLive', () => {
       expect(COLLECTION[1]).not.toHaveClass('mySecondClass')
     })
 
-    test('wich not appear in the document return empty node', () => {
+    test('Which not appear in the document return empty node', () => {
       const COLLECTION = $byClassLive('notHereClass')
       expect(COLLECTION.length).toBe(0)
     })
@@ -64,28 +64,28 @@ describe('$byClassLive', () => {
       expect(TEST_COLLECTION).toBeTruthy()
     })
 
-    test('wich appear in the dom return an HTMLCollection containing only elements with theses classes', () => {
+    test('Which appear in the dom return an HTMLCollection containing only elements with theses classes', () => {
       const COLLECTION = $byClassLive(['myFirstClass', 'myFourthClass'])
       expect(COLLECTION.length).toBe(0)
     })
 
-    test('wich appear in the dom but not match an element return empty HTMLCollection', () => {
-      const COLLECTION = $byClassLive(['myFirstClass', 'myFirdClass'])
-      expect(COLLECTION.length).toBe(1)
+    test('Which appear in the dom but not match an element return empty HTMLCollection', () => {
+      const COLLECTION = $byClassLive(['myFirstClass', 'myThirdClass'])
+      expect(COLLECTION.length).toBe(2)
       expect(COLLECTION[0]).toHaveClass('myFirstClass')
-      expect(COLLECTION[0]).toHaveClass('myFirdClass')
+      expect(COLLECTION[0]).toHaveClass('myThirdClass')
       expect(COLLECTION[0]).not.toHaveClass('mySecondClass')
     })
 
-    test('containing dot at start and space at start and end wich appear in the dom but not match an element return empty HTMLCollection', () => {
-      const COLLECTION = $byClassLive(['.myFirstClass', '   myFirdClass    '])
-      expect(COLLECTION.length).toBe(1)
+    test('containing dot at start and space at start and end Which appear in the dom but not match an element return empty HTMLCollection', () => {
+      const COLLECTION = $byClassLive(['.myFirstClass', '   myThirdClass    '])
+      expect(COLLECTION.length).toBe(2)
       expect(COLLECTION[0]).toHaveClass('myFirstClass')
-      expect(COLLECTION[0]).toHaveClass('myFirdClass')
+      expect(COLLECTION[0]).toHaveClass('myThirdClass')
       expect(COLLECTION[0]).not.toHaveClass('mySecondClass')
     })
 
-    test('wich not appear in the document return empty HTMLCollection', () => {
+    test('Which not appear in the document return empty HTMLCollection', () => {
       const COLLECTION = $byClassLive(['notHereClass', '.farAwayClass'])
       expect(COLLECTION.length).toBe(0)
     })
@@ -99,7 +99,7 @@ describe('$byClassLive', () => {
       expect(TEST_COLLECTION).toBeTruthy()
     })
 
-    test('wich appear in the dom return an HTMLCollection containing only elements with this class in the element', () => {
+    test('Which appear in the dom return an HTMLCollection containing only elements with this class in the element', () => {
       const TARGET_ID = document.getElementById('myId')
       const COLLECTION = $byClassLive('myFirstClass', TARGET_ID)
       expect(COLLECTION.length).toBe(2)
@@ -109,7 +109,7 @@ describe('$byClassLive', () => {
       expect(COLLECTION[1]).not.toHaveClass('mySecondClass')
     })
 
-    test('containig dot at start wich appear in the dom return an HTMLCollection containing only elements with this class in the element', () => {
+    test('containig dot at start Which appear in the dom return an HTMLCollection containing only elements with this class in the element', () => {
       const TARGET_ID = document.getElementById('myId')
       const COLLECTION = $byClassLive('.myFirstClass', TARGET_ID)
       expect(COLLECTION.length).toBe(2)
@@ -119,7 +119,7 @@ describe('$byClassLive', () => {
       expect(COLLECTION[1]).not.toHaveClass('mySecondClass')
     })
 
-    test('containing spaces at start and end wich appear in the dom return an HTMLCollection containing only elements with this class in the element', () => {
+    test('containing spaces at start and end Which appear in the dom return an HTMLCollection containing only elements with this class in the element', () => {
       const TARGET_ID = document.getElementById('myId')
       const COLLECTION = $byClassLive('  myFirstClass    ', TARGET_ID)
       expect(COLLECTION.length).toBe(2)
@@ -129,7 +129,7 @@ describe('$byClassLive', () => {
       expect(COLLECTION[1]).not.toHaveClass('mySecondClass')
     })
 
-    test('wich not appear in the element return empty HTMLCollection', () => {
+    test('Which not appear in the element return empty HTMLCollection', () => {
       const TARGET_ID = document.getElementById('myId')
       const COLLECTION = $byClassLive('myFourthClass', TARGET_ID)
       expect(COLLECTION.length).toBe(0)
@@ -147,18 +147,18 @@ describe('$byClassLive', () => {
       expect(TEST_COLLECTION).toBeTruthy()
     })
 
-    test('wich appear in the dom return an HTMLCollection containing only elements with theses classes in the element', () => {
+    test('Which appear in the dom return an HTMLCollection containing only elements with theses classes in the element', () => {
       const TARGET_ID = document.getElementById('myId')
       const COLLECTION = $byClassLive(
         ['mySecondClass', 'myThirdClass'],
         TARGET_ID
       )
-      expect(COLLECTION.length).toBe(1)
+      expect(COLLECTION.length).toBe(2)
       expect(COLLECTION[0]).toHaveClass('mySecondClass')
       expect(COLLECTION[0]).toHaveClass('myThirdClass')
     })
 
-    test('wich appear in the dom but not match an element in the element return empty HTMLCollection', () => {
+    test('Which appear in the dom but not match an element in the element return empty HTMLCollection', () => {
       const TARGET_ID = document.getElementById('myId')
       const COLLECTION = $byClassLive(
         ['myFirstClass', 'myFourthClass'],
@@ -167,18 +167,18 @@ describe('$byClassLive', () => {
       expect(COLLECTION.length).toBe(0)
     })
 
-    test('containing dot at start and space at start and end wich appear in the dom return an HTMLCollection containing only elements with theses classes in the element', () => {
+    test('containing dot at start and space at start and end Which appear in the dom return an HTMLCollection containing only elements with theses classes in the element', () => {
       const TARGET_ID = document.getElementById('myId')
       const COLLECTION = $byClassLive(
         ['.mySecondClass', '   myThirdClass   '],
         TARGET_ID
       )
-      expect(COLLECTION.length).toBe(1)
+      expect(COLLECTION.length).toBe(2)
       expect(COLLECTION[0]).toHaveClass('mySecondClass')
       expect(COLLECTION[0]).toHaveClass('myThirdClass')
     })
 
-    test('wich not appear in the element return empty HTMLCollection', () => {
+    test('Which not appear in the element return empty HTMLCollection', () => {
       const TARGET_ID = document.getElementById('myId')
       const COLLECTION = $byClassLive(
         ['myFifthClass', '.mySixthClass'],

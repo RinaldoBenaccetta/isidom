@@ -3,16 +3,16 @@ import '@testing-library/jest-dom'
 
 document.body.innerHTML =
   // eslint-disable-next-line no-multi-str
-  '<div class="myFirstClass myFirdClass">hello</div>\
+  '<div class="myFirstClass myThirdClass">hello</div>\
   <div class="mySecondClass"></div>\
-  <div class="myFirdClass">world</div>\
+  <div class="myThirdClass">world</div>\
   <span class="myFourthClass"></span>\
   <p class ="myFirstClass">!</p>\
   <div class ="myFifthClass mySixthClass">!</div>\
   <div name="findMe" class="myFirstClass" id="myId">\
     <div class="myFirstClass"></div>\
     <div class="myFirstClass myThirdClass" id="mySecondId"></div>\
-    <div class="myFirdClass mySecondClass"></div>\
+    <div class="myThirdClass mySecondClass"></div>\
     <div class="mySecondClass myThirdClass"></div>\
   </div>\
   <div name="it is not me">\
@@ -21,7 +21,7 @@ document.body.innerHTML =
 
 describe('$findParent', () => {
   describe('given an HTMLElement', () => {
-    test('wich is in DOM return the parent HTMLElement', () => {
+    test('Which is in DOM return the parent HTMLElement', () => {
       const TARGET_ID = document.getElementById('mySecondId')
       const PARENT = $findParent(TARGET_ID)
       const IS_HTML_ELEMENT = PARENT instanceof HTMLElement

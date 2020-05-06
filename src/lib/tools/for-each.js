@@ -1,4 +1,4 @@
-import { $isNodeList } from './is-nodelist'
+import { $isNodeList } from './is-nodeList'
 import { $isArray } from './is-array'
 import { $isCollection } from './is-collection'
 
@@ -39,9 +39,9 @@ import { $isCollection } from './is-collection'
  * This is the function that will be executed in the forEach loop.
  *
  * @param {*} element
- * This is the array, the nodelist, the HTMLCollection or the HTMLElement that
+ * This is the array, the nodeList, the HTMLCollection or the HTMLElement that
  * will be processed by the for loop.
- * If this is not an array, an HTMLCollection or a nodelist,
+ * If this is not an array, an HTMLCollection or a nodeList,
  * the function will be executed once on the argument. Note : a string is
  * an array of letters.
  */

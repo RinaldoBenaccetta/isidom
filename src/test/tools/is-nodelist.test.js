@@ -2,7 +2,7 @@ import * as mod from '../../index'
 
 describe('$isNodeList', () => {
   describe('given a nodeList', () => {
-    test('is nodelist', () => {
+    test('is nodeList', () => {
       const nodeList = document.querySelectorAll('div')
       expect(mod.$isNodeList(nodeList)).toBeTruthy()
     })

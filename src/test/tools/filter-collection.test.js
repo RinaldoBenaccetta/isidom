@@ -3,9 +3,9 @@ import '@testing-library/jest-dom'
 
 document.body.innerHTML =
   // eslint-disable-next-line no-multi-str
-  '<div class="myFirstClass myFirdClass">hello</div>\
+  '<div class="myFirstClass myThirdClass">hello</div>\
   <div class="mySecondClass"></div>\
-  <div class="myFirdClass">world</div>\
+  <div class="myThirdClass">world</div>\
   <span class="myFourthClass"></span>\
   <p class ="myFirstClass">!</p>\
   <div class ="myFifthClass mySixthClass">!</div>\
@@ -21,17 +21,17 @@ document.body.innerHTML =
 
 describe('$filterCollection', () => {
   describe('given valid filter and an HTMLCollection', () => {
-    test('wich match HTMLElements return an array of HTMLElement', () => {
+    test('Which match HTMLElements return an array of HTMLElement', () => {
       const TARGET_ID = document.getElementsByClassName('myFirstClass')
       const TEST_FILTER = $filterCollection('.myThirdClass', TARGET_ID)
       const TEST_ARRAY = Array.isArray(TEST_FILTER)
       expect(TEST_ARRAY).toBeTruthy()
-      expect(TEST_FILTER.length).toBe(2)
+      expect(TEST_FILTER.length).toBe(3)
     })
   })
 
   describe('given valid filter and an HTMLCollection that match nothing return null', () => {
-    test('wich match HTMLElements return an array of HTMLElement', () => {
+    test('Which match HTMLElements return an array of HTMLElement', () => {
       const TARGET_ID = document.getElementsByClassName('myFirstClass')
       const TEST_FILTER = $filterCollection('.myLostClass', TARGET_ID)
       expect(TEST_FILTER).toBeNull()

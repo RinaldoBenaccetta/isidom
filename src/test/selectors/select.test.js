@@ -42,7 +42,7 @@ describe('select', () => {
   })
 
   describe('given a valid string and a valid element', () => {
-    test('return a nodelist', () => {
+    test('return a nodeList', () => {
       const TARGET_ID = document.getElementById('myId')
       const NODE_LIST = $select('.myFirstClass', TARGET_ID)
       const TEST_NODE = NodeList.prototype.isPrototypeOf(NODE_LIST)
@@ -50,14 +50,14 @@ describe('select', () => {
     })
   })
 
-  test('wich selectors appear in the dom return a nodelist containing only elements with these selectors', () => {
+  test('Which selectors appear in the dom return a nodeList containing only elements with these selectors', () => {
     const TARGET_ID = document.getElementById('myId')
     const NODE_LIST = $select('span.myThirdClass[data-color="red"]', TARGET_ID)
     expect(NODE_LIST.length).toBe(1)
     expect(NODE_LIST[0]).toHaveTextContent('find me')
   })
 
-  test('wich selectors match nothing return an empty nodelist', () => {
+  test('Which selectors match nothing return an empty nodeList', () => {
     const TARGET_ID = document.getElementById('myId')
     const NODE_LIST = $select('span.myThirdClass[data-color="blue"]', TARGET_ID)
     expect(NODE_LIST.length).toBe(0)

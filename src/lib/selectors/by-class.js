@@ -3,7 +3,7 @@ import * as constant from '../constants/elements'
 
 /**
  * @description
- * Selects elements based on querySelectorAll(https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll) wich returns a static nodeList of
+ * Selects elements based on querySelectorAll(https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll) Which returns a static nodeList of
  * elements containing specified classes.
  *
  * The result is not live :

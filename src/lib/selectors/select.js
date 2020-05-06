@@ -5,7 +5,7 @@ import * as elements from '../constants/elements'
  * Selects elements based on querySelectorAll :
  *  https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll
  *
- * Wich returns a nodeList of elements containing specified selectors.
+ * Which returns a nodeList of elements containing specified selectors.
  *
  * A nodeList is static and is not live. It's like a snapshot of the DOM.
  *

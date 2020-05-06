@@ -3,15 +3,15 @@ import '@testing-library/jest-dom'
 
 const DOC =
   // eslint-disable-next-line no-multi-str
-  '<div name="Sarah Connor" class="myFirstClass myFirdClass">hello</div>\
+  '<div name="Sarah Connor" class="myFirstClass myThirdClass">hello</div>\
   <div class="mySecondClass"></div>\
-  <div class="myFirdClass">world</div>\
+  <div class="myThirdClass">world</div>\
   <div class="myFourthClass"></div>\
   <div class ="myFirstClass">!</div>\
   <div class ="myFifthClass mySixthClass">!</div>\
   <div class="myFirstClass">\
     <div class="myFirstClass"></div>\
-    <div class="myFirdClass mySecondClass" id="myId">Hello world!</div>\
+    <div class="myThirdClass mySecondClass" id="myId">Hello world!</div>\
     <div class="mySecondClass myThirdClass" id="mySecondId"></div>\
   </div>'
 

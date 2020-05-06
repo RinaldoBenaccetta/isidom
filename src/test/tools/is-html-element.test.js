@@ -2,15 +2,15 @@ import { $isHtmlElement } from '../../index'
 
 document.body.innerHTML =
   // eslint-disable-next-line no-multi-str
-  '<div class="myFirstClass myFirdClass">hello</div>\
+  '<div class="myFirstClass myThirdClass">hello</div>\
   <div class="mySecondClass"></div>\
-  <div class="myFirdClass">world</div>\
+  <div class="myThirdClass">world</div>\
   <div class="myFourthClass"></div>\
   <div class ="myFirstClass">!</div>\
   <div class ="myFifthClass mySixthClass">!</div>\
   <div class="myFirstClass" id="myId">\
     <div class="myFirstClass"></div>\
-    <div class="myFirdClass mySecondClass"></div>\
+    <div class="myThirdClass mySecondClass"></div>\
     <div class="myFirstClass myThirdClass"></div>\
     <div class="mySecondClass myThirdClass"></div>\
   </div>'
@@ -22,10 +22,10 @@ describe('$isCollection', () => {
       expect($isHtmlElement(htmlElement)).toBeTruthy()
     })
 
-    describe('given an nodelist', () => {
+    describe('given an nodeList', () => {
       test('is not an element', () => {
-        const nodelist = document.querySelectorAll('myFirstClass')
-        expect($isHtmlElement(nodelist)).toBeFalsy()
+        const nodeList = document.querySelectorAll('myFirstClass')
+        expect($isHtmlElement(nodeList)).toBeFalsy()
       })
     })
 
