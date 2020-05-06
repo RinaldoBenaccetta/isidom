@@ -2,7 +2,8 @@
 /node_modules
 
 base.js
-/src/experiment.js
 /tmp/doc.md
 
-/test/coverage
+src/test/coverage
+
+*.experiment.js
