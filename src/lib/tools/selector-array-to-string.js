@@ -8,7 +8,7 @@ import { $selectorToArray } from './selector-to-array'
  * Each string from the array will be transformed in a class name
  * if 'dot' is set to true. e.g. : 'myClass' becomes '.myClass',
  * '.myClass' stays '.myClass'.
- * 
+ *
  * If 'dot' is set to false, any dot in class name will be removed.
  * e.g. : '.myClass' becomes 'myClass'.
  *

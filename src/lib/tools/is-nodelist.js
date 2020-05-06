@@ -4,7 +4,7 @@
  *
  * @example
  * if(isi.$isNodeList(input)) { make something }
- * 
+ *
  * @param {*} input
  *
  * @returns {boolean}

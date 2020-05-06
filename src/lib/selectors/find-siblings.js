@@ -2,7 +2,8 @@ import * as values from '../constants/values'
 
 /**
  * @description
- * Returns an array containing siblings HTMLElement from a specified HTMLElement.
+ * Returns an array containing siblings HTMLElement
+ * from a specified HTMLElement.
  *
  * Returns null if there are no siblings.
  *

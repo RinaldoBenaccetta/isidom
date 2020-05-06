@@ -4,8 +4,8 @@ import * as elements from '../constants/elements'
 
 /**
  * @description
- * Selects elements based on getElementsByClassName(https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName) wich returns
- * an HTMLCollection of elements containing specified class.
+ * Selects elements based on getElementsByClassName(https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName)
+ * which returns an HTMLCollection of elements containing specified class.
  *
  * An HTMLCollection is live : change in the DOM is reflected
  * in the HTMLCollection.
@@ -20,7 +20,7 @@ import * as elements from '../constants/elements'
  * The string and strings in array can have spaces at start an end.
  * @param {HTMLElement=} [element=document]
  *
- * @returns {HTMLCollection} 
+ * @returns {HTMLCollection}
  */
 export function $byClassLive (classList, element = elements.$document) {
   return element.getElementsByClassName(

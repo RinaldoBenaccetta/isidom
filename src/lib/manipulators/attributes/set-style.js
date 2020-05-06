@@ -16,7 +16,7 @@
  * isi.$setStyle('red', 'backgroundColor', element)
  * // or
  * isi.$setStyle('red', $jsBackgroundColor, element)
- * 
+ *
  *
  * // Will set the background-color of the element.
  *

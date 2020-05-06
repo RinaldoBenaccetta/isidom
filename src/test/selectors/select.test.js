@@ -3,40 +3,39 @@ import '@testing-library/jest-dom'
 
 document.body.innerHTML =
   // eslint-disable-next-line no-multi-str
-  '<div class="myFirstClass myFirdClass">hello</div>\
+  '<div class="myFirstClass myThirdClass">hello</div>\
   <div class="mySecondClass"></div>\
-  <span class="myFirdClass" data-color="red">world</span>\
+  <span class="myThirdClass" data-color="red">world</span>\
   <p class="myFourthClass"></p>\
   <div class ="myFifthClass mySixthClass">!</div>\
   <div class="myFirstClass" id="myId">\
-    <span name="Jhon Doe" class ="myFirdClass" data-color="red">find me</span>\
-    <span name="Jhon Doe" class ="mySecondClass" data-color="red">!</span>\
-    <div name="Jhon Doe" class="myFirstClass"></div>\
-    <div class="myFirdClass mySecondClass"></div>\
+    <span name="John Doe" class ="myThirdClass" data-color="red">find me</span>\
+    <span name="John Doe" class ="mySecondClass" data-color="red">!</span>\
+    <div name="John Doe" class="myFirstClass"></div>\
+    <div class="myThirdClass mySecondClass"></div>\
     <div class="myFirstClass myThirdClass"></div>\
     <div class="mySecondClass myThirdClass"></div>\
   </div>'
 
 describe('select', () => {
   describe('given a valid string', () => {
-    test('return a nodelist', () => {
+    test('return a nodeList', () => {
       const NODE_LIST = $select('.myFirstClass')
       const TEST_NODE = NodeList.prototype.isPrototypeOf(NODE_LIST)
       expect(TEST_NODE).toBeTruthy()
     })
 
-    test('wich selectors appear in the dom return a nodelist containing only elements with these selectors', () => {
-      //   const NODE_LIST = $select("div.myFirstClass>span span[data-color='red'] span[name='Jhon Doe']")
+    test('which selectors appear in the dom return a nodeList containing only elements with these selectors', () => {
       const NODE_LIST = $select(
-        'div.myFirstClass>span.myFirdClass[name="Jhon Doe"][data-color="red"]'
+        'div.myFirstClass>span.myThirdClass[name="John Doe"][data-color="red"]'
       )
       expect(NODE_LIST.length).toBe(1)
       expect(NODE_LIST[0]).toHaveTextContent('find me')
     })
 
-    test('wich selectors match nothing return an empty nodelist', () => {
+    test('which selectors match nothing return an empty nodeList', () => {
       const NODE_LIST = $select(
-        'div.myFirstClass>span.myFirdClass[name="Jhon Doe"][data-color="blue"]'
+        'div.myFirstClass>span.myThirdClass[name="John Doe"][data-color="blue"]'
       )
       expect(NODE_LIST.length).toBe(0)
     })
@@ -53,14 +52,14 @@ describe('select', () => {
 
   test('wich selectors appear in the dom return a nodelist containing only elements with these selectors', () => {
     const TARGET_ID = document.getElementById('myId')
-    const NODE_LIST = $select('span.myFirdClass[data-color="red"]', TARGET_ID)
+    const NODE_LIST = $select('span.myThirdClass[data-color="red"]', TARGET_ID)
     expect(NODE_LIST.length).toBe(1)
     expect(NODE_LIST[0]).toHaveTextContent('find me')
   })
 
   test('wich selectors match nothing return an empty nodelist', () => {
     const TARGET_ID = document.getElementById('myId')
-    const NODE_LIST = $select('span.myFirdClass[data-color="blue"]', TARGET_ID)
+    const NODE_LIST = $select('span.myThirdClass[data-color="blue"]', TARGET_ID)
     expect(NODE_LIST.length).toBe(0)
   })
 })

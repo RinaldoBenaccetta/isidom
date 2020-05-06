@@ -13,11 +13,11 @@
  * // E.g. :
  *
  * isi.$setStyle('background-color', element)
- * 
+ *
  * // or
- * 
+ *
  * isi.$setStyle($cssBackgroundColor, element)
- * 
+ *
  * // Will remove the background-color style of the element.
  *
  * @param {string} property

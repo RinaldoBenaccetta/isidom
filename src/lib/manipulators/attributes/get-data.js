@@ -8,9 +8,9 @@ import { $getAttribute } from './get-attribute'
  *
  * @example
  * let a = isi.$getData(data, element)
- * 
+ *
  * // E.g. :
- * 
+ *
  * let a = isi.$getData('color', element)
  * // Will return the data-color of the Element.
  *

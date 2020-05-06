@@ -6,15 +6,18 @@ import * as elements from '../../constants/elements'
  * @description
  * Adds a class or a list of classes to an HTMLElement
  * or to all HTMLElements of a nodeList or an HTMLCollection.
- * 
+ *
  * If in the application, classes are added only on HTMLELement a few
- * number of times, then the best for minification would be to not use $addClass, but instead use this :
+ * number of times, then the best for minification would be
+ * to not use $addClass, but instead use this :
  *
  *     myElement[isi.$classList].add(class)
  *     // Or :
  *     myElement['classList'].add(class)
- * 
- * That's doesn't apply if $forEach or other classes and attributes manipulators are already used. In this case, the best is to use $addClass.
+ *
+ * That's doesn't apply if $forEach or other classes and
+ * attributes manipulators are already used.
+ * In this case, the best is to use $addClass.
  *
  * @example
  * isi.$addClass('myClass', element)

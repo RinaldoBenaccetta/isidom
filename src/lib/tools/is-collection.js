@@ -4,7 +4,7 @@
  *
  * @example
  * if(isi.$isCollection(input)) { make something }
- * 
+ *
  * @param {*} input
  *
  * @returns {boolean}

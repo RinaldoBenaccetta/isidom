@@ -6,12 +6,12 @@ import { $isCollection } from './is-collection'
  * @description
  * Replacement based on *for* loop for the *forEach* native Javascript function.
  * Note that $forEach returns nothing.
- * 
+ *
  * @example
  * isi.$forEach(functionToExecute}, element)
- * 
+ *
  * // Or :
- * 
+ *
  * isi.$forEach(itemsInElement => {
  *     itemsInElement.doSomething
  * }, element)
@@ -19,7 +19,7 @@ import { $isCollection } from './is-collection'
  * // Note that outside of the DOM elements, the $forEach function does not act
  * // on the element itself.
  * // E.g. :
- * 
+ *
  * let myArray = [1, 2, 3]
  * isi.$forEach(item => {
  *     items = item * 2
@@ -27,7 +27,7 @@ import { $isCollection } from './is-collection'
  *
  * // Will not transform myArray in [2, 4, 6]. myArray will stay [1, 2, 3].
  * // To do that, this code will do the job :
- * 
+ *
  * let myArray = [1, 2, 3]
  * let outputArray = []
  * isi.$forEach(item => {

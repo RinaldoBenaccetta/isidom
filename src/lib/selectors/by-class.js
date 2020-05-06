@@ -6,7 +6,8 @@ import * as constant from '../constants/elements'
  * Selects elements based on querySelectorAll(https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll) wich returns a static nodeList of
  * elements containing specified classes.
  *
- * The result is not live : Change in the DOM do not affect the nodeList content.
+ * The result is not live :
+ * Change in the DOM do not affect the nodeList content.
  * https://developer.mozilla.org/en-US/docs/Web/API/NodeList
  *
  * The nodeList accepts native JS forEach.

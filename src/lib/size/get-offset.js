@@ -2,7 +2,8 @@ import * as elements from '../constants/elements'
 
 /**
  * @description
- * Returns an object containing the top and left positions of a specified element relative to the top and left of the view.
+ * Returns an object containing the top and left positions
+ * of a specified element relative to the top and left of the view.
  *
  * @example
  * let offset = isi.$getOffset(element)
@@ -12,7 +13,8 @@ import * as elements from '../constants/elements'
  * @param {HTMLElement} element
  *
  * @returns {Object}
- * The returned object contains the 'top' and 'left' properties that can be accessed.
+ * The returned object contains the 'top' and 'left' properties
+ * that can be accessed.
  */
 export function $getOffset (element) {
   var rectangle = element.getBoundingClientRect()

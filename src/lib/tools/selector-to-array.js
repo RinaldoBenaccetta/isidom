@@ -7,7 +7,8 @@ import { $cleanSelector } from './clean-selector'
  *
  * The spaces at the start and end of the string will be removed.
  *
- * A sole string will return an array with the string as the only item in the array.
+ * A sole string will return an array with the string
+ * as the only item in the array.
  *
  * @example
  * let a = isi.$selectorToArray(input)
