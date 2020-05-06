@@ -462,7 +462,7 @@ const $jsZoom = $cssZoom;
  * Returns the specified attribute of the specified HTMLElement.
  *
  * @example
- * let a = $getAttribute('attribute', element)
+ * let a = isi.$getAttribute('attribute', element)
  *
  * @param {string} attribute
  * @param {HTMLElement} element
@@ -497,7 +497,7 @@ function $getAttribute (attribute, element) {
  *
  * // The data can be directly accessed like this :
  *
- * let a = $getAttributes(element).type
+ * let a = isi.$getAttributes(element).type
  *
  * // But in this case, the best would be to use the $getAttribute function
  * // instead of $getAttributes.
@@ -522,12 +522,11 @@ function $getAttributes (element) {
  * If the specified data is not present in the HTMLElement, null is returned.
  *
  * @example
- * let a = $getData(data, element)
- * 
- * // Or
- * 
- * let a = $getData('color', element)
+ * let a = isi.$getData(data, element)
  *
+ * // E.g. :
+ *
+ * let a = isi.$getData('color', element)
  * // Will return the data-color of the Element.
  *
  * @param {string} data
@@ -555,12 +554,9 @@ function $getData (data, element) {
  *
  * // E.g. :
  *
- * let a = $getStyle('backgroundColor', element)
- * 
+ * let a = isi.$getStyle('backgroundColor', element)
  * // or
- * 
- * let a = $getStyle($jsBackgroundColor, element)
- *
+ * let a = isi.$getStyle($jsBackgroundColor, element)
  * // Will return the background-color of the element.
  *
  * @param {string} property
@@ -580,7 +576,7 @@ function $getStyle (property, element) {
  * Returns the text value of the specified HTMLElement.
  *
  * @example
- * let a = $getText(element)
+ * let a = isi.$getText(element)
  *
  * @param {HTMLElement} element
  *
@@ -595,7 +591,7 @@ function $getText (element) {
  * Returns the value of an input element.
  *
  * @example
- * let a = $getValue(input)
+ * let a = isi.$getValue(input)
  *
  * @param {HTMLElement} input
  *
@@ -615,16 +611,16 @@ function $getValue (input) {
  * E.g. : $cssBackgroundColor instead of $jsBackgroundColor.
  *
  * @example
- * $removeStyle(property, element)
+ * isi.$removeStyle(property, element)
  *
  * // E.g. :
  *
- * $setStyle('background-color', element)
- * 
+ * isi.$setStyle('background-color', element)
+ *
  * // or
- * 
- * $setStyle($cssBackgroundColor, element)
- * 
+ *
+ * isi.$setStyle($cssBackgroundColor, element)
+ *
  * // Will remove the background-color style of the element.
  *
  * @param {string} property
@@ -640,11 +636,11 @@ function $removeStyle (property, element) {
 
 /**
  * @description
- * Checks if input is a nodelist and returns true or false.
+ * Checks if input is a nodeList and returns true or false.
  *
  * @example
- * if($isNodeList(input)) { make something }
- * 
+ * if(isi.$isNodeList(input)) { make something }
+ *
  * @param {*} input
  *
  * @returns {boolean}
@@ -658,8 +654,8 @@ function $isNodeList (input) {
  * @description
  * Checks if input is an array or not and returns true or false.
  *
- * @example 
- * if($isArray(input)) { make something }
+ * @example
+ * if(isi.$isArray(input)) { make something }
  *
  * @param {*} input
  *
@@ -674,8 +670,8 @@ function $isArray (input) {
  * Checks if input is an HTMLcollection and returns true or false.
  *
  * @example
- * if($isCollection(input)) { make something }
- * 
+ * if(isi.$isCollection(input)) { make something }
+ *
  * @param {*} input
  *
  * @returns {boolean}
@@ -689,31 +685,31 @@ function $isCollection (input) {
  * @description
  * Replacement based on *for* loop for the *forEach* native Javascript function.
  * Note that $forEach returns nothing.
- * 
+ *
  * @example
- * $forEach(functionToExecute}, element)
- * 
+ * isi.$forEach(functionToExecute}, element)
+ *
  * // Or :
- * 
- * $forEach(itemsInElement => {
+ *
+ * isi.$forEach(itemsInElement => {
  *     itemsInElement.doSomething
  * }, element)
  *
  * // Note that outside of the DOM elements, the $forEach function does not act
  * // on the element itself.
  * // E.g. :
- * 
+ *
  * let myArray = [1, 2, 3]
- * $forEach(item => {
+ * isi.$forEach(item => {
  *     items = item * 2
  * }, myArray)
  *
  * // Will not transform myArray in [2, 4, 6]. myArray will stay [1, 2, 3].
  * // To do that, this code will do the job :
- * 
+ *
  * let myArray = [1, 2, 3]
  * let outputArray = []
- * $forEach(item => {
+ * isi.$forEach(item => {
  *     outputArray.push(item * 2)
  * }, myArray)
  * console.log(outputArray) // this should output [2, 4, 6].
@@ -722,9 +718,9 @@ function $isCollection (input) {
  * This is the function that will be executed in the forEach loop.
  *
  * @param {*} element
- * This is the array, the nodelist, the HTMLCollection or the HTMLElement that
+ * This is the array, the nodeList, the HTMLCollection or the HTMLElement that
  * will be processed by the for loop.
- * If this is not an array, an HTMLCollection or a nodelist,
+ * If this is not an array, an HTMLCollection or a nodeList,
  * the function will be executed once on the argument. Note : a string is
  * an array of letters.
  */
@@ -745,10 +741,10 @@ function $forEach (functionToExecute, element) {
  *
  * To be used like this :
  *
- *     $setAttributes(value, attribute, element)
+ *     isi.$setAttributes(value, attribute, element)
  *
  * @example
- * $setAttributes('Jhon Doe', 'name', element)
+ * isi.$setAttributes('John Doe', 'name', element)
  *
  * @param {string} value
  * @param {string} attribute
@@ -771,16 +767,14 @@ function $setAttribute (value, attribute, element) {
  * E.g. : $jsBackgroundColor instead of $cssBackgroundColor.
  *
  * @example
- * $setStyle(value, property, element)
+ * isi.$setStyle(value, property, element)
  *
  * // E.g. :
  *
- * $setStyle('red', 'backgroundColor', element)
- * 
+ * isi.$setStyle('red', 'backgroundColor', element)
  * // or
- * 
- * $setStyle('red', $jsBackgroundColor, element)
- * 
+ * isi.$setStyle('red', $jsBackgroundColor, element)
+ *
  *
  * // Will set the background-color of the element.
  *
@@ -802,7 +796,7 @@ function $setStyle (value, property, element) {
  * Replaces the specified HTMLElement's text by the new specified one.
  *
  * @example
- * $setText('text', element)
+ * isi.$setText('text', element)
  *
  * @param {string} text
  * @param {HTMLElement} element
@@ -816,7 +810,7 @@ function $setText (text, element) {
  * Sets the specified value of the specified input element.
  *
  * @example
- * $setValue(value, input)
+ * isi.$setValue(value, input)
  *
  * @param {string|number|boolean} value
  *
@@ -831,11 +825,11 @@ function $setValue (value, input) {
  * Removes '.' and '#' from start of selectors names.
  *
  * '.myClass' becomes 'myClass' and '#myId' becomes 'myId'.
- * 
+ *
  * The spaces at the start and end of the string will be removed.
- * 
+ *
  * @example
- * let a = $cleanSelector(myElement)
+ * let a = isi.$cleanSelector(myElement)
  *
  * @param {string} selector
  *
@@ -855,10 +849,11 @@ function $cleanSelector (selector) {
  *
  * The spaces at the start and end of the string will be removed.
  *
- * A sole string will return an array with the string as the only item in the array.
+ * A sole string will return an array with the string
+ * as the only item in the array.
  *
  * @example
- * let a = $selectorToArray(input)
+ * let a = isi.$selectorToArray(input)
  *
  * @param {string|string[]} input
  *
@@ -878,17 +873,22 @@ function $selectorToArray (input) {
  * @description
  * Adds a class or a list of classes to an HTMLElement
  * or to all HTMLElements of a nodeList or an HTMLCollection.
- * 
- * If in the application, classes are added only on HTMLELement a few
- * number of times, then the best for minification would be to not use $addClass, but instead use this :
  *
- *     myElement[$classList].add(class)
- * 
- * That's doesn't apply if $forEach or other classes and attributes manipulators are already used. In this case, the best is to use $addClass.
+ * If in the application, classes are added only on HTMLELement a few
+ * number of times, then the best for minification would be
+ * to not use $addClass, but instead use this :
+ *
+ *     myElement[isi.$classList].add(class)
+ *     // Or :
+ *     myElement['classList'].add(class)
+ *
+ * That's doesn't apply if $forEach or other classes and
+ * attributes manipulators are already used.
+ * In this case, the best is to use $addClass.
  *
  * @example
- * $addClass('myClass', element)
- * $addClass(['myClass', 'myOtherClass'], element)
+ * isi.$addClass('myClass', element)
+ * isi.$addClass(['myClass', 'myOtherClass'], element)
  *
  * @param {(string|string[])} classList
  * @param {(HTMLElement|nodeList|HTMLCollection)} element
@@ -907,7 +907,7 @@ function $addClass (classList, element) {
  * Can only test one class at a time.
  *
  * @example
- * if($hasClass('className', element)) { make something }
+ * isi.if($hasClass('className', element)) { make something }
  *
  * @param {string} className
  * The string can start with a dot or not with no influence on the output.
@@ -924,18 +924,22 @@ function $hasClass (className, element) {
  * @description
  * Removes a class or a list of classes from an HTMLElement or
  * from all HTMLElement of a nodeList or an HTMLCollection.
- * 
+ *
  * If in the application, classes are removed only on HTMLELement a few
- * number of times, then the best for minification would be to not use $removeClass, but instead use this :
+ * number of times, then the best for minification would be
+ * to not use $removeClass, but instead use this :
  *
  *     myElement[$classList].remove(class)
+ *     // Or :
+ *     myElement['classList'].remove(class)
  *
- * That's doesn't apply if $forEach or other classes and attributes manipulators are
+ * That's doesn't apply if $forEach or other classes
+ * and attributes manipulators are
  * already used. In this case, the best is to use $removeClass.
  *
  * @example
- * $removeClass('myClass', element)
- * $removeClass(['myClass', 'myOtherClass'], element)
+ * isi.$removeClass('myClass', element)
+ * isi.$removeClass(['myClass', 'myOtherClass'], element)
  *
  * @param {(string|string[])} classList
  * @param {(HTMLElement|nodeList|HTMLCollection)} element
@@ -955,17 +959,21 @@ function $removeClass (classList, element) {
  * supported : https://caniuse.com/#search=classlist%20replace.
  * Until it's well supported, the best would be to use $toggleClass
  * on the two classes.
- * 
+ *
  * If in the application, classes are replaced only on HTMLELement a
  * few number of times, then the best for minification would be to not use
  * $replaceClass, but instead use this :
  *
  *     myElement[$classList].replace('oldClass', 'newClass')
+ *     // Or :
+ *     myElement['classList'].replace('oldClass', 'newClass')
  *
- * That's doen't apply if $forEach or other classes and attributes manipulators are already used. In this case, the best is to use $replaceClass.
+ * That's doen't apply if $forEach or other classes
+ * and attributes manipulators are already used.
+ * In this case, the best is to use $replaceClass.
  *
  * @example
- * $replaceClass('oldClass', 'newClass', element)
+ * isi.$replaceClass('oldClass', 'newClass', element)
  *
  * @param {string} oldClass
  * @param {string} newClass
@@ -984,18 +992,23 @@ function $replaceClass (oldClass, newClass, element) {
  * @description
  * Toggles a class or a list of classes of an HTMLElement
  * or of all HTMLElements of a nodeList or an HTMLCollection.
- * 
+ *
  * If in application, classes are toggled only on HTMLELement a few
- * number of times, then the best for minification would be to not use $toggleClass, but instead use this :
+ * number of times, then the best for minification
+ * would be to not use $toggleClass, but instead use this :
  *
  *     myElement[$classList].toggle(class)
+ *     //Or :
+ *     myElement['classList'].toggle(class)
  *
- * That's doesn't apply if $forEach or other classes and attributes manipulators are already used. In this case, the best is to use $toggleClass.
+ * That's doesn't apply if $forEach or other classes
+ * and attributes manipulators are already used.
+ * In this case, the best is to use $toggleClass.
  *
  * @example
- * $toggleClass('myClass', element)
- * $toggleClass(['myClass', 'myOtherClass'], element)
- * 
+ * isi.$toggleClass('myClass', element)
+ * isi.$toggleClass(['myClass', 'myOtherClass'], element)
+ *
  * @param {(string|string[])} classList
  * @param {(HTMLElement|nodeList|HTMLCollection)} element
  */
@@ -1016,14 +1029,14 @@ function $toggleClass (classList, element) {
  * Each string from the array will be transformed in a class name
  * if 'dot' is set to true. e.g. : 'myClass' becomes '.myClass',
  * '.myClass' stays '.myClass'.
- * 
+ *
  * If 'dot' is set to false, any dot in class name will be removed.
  * e.g. : '.myClass' becomes 'myClass'.
  *
  * Spaces from start and end of strings will be removed.
  *
  * @example
- * let a = $selectorArrayToString(input, false)
+ * let a = isi.$selectorArrayToString(input, false)
  *
  * @param {string|string[]} input
  * A string value will output the same string with or without '.' at start
@@ -1043,8 +1056,8 @@ function $selectorArrayToString (input, dot = $true) {
 
 /**
  * @description
- * Selects elements based on getElementsByClassName(https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName) wich returns
- * an HTMLCollection of elements containing specified class.
+ * Selects elements based on getElementsByClassName(https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName)
+ * which returns an HTMLCollection of elements containing specified class.
  *
  * An HTMLCollection is live : change in the DOM is reflected
  * in the HTMLCollection.
@@ -1052,14 +1065,14 @@ function $selectorArrayToString (input, dot = $true) {
  * An HTMLCollection doesn't accept forEach. Use other loops with it.
  *
  * @example
- * let a = $byClassLive('classList', element)
+ * let a = isi.$byClassLive('classList', element)
  *
  * @param {string|string[]} classList
  * The string and strings in array can start with a dot or not.
  * The string and strings in array can have spaces at start an end.
  * @param {HTMLElement=} [element=document]
  *
- * @returns {HTMLCollection} 
+ * @returns {HTMLCollection}
  */
 function $byClassLive (classList, element = $document) {
   return element.getElementsByClassName(
@@ -1069,16 +1082,17 @@ function $byClassLive (classList, element = $document) {
 
 /**
  * @description
- * Selects elements based on querySelectorAll(https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll) wich returns a static nodeList of
+ * Selects elements based on querySelectorAll(https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll) Which returns a static nodeList of
  * elements containing specified classes.
  *
- * The result is not live : Change in the DOM do not affect the nodeList content.
+ * The result is not live :
+ * Change in the DOM do not affect the nodeList content.
  * https://developer.mozilla.org/en-US/docs/Web/API/NodeList
  *
  * The nodeList accepts native JS forEach.
  *
  * @example
- * let a = $byClass('classList', element)
+ * let a = isi.$byClass('classList', element)
  *
  * @param {string|string[]} classList
  * The string and strings in array can start with a dot or not.
@@ -1097,11 +1111,11 @@ function $byClass (classList, element = $document) {
  * Returns null if nothing is found.
  *
  * @example
- * let a = $byId('id')
+ * let a = isi.$byId('id')
  *
  * @param {string} id
- * The string and strings in array can start with a # or not.
- * The string and strings in array can have spaces at start an end.
+ * The string can start with a # or not.
+ * The string can have spaces at start an end.
  *
  * @returns {HTMLElement|null}
  */
@@ -1117,7 +1131,7 @@ function $byId (id) {
  * Returns null if there are no next siblings found.
  *
  * @example
- * let a = $findNextSiblings(element)
+ * let a = isi.$findNextSiblings(element)
  *
  * @param {HTMLElement} element
  *
@@ -1136,10 +1150,10 @@ function $findNextSiblings (element) {
  * Replaces native JS property element.parentElement.
  * (https://developer.mozilla.org/en-US/docs/Web/API/Node/parentElement)
  *
- * Returns an HTMLElement wich is the parent of the specified HTMLElement.
+ * Returns an HTMLElement Which is the parent of the specified HTMLElement.
  *
  * @example
- * let a = $findParent(element)
+ * let a = isi.$findParent(element)
  *
  * @param {HTMLElement} element
  *
@@ -1160,7 +1174,7 @@ function $findParent (element) {
  * Returns null if there are no previous siblings found.
  *
  * @example
- * let a = $findPreviousSiblings(element)
+ * let a = isi.$findPreviousSiblings(element)
  *
  * @param {HTMLElement} element
  *
@@ -1176,12 +1190,13 @@ function $findPreviousSiblings (element) {
 
 /**
  * @description
- * Returns an array containing siblings HTMLElement from a specified HTMLElement.
+ * Returns an array containing siblings HTMLElement
+ * from a specified HTMLElement.
  *
  * Returns null if there are no siblings.
  *
  * @example
- * let a = $findSiblings(element)
+ * let a = isi.$findSiblings(element)
  *
  * @param {HTMLElement} element
  *
@@ -1203,7 +1218,7 @@ function $findSiblings (element) {
  * Selects elements based on querySelectorAll :
  *  https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll
  *
- * Wich returns a nodeList of elements containing specified selectors.
+ * Which returns a nodeList of elements containing specified selectors.
  *
  * A nodeList is static and is not live. It's like a snapshot of the DOM.
  *
@@ -1211,7 +1226,7 @@ function $findSiblings (element) {
  *
  * @example
  * let query = "div.myClass, div.myOtherClass"
- * let a = $select(query, element)
+ * let a = isi.$select(query, element)
  *
  * @param {string} query
  * @param {element} [element=document]
@@ -1228,7 +1243,7 @@ function $select (query, element = $document) {
  * If no HTMLElement is specified, the height of the window is returned.
  *
  * @example
- * let a = $getHeight(element)
+ * let a = isi.$getHeight(element)
  *
  * @param {HTMLElement} [element=null]
  *
@@ -1248,17 +1263,19 @@ function $getHeight (element = $null) {
 
 /**
  * @description
- * Returns an object containing the top and left positions of a specified element relative to the top and left of the view.
+ * Returns an object containing the top and left positions
+ * of a specified element relative to the top and left of the view.
  *
  * @example
- * let a = $getOffset(element)
- * console.log(a.top)
- * console.log(a.left)
+ * let offset = isi.$getOffset(element)
+ * console.log(offset.top)
+ * console.log(offset.left)
  *
  * @param {HTMLElement} element
  *
  * @returns {Object}
- * The returned object contains the 'top' and 'left' properties that can be accessed.
+ * The returned object contains the 'top' and 'left' properties
+ * that can be accessed.
  */
 function $getOffset (element) {
   var rectangle = element.getBoundingClientRect();
@@ -1275,7 +1292,7 @@ function $getOffset (element) {
  * the width of the window is returned.
  *
  * @example
- * let a = $getWidth(element)
+ * let a = isi.$getWidth(element)
  *
  * @param {HTMLElement} [element=null]
  *
@@ -1297,25 +1314,25 @@ function $getWidth (element = $null) {
  * @description
  * Filters an HTMLCollection and returns an array with the fitered HTMLElements.
  * Returns null if nothing matches the filter.
- * 
+ *
  * @example
- * let a = $filterCollection("div.myClass input[name='myName']", myElement)
+ * let a = isi.$filterCollection("div.myClass input[name='myName']", myElement)
  *
  * @param {string} filter
  * The filter like in querySelector :
  *  https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector
- * @param {HTMLElement} element
+ * @param {HTMLCollection} collection
  *
  * @returns {Array|null}
  * An array of HTMLElement.
  */
-function $filterCollection (filter, element) {
+function $filterCollection (filter, collection) {
   var output = [];
-  for (var i = 0; i < element.length; i++) {
-    // if nodetype is an element and match selector :
+  for (var i = 0; i < collection.length; i++) {
+    // if nodeType is an element and match selector :
     // push the element in the array
-    if (element[i].nodeType === 1 && element[i].matches(filter)) {
-      output.push(element[i]);
+    if (collection[i].nodeType === 1 && collection[i].matches(filter)) {
+      output.push(collection[i]);
     }
   }
 
@@ -1331,7 +1348,7 @@ function $filterCollection (filter, element) {
  * the specified parent element.
  *
  * @example
- * if($isExisting(query)) { make something }
+ * if(isi.$isExisting(query)) { make something }
  *
  * @param {string} query
  * @param {HTMLElement=} [element=document]
@@ -1347,7 +1364,7 @@ function $isExisting (query, element = $document) {
  * Checks if input is an HTMLelement and returns true or false.
  *
  * @example
- * if($isHtmlElement(input)) { make something }
+ * if(isi.$isHtmlElement(input)) { make something }
  *
  * @param {*} input
  *
@@ -1360,13 +1377,13 @@ function $isHtmlElement (input) {
 /**
  * @description
  * Replacement for : typeof variable === 'undefined'
- * 
+ *
  * @example
  * // instead of this :
  * typeof variable === 'undefined'
- * 
+ *
  * // Use this :
- * if($isUndefined(variable)) { make something }
+ * if(isi.$isUndefined(variable)) { make something }
  *
  * @param {*} variable
  *

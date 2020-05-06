@@ -63,7 +63,7 @@ A browser side Javascript library to easily and intuitively manipulate the DOM a
 
 ## Introduction
 
-### What is Isidomdom ?
+### What is Isidom ?
 
 The first goal of Isidom is to maximise minification of vanilla DOM manipulation.
 Isidom should replace method, chained methods and values for optimisation of minification.
@@ -88,20 +88,16 @@ document.getElementById('myId').classList.add(...['myNewClass','anotherClass','a
 The same example with Isidom :
 
 ```javascript
-let classes = [
-    'myNewClass',
-    'anotherClass',
-    'andAgain'
-    ]
-isi.$addClass(classes, isi.$byID('myID'))
+let classes = ["myNewClass", "anotherClass", "andAgain"];
+isi.$addClass(classes, isi.$byID("myID"));
 
 // Will be minified like this :
 
-a(['myNewClass','anotherClass','andAgain'],b('myID'))
+a(["myNewClass", "anotherClass", "andAgain"], b("myID"));
 // That makes 53 characters.
 ```
 
-Be carefull : the two functions (and their subfunctions) $addClass and $byId together use something like 450 characters (minified), so the example above would make about 500 characters. To be interesting in term of minification, theses function should be written at least 5 or 6 times. Note that subfunction are reused by all tools of Isidom. For small piece of code, Isidom not make sense, but with larger application, with several DOM manipulation, it can. By the way, Isidom stays simpler and shorter to write.
+Be careful : the two functions (and their subfunctions) $addClass and $byId together use something like 450 characters (minified), so the example above would make about 500 characters. To be interesting in term of minification, theses function should be written at least 5 or 6 times. Note that subfunction are reused by all tools of Isidom. For small piece of code, Isidom not make sense, but with larger application, with several DOM manipulation, it can. By the way, Isidom stays simpler and shorter to write.
 
 
 ## How to use
@@ -130,7 +126,7 @@ isi.$addClass( 'myClass', isi.$byId( 'myId' ))
 
 install :
 
-    npm install isidom --save-dev
+    npm install isidom
 
 Then import Isidom in your entry point :
 
@@ -302,7 +298,7 @@ Returns **[boolean][57]**
 
 ### $isNodeList
 
-Checks if input is a nodelist and returns true or false.
+Checks if input is a nodeList and returns true or false.
 
 #### Parameters
 
@@ -338,7 +334,8 @@ Returns an array of strings without '.' and '#' at start of strings.
 
 The spaces at the start and end of the string will be removed.
 
-A sole string will return an array with the string as the only item in the array.
+A sole string will return an array with the string
+as the only item in the array.
 
 #### Parameters
 
@@ -389,9 +386,9 @@ Note that $forEach returns nothing.
 #### Parameters
 
 -   `functionToExecute` **[function][61]** This is the function that will be executed in the forEach loop.
--   `element` **any** This is the array, the nodelist, the HTMLCollection or the HTMLElement that
+-   `element` **any** This is the array, the nodeList, the HTMLCollection or the HTMLElement that
     will be processed by the for loop.
-    If this is not an array, an HTMLCollection or a nodelist,
+    If this is not an array, an HTMLCollection or a nodeList,
     the function will be executed once on the argument. Note : a string is
     an array of letters.
 
@@ -472,10 +469,11 @@ Returns **[string][58]**
 
 ### $byClass
 
-Selects elements based on querySelectorAll([https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll][63]) wich returns a static nodeList of
+Selects elements based on querySelectorAll([https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll][63]) Which returns a static nodeList of
 elements containing specified classes.
 
-The result is not live : Change in the DOM do not affect the nodeList content.
+The result is not live :
+Change in the DOM do not affect the nodeList content.
 [https://developer.mozilla.org/en-US/docs/Web/API/NodeList][64]
 
 The nodeList accepts native JS forEach.
@@ -496,8 +494,8 @@ Returns **[NodeList][65]**
 
 ### $byClassLive
 
-Selects elements based on getElementsByClassName([https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName][66]) wich returns
-an HTMLCollection of elements containing specified class.
+Selects elements based on getElementsByClassName([https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName][66])
+which returns an HTMLCollection of elements containing specified class.
 
 An HTMLCollection is live : change in the DOM is reflected
 in the HTMLCollection.
@@ -541,7 +539,7 @@ Returns **([HTMLElement][59] | null)**
 Selects elements based on querySelectorAll :
  [https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll][63]
 
-Wich returns a nodeList of elements containing specified selectors.
+Which returns a nodeList of elements containing specified selectors.
 
 A nodeList is static and is not live. It's like a snapshot of the DOM.
 
@@ -566,7 +564,7 @@ Returns **[NodeList][65]**
 Replaces native JS property element.parentElement.
 ([https://developer.mozilla.org/en-US/docs/Web/API/Node/parentElement][68])
 
-Returns an HTMLElement wich is the parent of the specified HTMLElement.
+Returns an HTMLElement Which is the parent of the specified HTMLElement.
 
 #### Parameters
 
@@ -582,7 +580,8 @@ Returns **[HTMLElement][59]**
 
 ### $findSiblings
 
-Returns an array containing siblings HTMLElement from a specified HTMLElement.
+Returns an array containing siblings HTMLElement
+from a specified HTMLElement.
 
 Returns null if there are no siblings.
 
@@ -669,13 +668,16 @@ Adds a class or a list of classes to an HTMLElement
 or to all HTMLElements of a nodeList or an HTMLCollection.
 
 If in the application, classes are added only on HTMLELement a few
-number of times, then the best for minification would be to not use $addClass, but instead use this :
+number of times, then the best for minification would be
+to not use $addClass, but instead use this :
 
     myElement[isi.$classList].add(class)
     // Or :
     myElement['classList'].add(class)
 
-That's doesn't apply if $forEach or other classes and attributes manipulators are already used. In this case, the best is to use $addClass.
+That's doesn't apply if $forEach or other classes and
+attributes manipulators are already used.
+In this case, the best is to use $addClass.
 
 #### Parameters
 
@@ -695,13 +697,15 @@ Removes a class or a list of classes from an HTMLElement or
 from all HTMLElement of a nodeList or an HTMLCollection.
 
 If in the application, classes are removed only on HTMLELement a few
-number of times, then the best for minification would be to not use $removeClass, but instead use this :
+number of times, then the best for minification would be
+to not use $removeClass, but instead use this :
 
     myElement[$classList].remove(class)
     // Or :
     myElement['classList'].remove(class)
 
-That's doesn't apply if $forEach or other classes and attributes manipulators are
+That's doesn't apply if $forEach or other classes
+and attributes manipulators are
 already used. In this case, the best is to use $removeClass.
 
 #### Parameters
@@ -722,13 +726,16 @@ Toggles a class or a list of classes of an HTMLElement
 or of all HTMLElements of a nodeList or an HTMLCollection.
 
 If in application, classes are toggled only on HTMLELement a few
-number of times, then the best for minification would be to not use $toggleClass, but instead use this :
+number of times, then the best for minification
+would be to not use $toggleClass, but instead use this :
 
     myElement[$classList].toggle(class)
     //Or :
     myElement['classList'].toggle(class)
 
-That's doesn't apply if $forEach or other classes and attributes manipulators are already used. In this case, the best is to use $toggleClass.
+That's doesn't apply if $forEach or other classes
+and attributes manipulators are already used.
+In this case, the best is to use $toggleClass.
 
 #### Parameters
 
@@ -760,7 +767,9 @@ $replaceClass, but instead use this :
     // Or :
     myElement['classList'].replace('oldClass', 'newClass')
 
-That's doen't apply if $forEach or other classes and attributes manipulators are already used. In this case, the best is to use $replaceClass.
+That's doen't apply if $forEach or other classes
+and attributes manipulators are already used.
+In this case, the best is to use $replaceClass.
 
 #### Parameters
 
@@ -853,7 +862,7 @@ To be used like this :
 #### Examples
 
 ```javascript
-isi.$setAttributes('Jhon Doe', 'name', element)
+isi.$setAttributes('John Doe', 'name', element)
 ```
 
 ## Data manipulators
@@ -1098,7 +1107,8 @@ Returns **[number][71]**
 
 ### $getOffset
 
-Returns an object containing the top and left positions of a specified element relative to the top and left of the view.
+Returns an object containing the top and left positions
+of a specified element relative to the top and left of the view.
 
 #### Parameters
 
@@ -1112,7 +1122,8 @@ console.log(offset.top)
 console.log(offset.left)
 ```
 
-Returns **[Object][70]** The returned object contains the 'top' and 'left' properties that can be accessed.
+Returns **[Object][70]** The returned object contains the 'top' and 'left' properties
+that can be accessed.
 
 ## Constants
 
@@ -1127,66 +1138,66 @@ E.G. :
 with use of constant :
 
 ```javascript
-$setStyle('red', $jsBackgroundColor, firstElement)
+$setStyle("red", $jsBackgroundColor, firstElement);
 ```
 
 Will be minified like this :
 
 ```javascript
-var b='backgroundColor'
-a('red',b,c)
+var b = "backgroundColor";
+a("red", b, c);
 // Total : 35 characters.
 ```
 
 Without use of constant :
 
 ```javascript
-$setStyle('red', 'backgroundColor', firstElement)
+$setStyle("red", "backgroundColor", firstElement);
 ```
 
 Will be minified like this :
 
 ```javascript
-a('red','backgroundColor',c)
+a("red", "backgroundColor", c);
 // Total : 28 characters.
 ```
 
-for one occurence of $jsBackgroundColor, that makes 35 characters with constant vs. 29 characters without constant. That's not so interresting.
+for one occurrence of \\$jsBackgroundColor, that makes 35 characters with constant vs. 29 characters without constant. That's not so interesting.
 
-_But with two occurences..._
+_But with two occurrences..._
 
 with use of constant :
 
 ```javascript
-$setStyle('red', $jsBackgroundColor, firstElement)
-$setStyle('green', $jsBackgroundColor, secondElement)
+$setStyle("red", $jsBackgroundColor, firstElement);
+$setStyle("green", $jsBackgroundColor, secondElement);
 ```
 
 Will be minified like this :
 
 ```javascript
-var b='backgroundColor'
-a('red',b,c)
-a('red',b,d)
+var b = "backgroundColor";
+a("red", b, c);
+a("red", b, d);
 // Total : 47 characters.
 ```
 
- Without use of constant :
+Without use of constant :
 
 ```javascript
-$setStyle('red', 'backgroundColor', firstElement)
-$setStyle('green', 'backgroundColor', secondElement)
+$setStyle("red", "backgroundColor", firstElement);
+$setStyle("green", "backgroundColor", secondElement);
 ```
 
 Will be minified like this :
 
 ```javascript
-a('red','backgroundColor',c)
-a('red','backgroundColor',d)
+a("red", "backgroundColor", c);
+a("red", "backgroundColor", d);
 // Total : 56 characters.
 ```
 
-For two occurences of $jsBackgroundColor, that make 47 characters with constant vs. 56 characters without constant. That becomes interesting. And that will become more and more interesting with more occurences. (59 characters vs. 84 for three occurences, 71 vs. 112 for four occurences, ...).
+For two occurrences of \\$jsBackgroundColor, that make 47 characters with constant vs. 56 characters without constant. That becomes interesting. And that will become more and more interesting with more occurrences. (59 characters vs. 84 for three occurrences, 71 vs. 112 for four occurrences, ...).
 
 
 ### Common values
@@ -2154,8 +2165,8 @@ $jsZoom = 'zoom'
 
 ## Todo
 
--   Add some shortcut function like $addClassToId for _$addClass(classes, $byID('myID'))_
--   ... and some other functions, like $addClassToClass, $addTextToId, $getVlaueFromId,...
+-   Add some shortcut function like $addClassToId for $addClass(classes, \\$byID('myID'))
+-   ... and some other functions, like $addClassToClass, $addTextToId, \\$getValueFromId,...
 
 
 [1]: #introduction
