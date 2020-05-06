@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.2
+
+### Fix
+
+- Minor fixes.
+
 ## 1.0.1
 
 ### Add
