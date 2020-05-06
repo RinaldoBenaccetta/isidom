@@ -47,8 +47,8 @@
     "url": "https://github.com/RinaldoBenaccetta/isi.git"
   },
   "scripts": {
-    "test": "jest",
-    "testwatch": "jest --watchAll",
+    "test": "jest --config ./jest.config.json",
+    "testwatch": "jest --config ./jest.config.json --watchAll",
     "rollup": "npx rollup --config",
     "codedoc": "documentation --config documentation.yml build src/lib/** -f md -o tmp/doc.md --markdown-toc-max-depth 3",
     "codedocwatch": "documentation --config documentation.yml build src/lib/** -f md -o ./tmp/doc.md -w --markdown-toc-max-depth 3",
@@ -57,7 +57,7 @@
     "doc": "npm run codedoc && npm run docinclude",
     "build": "npm run lint && npm run test && npm run rollup && npm run doc",
     "lint": "eslint . --fix",
-    "coveralls": "jest --silent && cat .src/test/coverage/lcov.info | coveralls"
+    "coveralls": "jest --silent && cat ./src/test/coverage/lcov.info | coveralls"
   },
   "author": "npm",
   "license": "MIT",
