@@ -54,7 +54,7 @@
     "docinclude": "npx markdown-include markdown.json",
     "doc": "npm run codedoc && npm run docinclude",
     "build": "rollup && doc",
-    "lint": "eslint ."
+    "lint": "eslint . --fix"
   },
   "author": "npm",
   "license": "MIT",
