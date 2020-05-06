@@ -1,4 +1,4 @@
-import { $cleanSelector } from '../../lib/tools/clean-selector'
+import { $cleanSelector } from '../../index'
 
 describe('$selectorClean', () => {
   describe('given a string', () => {

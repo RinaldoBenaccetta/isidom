@@ -1,4 +1,4 @@
-import { $setValue } from '../../../lib/manipulators/attributes/set-value'
+import { $setValue } from '../../../index'
 import '@testing-library/jest-dom'
 
 const DOC =

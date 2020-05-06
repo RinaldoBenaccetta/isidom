@@ -1,4 +1,4 @@
-import { $byClassLive } from '../../lib/selectors/by-class-live'
+import { $byClassLive } from '../../index'
 import '@testing-library/jest-dom'
 
 document.body.innerHTML =

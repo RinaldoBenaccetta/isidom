@@ -1,4 +1,4 @@
-import { $selectorToArray } from '../../lib/tools/selector-to-array'
+import { $selectorToArray } from '../../index'
 
 describe('$selectorArrayClean', () => {
   describe('given an array of selectors', () => {
@@ -18,9 +18,7 @@ describe('$selectorArrayClean', () => {
     })
     test('wich is a string return an array of the string without . or # at the start and without space at start and end of the string', () => {
       const SELECTOR_STRING = '.myClass'
-      expect($selectorToArray(SELECTOR_STRING)).toStrictEqual([
-        'myClass'
-      ])
+      expect($selectorToArray(SELECTOR_STRING)).toStrictEqual(['myClass'])
     })
   })
 })

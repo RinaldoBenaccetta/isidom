@@ -1,4 +1,4 @@
-import { $isHtmlElement } from '../../lib/tools/is-html-element'
+import { $isHtmlElement } from '../../index'
 
 document.body.innerHTML =
   // eslint-disable-next-line no-multi-str

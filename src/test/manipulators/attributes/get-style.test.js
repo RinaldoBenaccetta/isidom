@@ -1,4 +1,4 @@
-import { $getStyle } from '../../../lib/manipulators/attributes/get-style'
+import { $getStyle } from '../../../index'
 import '@testing-library/jest-dom'
 
 const DOC =

@@ -1,4 +1,4 @@
-import { $select } from '../../lib/selectors/select'
+import { $select } from '../../index'
 import '@testing-library/jest-dom'
 
 document.body.innerHTML =

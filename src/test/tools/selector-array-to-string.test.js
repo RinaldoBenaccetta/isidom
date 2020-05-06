@@ -1,4 +1,4 @@
-import * as mod from '../../lib/tools/selector-array-to-string'
+import * as mod from '../../index'
 
 describe('$arrayToStringList', () => {
   describe('given a string and no argument', () => {

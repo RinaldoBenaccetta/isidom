@@ -1,4 +1,4 @@
-import { $getOffset } from '../../lib/size/get-offset'
+import { $getOffset } from '../../index'
 
 document.body.innerHTML =
   // eslint-disable-next-line no-multi-str

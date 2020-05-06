@@ -1,4 +1,4 @@
-import { $getData } from '../../../lib/manipulators/attributes/get-data'
+import { $getData } from '../../../index'
 import '@testing-library/jest-dom'
 
 const DOC =

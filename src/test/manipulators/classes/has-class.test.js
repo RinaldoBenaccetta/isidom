@@ -1,4 +1,4 @@
-import { $hasClass } from '../../../lib/manipulators/classes/has-class'
+import { $hasClass } from '../../../index'
 
 document.body.innerHTML =
   // eslint-disable-next-line no-multi-str

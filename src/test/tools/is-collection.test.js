@@ -1,4 +1,4 @@
-import { $isCollection } from '../../lib/tools/is-collection'
+import { $isCollection } from '../../index'
 
 describe('$isCollection', () => {
   describe('given a nodeList', () => {

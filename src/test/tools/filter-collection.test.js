@@ -1,4 +1,4 @@
-import { $filterCollection } from '../../lib/tools/filter-collection'
+import { $filterCollection } from '../../index'
 import '@testing-library/jest-dom'
 
 document.body.innerHTML =

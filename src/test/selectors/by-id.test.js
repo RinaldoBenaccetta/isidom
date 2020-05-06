@@ -1,4 +1,4 @@
-import { $byId } from '../../lib/selectors/by-id'
+import { $byId } from '../../index'
 import '@testing-library/jest-dom'
 
 document.body.innerHTML =

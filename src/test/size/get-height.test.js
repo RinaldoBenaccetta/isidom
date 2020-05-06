@@ -1,4 +1,4 @@
-import { $getHeight } from '../../lib/size/get-height'
+import { $getHeight } from '../../index'
 import '@testing-library/jest-dom'
 
 document.body.innerHTML =

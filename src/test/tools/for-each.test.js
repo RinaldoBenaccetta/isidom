@@ -1,4 +1,4 @@
-import { $forEach } from '../../lib/tools/for-each'
+import { $forEach } from '../../index'
 import '@testing-library/jest-dom'
 
 describe('$forEach', () => {

@@ -1,4 +1,4 @@
-import { $findNextSiblings } from '../../lib/selectors/find-next-siblings'
+import { $findNextSiblings } from '../../index'
 import '@testing-library/jest-dom'
 
 document.body.innerHTML =

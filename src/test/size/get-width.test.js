@@ -1,4 +1,4 @@
-import { $getWidth } from '../../lib/size/get-width'
+import { $getWidth } from '../../index'
 import '@testing-library/jest-dom'
 
 document.body.innerHTML =
