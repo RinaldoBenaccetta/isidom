@@ -7,3 +7,5 @@ base.js
 src/test/coverage
 
 *.experiment.js
+
+.vscode
