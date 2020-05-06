@@ -1,5 +1,5 @@
 module.exports = {
-  verbose: true,
+  verbose: false,
   preset: 'ts-jest/presets/js-with-ts',
   testEnvironment: 'jsdom',
   setupFilesAfterEnv: ['./jest.setup.js'],
@@ -10,7 +10,8 @@ module.exports = {
     '!**/test/fixtures/**/*.js',
     '!**/test/coverage/**/*.js',
     '!/node_modules/',
-    '!**/*.config.js'
+    '!**/*.config.js',
+    '!**/dist/**/*.js'
   ],
   coverageDirectory: 'src/test/coverage'
 }
