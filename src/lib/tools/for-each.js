@@ -1,4 +1,4 @@
-import { $isNodeList } from './is-nodeList'
+import { $isNodeList } from './is-nodelist'
 import { $isArray } from './is-array'
 import { $isCollection } from './is-collection'
 
