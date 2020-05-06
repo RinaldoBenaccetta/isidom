@@ -28,3 +28,5 @@ base.js
 index.html
 rollup.config.js
 tsconfig.json
+
+.travis.yml
