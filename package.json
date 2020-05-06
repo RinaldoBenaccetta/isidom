@@ -52,7 +52,8 @@
     "codedocwatch": "documentation --config documentation.yml build src/lib/** -f md -o ./tmp/doc.md -w --markdown-toc-max-depth 3",
     "doclint": "documentation lint src/lib/**",
     "docinclude": "npx markdown-include markdown.json",
-    "doc": "npm run codedoc && npm run docinclude"
+    "doc": "npm run codedoc && npm run docinclude",
+    "lint": "eslint ."
   },
   "author": "npm",
   "license": "MIT",
