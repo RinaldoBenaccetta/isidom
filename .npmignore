@@ -30,3 +30,9 @@ rollup.config.js
 tsconfig.json
 
 .travis.yml
+
+#ignore vscode
+/.vscode
+
+#ignore coverage
+/src/test/coverage
