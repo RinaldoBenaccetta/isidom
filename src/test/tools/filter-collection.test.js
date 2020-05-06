@@ -29,4 +29,13 @@ describe('$filterCollection', () => {
       expect(TEST_FILTER.length).toBe(2)
     })
   })
+
+  describe('given valid filter and an HTMLCollection that match nothing return null', () => {
+    test('wich match HTMLElements return an array of HTMLElement', () => {
+      const TARGET_ID = document.getElementsByClassName('myFirstClass')
+      const TEST_FILTER = $filterCollection('.myLostClass', TARGET_ID)
+      const TEST_ARRAY = Array.isArray(TEST_FILTER)
+      expect(TEST_FILTER).toBeNull()
+    })
+  })
 })
