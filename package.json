@@ -2,7 +2,7 @@
   "name": "isidom",
   "version": "1.0.0",
   "devDependencies": {
-    "@testing-library/jest-dom": "^5.1.1",
+    "@testing-library/jest-dom": "^5.5.0",
     "@types/jest": "^25.1.1",
     "eslint": "^6.8.0",
     "eslint-config-standard": "^14.1.0",
@@ -10,12 +10,12 @@
     "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
-    "jest": "^25.1.0",
+    "jest": "^25.5.4",
     "jest-cli": "^24.9.0",
     "prettier": "^1.19.1",
     "prettier-eslint": "^9.0.1",
     "rollup": "^1.27.0",
-    "ts-jest": "^25.1.0",
+    "ts-jest": "^25.5.0",
     "typescript": "^3.7.5"
   },
   "description": "A browser side Javascript library to easily and intuitively manipulate the DOM and that can also help efficiently minify bundled apps.",
@@ -53,7 +53,7 @@
     "doclint": "documentation lint src/lib/**",
     "docinclude": "npx markdown-include markdown.json",
     "doc": "npm run codedoc && npm run docinclude",
-    "build": "rollup && doc",
+    "build": "npm run lint && npm run test && npm run rollup && npm run doc",
     "lint": "eslint . --fix"
   },
   "author": "npm",
