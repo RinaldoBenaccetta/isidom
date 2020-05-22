@@ -1,6 +1,6 @@
 {
   "name": "isidom",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "devDependencies": {
     "@testing-library/jest-dom": "^5.5.0",
     "@types/jest": "^25.1.1",
