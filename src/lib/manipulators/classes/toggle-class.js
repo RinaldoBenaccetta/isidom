@@ -23,14 +23,14 @@ import * as elements from '../../constants/elements'
  * isi.$toggleClass(['myClass', 'myOtherClass'], element)
  *
  * @param {(string|string[])} classList
- * @param {(HTMLElement|nodeList|HTMLCollection)} element
+ * @param {(HTMLElement|nodeList|HTMLCollection)} inputElements
  */
-export function $toggleClass (classList, element) {
+export function $toggleClass (classList, inputElements) {
   const CLASSES = $selectorToArray(classList)
 
-  $forEach(target => {
-    for (let i = 0, len = CLASSES.length; i < len; i++) {
-      target[elements.$classList].toggle(CLASSES[i])
-    }
-  }, element)
+  $forEach(element => {
+    $forEach(
+      classItem => element[elements.$classList].toggle(classItem), CLASSES
+    )
+  }, inputElements)
 }
