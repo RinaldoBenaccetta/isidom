@@ -30,5 +30,5 @@
  * @returns
  */
 export function $setStyle (value, property, element) {
-  return (element.style[property] = value)
+  element.style[property] = value
 }
