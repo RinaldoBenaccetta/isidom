@@ -17,9 +17,9 @@ import * as elements from '../constants/elements'
  * that can be accessed.
  */
 export function $getOffset (element) {
-  var rectangle = element.getBoundingClientRect()
+  const RECTANGLE = element.getBoundingClientRect()
   return {
-    top: rectangle.top + elements.$docBody.scrollTop,
-    left: rectangle.left + elements.$docBody.scrollLeft
+    top: RECTANGLE.top + elements.$docBody.scrollTop,
+    left: RECTANGLE.left + elements.$docBody.scrollLeft
   }
 }
