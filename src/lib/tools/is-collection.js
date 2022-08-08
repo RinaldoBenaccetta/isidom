@@ -10,6 +10,5 @@
  * @returns {boolean}
  */
 export function $isCollection (input) {
-  // return HTMLCollection.prototype.isPrototypeOf(input)
   return input instanceof HTMLCollection
 }
