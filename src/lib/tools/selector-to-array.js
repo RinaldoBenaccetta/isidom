@@ -19,10 +19,7 @@ import { $cleanSelector } from './clean-selector'
  */
 export function $selectorToArray (input) {
   if ($isArray(input)) {
-    for (let i = 0, len = input.length; i < len; i++) {
-      input[i] = $cleanSelector(input[i])
-    }
-    return input
+    return input.map((item) => $cleanSelector(item))
   }
   return [$cleanSelector(input)]
 }
