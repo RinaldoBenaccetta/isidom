@@ -10,6 +10,5 @@
  * @returns {boolean}
  */
 export function $isNodeList (input) {
-  // return NodeList.prototype.isPrototypeOf(input)
   return input instanceof NodeList
 }
