@@ -5,6 +5,8 @@ import { $isCollection } from './is-collection'
 /**
  * @description
  * Replacement based on *for* loop for the *forEach* native Javascript function.
+ * The *forEach* native Javascript function doesn't work on HTML Collection,
+ * this function does.
  * Note that $forEach returns nothing.
  *
  * @example
