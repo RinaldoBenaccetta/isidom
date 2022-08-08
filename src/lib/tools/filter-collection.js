@@ -17,8 +17,8 @@ import * as values from '../constants/values'
  * An array of HTMLElement.
  */
 export function $filterCollection (filter, collection) {
-  var output = []
-  for (var i = 0; i < collection.length; i++) {
+  const output = []
+  for (let i = 0; i < collection.length; i++) {
     // if nodeType is an element and match selector :
     // push the element in the array
     if (collection[i].nodeType === 1 && collection[i].matches(filter)) {
