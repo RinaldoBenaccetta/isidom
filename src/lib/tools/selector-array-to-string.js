@@ -28,7 +28,7 @@ import { $selectorToArray } from './selector-to-array'
  * @returns {string}
  */
 export function $selectorArrayToString (input, dot = constant.$true) {
-  const SEPARATOR = dot === constant.$true ? '.' : ' '
-  input = $selectorToArray(input)
-  return (SEPARATOR + input.join(SEPARATOR)).trim()
+  const SEPARATOR = dot ? '.' : ' '
+
+  return (SEPARATOR + $selectorToArray(input).join(SEPARATOR)).trim()
 }
