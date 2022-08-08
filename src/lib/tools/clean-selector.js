@@ -15,8 +15,8 @@
  */
 export function $cleanSelector (selector) {
   selector = selector.trim()
-  if (selector.charAt(0) === '#' || selector.charAt(0) === '.') {
-    selector = selector.slice(1)
-  }
-  return selector
+
+  return selector.charAt(0) === '#' || selector.charAt(0) === '.'
+    ? selector.slice(1)
+    : selector
 }
