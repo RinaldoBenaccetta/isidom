@@ -17,14 +17,19 @@ import * as values from '../constants/values'
  * An array of HTMLElement.
  */
 export function $filterCollection (filter, collection) {
-  const OUTPUT = []
-  for (let i = 0; i < collection.length; i++) {
-    // if nodeType is an element and match selector :
-    // push the element in the array
-    if (collection[i].nodeType === 1 && collection[i].matches(filter)) {
-      OUTPUT.push(collection[i])
-    }
-  }
+  // const OUTPUT = []
+  // for (let i = 0; i < collection.length; i++) {
+  //   // if nodeType is an element and match selector :
+  //   // push the element in the array
+  //   if (collection[i].nodeType === 1 && collection[i].matches(filter)) {
+  //     OUTPUT.push(collection[i])
+  //   }
+  // }
+
+  const OUTPUT = Array.from(collection).filter(
+    // if nodeType is an element and match selector
+    item => item.nodeType === 1 && item.matches(filter)
+  )
 
   return OUTPUT.length > 0 ? OUTPUT : values.$null
 }
