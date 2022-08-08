@@ -33,8 +33,8 @@
  */
 export function $getAttributes (element) {
   const OUTPUT = {}
-  for (let i = 0, attributes = element.attributes; i < attributes.length; i++) {
-    OUTPUT[attributes[i].nodeName] = attributes[i].nodeValue
+  for (const attribute of element.attributes) {
+    OUTPUT[attribute.nodeName] = attribute.nodeValue
   }
 
   return OUTPUT
