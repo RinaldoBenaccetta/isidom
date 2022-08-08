@@ -10,6 +10,5 @@
  * @returns {boolean}
  */
 export function $isHtmlElement (input) {
-  // return input instanceof HTMLElement
   return input.nodeType === 1
 }
