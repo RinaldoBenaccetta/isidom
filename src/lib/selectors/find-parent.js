@@ -12,6 +12,4 @@
  *
  * @returns {HTMLElement}
  */
-export function $findParent (element) {
-  return element.parentElement
-}
+export const $findParent = element => element.parentElement

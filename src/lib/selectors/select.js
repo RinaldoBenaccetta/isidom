@@ -20,6 +20,5 @@ import * as elements from '../constants/elements'
  *
  * @returns {NodeList}
  */
-export function $select (query, element = elements.$document) {
-  return element.querySelectorAll(query)
-}
+export const $select = (query, element = elements.$document) =>
+  element.querySelectorAll(query)

@@ -8,6 +8,4 @@
  * @param {string} text
  * @param {HTMLElement} element
  */
-export function $setText (text, element) {
-  element.textContent = text
-}
+export const $setText = (text, element) => { element.textContent = text }

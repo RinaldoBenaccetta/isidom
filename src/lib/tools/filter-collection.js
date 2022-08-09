@@ -17,7 +17,7 @@ import { $isHtmlElement } from './is-html-element'
  * @returns {Array|null}
  * An array of HTMLElement.
  */
-export function $filterCollection (filter, collection) {
+export const $filterCollection = (filter, collection) => {
   const OUTPUT = Array.from(collection).filter(
     // if nodeType is an html element and match selector
     item => $isHtmlElement(item) && item.matches(filter)

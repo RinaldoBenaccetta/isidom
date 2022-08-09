@@ -9,6 +9,4 @@
  *
  * @returns {boolean}
  */
-export function $isCollection (input) {
-  return input instanceof HTMLCollection
-}
+export const $isCollection = input => input instanceof HTMLCollection

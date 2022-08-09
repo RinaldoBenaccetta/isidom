@@ -26,6 +26,4 @@
  *
  * @returns
  */
-export function $getStyle (property, element) {
-  return element.style[property]
-}
+export const $getStyle = (property, element) => element.style[property]

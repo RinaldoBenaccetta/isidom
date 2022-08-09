@@ -15,7 +15,7 @@ import * as properties from '../constants/css-properties'
  *
  * @returns {number}
  */
-export function $getWidth (element = values.$null) {
+export const $getWidth = (element = values.$null) => {
   if (element) {
     return parseFloat(
       getComputedStyle(element)[properties.$cssWidth].replace(

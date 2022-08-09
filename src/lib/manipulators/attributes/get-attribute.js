@@ -11,6 +11,5 @@
  *
  * @returns {string}
  */
-export function $getAttribute (attribute, element) {
-  return element.getAttribute(attribute)
-}
+export const $getAttribute = (attribute, element) =>
+  element.getAttribute(attribute)

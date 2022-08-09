@@ -26,9 +26,7 @@
  * for maximum minification when used several times.
  * In this case, the $js prefixed constants must be used.
  * @param {HTMLElement} element
- *
- * @returns
  */
-export function $setStyle (value, property, element) {
+export const $setStyle = (value, property, element) => {
   element.style[property] = value
 }

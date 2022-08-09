@@ -16,7 +16,7 @@ import * as elements from '../constants/elements'
  * The returned object contains the 'top' and 'left' properties
  * that can be accessed.
  */
-export function $getOffset (element) {
+export const $getOffset = element => {
   const RECTANGLE = element.getBoundingClientRect()
   return {
     top: RECTANGLE.top + elements.$docBody.scrollTop,

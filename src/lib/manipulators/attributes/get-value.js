@@ -9,6 +9,4 @@
  *
  * @returns {string}
  */
-export function $getValue (input) {
-  return input.value
-}
+export const $getValue = input => input.value

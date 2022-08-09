@@ -22,8 +22,7 @@ import * as elements from '../constants/elements'
  *
  * @returns {HTMLCollection}
  */
-export function $byClassLive (classList, element = elements.$document) {
-  return element.getElementsByClassName(
+export const $byClassLive = (classList, element = elements.$document) =>
+  element.getElementsByClassName(
     $selectorArrayToString(classList, values.$false)
   )
-}

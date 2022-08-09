@@ -17,7 +17,7 @@ import * as values from '../constants/values'
  *
  * @returns {Array|null}
  */
-export function $findPreviousSiblings (element) {
+export const $findPreviousSiblings = element => {
   const SIBLINGS = []
   while ((element = element.previousElementSibling)) {
     SIBLINGS.push(element)

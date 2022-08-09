@@ -9,6 +9,4 @@
  *
  * @returns {boolean}
  */
-export function $isHtmlElement (input) {
-  return input.nodeType === 1
-}
+export const $isHtmlElement = input => input.nodeType === 1

@@ -14,7 +14,7 @@ import * as values from '../constants/values'
  *
  * @returns {Array|null}
  */
-export function $findSiblings (element) {
+export const $findSiblings = element => {
   const output = Array.prototype.filter.call(
     element.parentNode.children,
     function (child) {

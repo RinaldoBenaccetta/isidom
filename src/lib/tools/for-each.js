@@ -7,6 +7,7 @@ import { $isCollection } from './is-collection'
  * Replacement based on *for* loop for the *forEach* native Javascript function.
  * The *forEach* native Javascript function doesn't work on HTML Collection,
  * this function does.
+ * ForEach native seems slower than for loops used in this function.
  * Note that $forEach returns nothing.
  *
  * @example
@@ -47,7 +48,7 @@ import { $isCollection } from './is-collection'
  * the function will be executed once on the argument. Note : a string is
  * an array of letters.
  */
-export function $forEach (functionToExecute, element) {
+export const $forEach = (functionToExecute, element) => {
   if ($isNodeList(element) || $isArray(element) || $isCollection(element)) {
     for (const ITEM of element) {
       functionToExecute(ITEM)

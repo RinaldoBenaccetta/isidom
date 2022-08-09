@@ -9,6 +9,4 @@
  *
  * @param {HTMLElement} input
  */
-export function $setValue (value, input) {
-  input.value = value
-}
+export const $setValue = (value, input) => { input.value = value }

@@ -17,9 +17,8 @@ import { $cleanSelector } from './clean-selector'
  *
  * @returns  {string[]}
  */
-export function $selectorToArray (input) {
-  if ($isArray(input)) {
-    return input.map((item) => $cleanSelector(item))
-  }
+export const $selectorToArray = input => {
+  if ($isArray(input)) return input.map((item) => $cleanSelector(item))
+
   return [$cleanSelector(input)]
 }

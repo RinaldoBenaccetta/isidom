@@ -9,6 +9,4 @@
  *
  * @returns {string}
  */
-export function $getText (element) {
-  return element.textContent
-}
+export const $getText = element => element.textContent

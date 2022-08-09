@@ -26,7 +26,7 @@ import * as elements from '../../constants/elements'
  * @param {(string|string[])} classList
  * @param {(HTMLElement|nodeList|HTMLCollection)} element
  */
-export function $removeClass (classList, element) {
+export const $removeClass = (classList, element) => {
   $forEach(target => {
     target[elements.$classList].remove(...$selectorToArray(classList))
   }, element)

@@ -30,8 +30,8 @@
  * @param {HTMLElement} element
  *
  * @returns {Object}
- */
-export function $getAttributes (element) {
+*/
+export const $getAttributes = element => {
   const OUTPUT = {}
   for (const attribute of element.attributes) {
     OUTPUT[attribute.nodeName] = attribute.nodeValue

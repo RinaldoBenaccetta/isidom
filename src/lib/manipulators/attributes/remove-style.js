@@ -27,6 +27,5 @@
  * $css prefixed constants must be used.
  * @param {HTMLElement} element
  */
-export function $removeStyle (property, element) {
+export const $removeStyle = (property, element) =>
   element.style.removeProperty([property])
-}

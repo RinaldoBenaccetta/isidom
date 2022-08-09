@@ -15,6 +15,5 @@ import * as elements from '../constants/elements'
  *
  * @returns {HTMLElement|null}
  */
-export function $byId (id) {
-  return elements.$document.getElementById($cleanSelector(id))
-}
+export const $byId = id =>
+  elements.$document.getElementById($cleanSelector(id))

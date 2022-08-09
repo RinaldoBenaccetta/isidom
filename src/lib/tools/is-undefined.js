@@ -15,7 +15,5 @@ import * as constant from '../constants/values'
  *
  * @returns {boolean}
  */
-export function $isUndefined (variable) {
-  // eslint-disable-next-line valid-typeof
-  return typeof variable === constant._$undefined
-}
+// eslint-disable-next-line valid-typeof
+export const $isUndefined = variable => typeof variable === constant._$undefined

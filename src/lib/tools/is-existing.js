@@ -17,6 +17,5 @@ import * as values from '../constants/values'
  *
  * @returns {boolean}
  */
-export function $isExisting (query, element = elements.$document) {
-  return element.querySelector(query) ? values.$true : values.$false
-}
+export const $isExisting = (query, element = elements.$document) =>
+  element.querySelector(query) ? values.$true : values.$false

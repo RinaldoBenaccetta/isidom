@@ -9,6 +9,4 @@
  *
  * @returns {boolean}
  */
-export function $isNodeList (input) {
-  return input instanceof NodeList
-}
+export const $isNodeList = input => input instanceof NodeList

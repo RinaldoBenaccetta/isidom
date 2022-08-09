@@ -31,7 +31,7 @@ import { $cleanSelector } from '../../tools/clean-selector'
  * @param {string} newClass
  * @param {(HTMLElement|nodeList|HTMLCollection)} element
  */
-export function $replaceClass (oldClass, newClass, element) {
+export const $replaceClass = (oldClass, newClass, element) => {
   $forEach(target => {
     target[elements.$classList].replace(
       $cleanSelector(oldClass),

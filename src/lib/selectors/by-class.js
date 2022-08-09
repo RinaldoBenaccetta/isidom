@@ -22,6 +22,5 @@ import * as constant from '../constants/elements'
  *
  * @returns {NodeList}
  */
-export function $byClass (classList, element = constant.$document) {
-  return element.querySelectorAll($selectorArrayToString(classList))
-}
+export const $byClass = (classList, element = constant.$document) =>
+  element.querySelectorAll($selectorArrayToString(classList))

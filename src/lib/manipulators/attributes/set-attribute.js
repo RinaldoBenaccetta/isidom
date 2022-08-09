@@ -16,7 +16,7 @@ import { $forEach } from '../../tools/for-each'
  * @param {string} attribute
  * @param {HTMLElement|HTMLElement[]|nodeList|HTMLCollection} element
  */
-export function $setAttribute (value, attribute, element) {
+export const $setAttribute = (value, attribute, element) => {
   $forEach(item => {
     item.setAttribute(attribute, value)
   }, element)

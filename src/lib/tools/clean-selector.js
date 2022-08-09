@@ -13,7 +13,7 @@
  *
  * @returns {string}
  */
-export function $cleanSelector (selector) {
+export const $cleanSelector = selector => {
   selector = selector.trim()
 
   return selector.charAt(0) === '#' || selector.charAt(0) === '.'

@@ -14,7 +14,7 @@ import * as properties from '../constants/css-properties'
  *
  * @returns {number}
  */
-export function $getHeight (element = values.$null) {
+export const $getHeight = (element = values.$null) => {
   if (element) {
     return parseFloat(
       getComputedStyle(element)[properties.$cssHeight].replace(

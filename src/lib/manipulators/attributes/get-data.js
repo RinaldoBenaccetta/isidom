@@ -20,6 +20,4 @@ import { $getAttribute } from './get-attribute'
  *
  * @returns {string, null}
  */
-export function $getData (data, element) {
-  return $getAttribute('data-' + data, element)
-}
+export const $getData = (data, element) => $getAttribute('data-' + data, element)

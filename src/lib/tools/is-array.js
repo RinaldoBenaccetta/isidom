@@ -9,6 +9,4 @@
  *
  * @returns {boolean}
  */
-export function $isArray (input) {
-  return Array.isArray(input)
-}
+export const $isArray = input => Array.isArray(input)

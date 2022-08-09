@@ -18,6 +18,5 @@ import * as elements from '../../constants/elements'
  *
  * @returns {boolean}
  */
-export function $hasClass (className, element) {
-  return element[elements.$classList].contains($cleanSelector(className))
-}
+export const $hasClass = (className, element) =>
+  element[elements.$classList].contains($cleanSelector(className))

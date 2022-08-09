@@ -26,7 +26,7 @@ import * as elements from '../../constants/elements'
  * @param {(string|string[])} classList
  * @param {(HTMLElement|nodeList|HTMLCollection)} element
  */
-export function $addClass (classList, element) {
+export const $addClass = (classList, element) => {
   $forEach(target => {
     target[elements.$classList].add(...$selectorToArray(classList))
   }, element)

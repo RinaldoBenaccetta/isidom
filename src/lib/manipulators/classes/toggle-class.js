@@ -25,7 +25,7 @@ import * as elements from '../../constants/elements'
  * @param {(string|string[])} classList
  * @param {(HTMLElement|nodeList|HTMLCollection)} inputElements
  */
-export function $toggleClass (classList, inputElements) {
+export const $toggleClass = (classList, inputElements) => {
   const CLASSES = $selectorToArray(classList)
 
   $forEach(element => {
